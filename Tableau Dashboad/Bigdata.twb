@@ -1,0 +1,3438 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 20242.24.0711.1636                               -->
+<workbook original-version='18.1' source-build='2024.2.1 (20242.24.0711.1636)' source-platform='win' version='18.1' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <document-format-change-manifest>
+    <_.fcp.AnimationOnByDefault.true...AnimationOnByDefault />
+    <_.fcp.MarkAnimation.true...MarkAnimation />
+    <_.fcp.ObjectModelEncapsulateLegacy.true...ObjectModelEncapsulateLegacy />
+    <_.fcp.ObjectModelTableType.true...ObjectModelTableType />
+    <_.fcp.SchemaViewerObjectModel.true...SchemaViewerObjectModel />
+    <SheetIdentifierTracking />
+    <WindowsPersistSimpleIdentifiers />
+  </document-format-change-manifest>
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <_.fcp.AnimationOnByDefault.false...style>
+    <_.fcp.AnimationOnByDefault.false..._.fcp.MarkAnimation.true...style-rule element='animation'>
+      <_.fcp.AnimationOnByDefault.false...format attr='animation-on' value='ao-on' />
+    </_.fcp.AnimationOnByDefault.false..._.fcp.MarkAnimation.true...style-rule>
+  </_.fcp.AnimationOnByDefault.false...style>
+  <datasources>
+    <datasource caption='plant_diseases' inline='true' name='federated.0zqy3i11mf6kv11afkdaw004m71t' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='plant_diseases' name='semistructpassivestore-direct.1bqmy461wa8zqt1ffdkci05syo2c'>
+            <connection class='semistructpassivestore-direct' directory='C:/Users/exam/Desktop/Transforming Big Data with Data Science_English/Supporting Files for LeafGuard/Supporting Files for LeafGuard/Plant_leaf_diseases_dataset_with_augmentation' filename='plant_diseases.json' password='' server=''>
+              <semistruct-schemas>
+                <semistruct-schema table='[plant_diseases.json]'>
+                  <map key='{root}' value='true' />
+                </semistruct-schema>
+              </semistruct-schemas>
+            </connection>
+          </named-connection>
+        </named-connections>
+        <_.fcp.ObjectModelEncapsulateLegacy.false...relation connection='semistructpassivestore-direct.1bqmy461wa8zqt1ffdkci05syo2c' name='plant_diseases.json' table='[plant_diseases.json]' type='table' />
+        <_.fcp.ObjectModelEncapsulateLegacy.true...relation connection='semistructpassivestore-direct.1bqmy461wa8zqt1ffdkci05syo2c' name='plant_diseases.json' table='[plant_diseases.json]' type='table' />
+        <metadata-records>
+          <metadata-record class='column'>
+            <remote-name>Document Index (generated)</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Document Index (generated)]</local-name>
+            <parent-name>[plant_diseases.json]</parent-name>
+            <remote-alias>Document Index (generated)</remote-alias>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[plant_diseases.json_EAFD6CFFBE29412DA92C6DA73FD1575D]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>image_path</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[image_path]</local-name>
+            <parent-name>[plant_diseases.json]</parent-name>
+            <remote-alias>image_path</remote-alias>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='binary' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[plant_diseases.json_EAFD6CFFBE29412DA92C6DA73FD1575D]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>label</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[label]</local-name>
+            <parent-name>[plant_diseases.json]</parent-name>
+            <remote-alias>label</remote-alias>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='binary' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[plant_diseases.json_EAFD6CFFBE29412DA92C6DA73FD1575D]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column aggregation='Sum' datatype='integer' name='[Document Index (generated)]' role='dimension' type='ordinal'>
+        <desc>
+          <formatted-text>
+            <run>Document Index (generated)</run>
+          </formatted-text>
+        </desc>
+      </column>
+      <_.fcp.ObjectModelTableType.true...column caption='plant_diseases.json' datatype='table' name='[__tableau_internal_object_id__].[plant_diseases.json_EAFD6CFFBE29412DA92C6DA73FD1575D]' role='measure' type='quantitative' />
+      <column caption='Image Path' datatype='string' name='[image_path]' role='dimension' type='nominal'>
+        <desc>
+          <formatted-text>
+            <run>image_path</run>
+          </formatted-text>
+        </desc>
+      </column>
+      <column caption='Label' datatype='string' name='[label]' role='dimension' type='nominal'>
+        <desc>
+          <formatted-text>
+            <run>label</run>
+          </formatted-text>
+        </desc>
+      </column>
+      <_.fcp.SchemaViewerObjectModel.false...folder name='Plant Diseases' role='dimensions'>
+        <folder-item name='[Document Index (generated)]' type='field' />
+        <folder-item name='[image_path]' type='field' />
+        <folder-item name='[label]' type='field' />
+      </_.fcp.SchemaViewerObjectModel.false...folder>
+      <_.fcp.SchemaViewerObjectModel.true...folders-common>
+        <folder name='Plant Diseases'>
+          <folder-item name='[Document Index (generated)]' type='field' />
+          <folder-item name='[image_path]' type='field' />
+          <folder-item name='[label]' type='field' />
+        </folder>
+      </_.fcp.SchemaViewerObjectModel.true...folders-common>
+      <layout _.fcp.SchemaViewerObjectModel.false...dim-percentage='0.5' _.fcp.SchemaViewerObjectModel.false...measure-percentage='0.4' dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='false' />
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;United States&quot;' />
+      </semantic-values>
+      <_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+        <objects>
+          <object caption='plant_diseases.json' id='plant_diseases.json_EAFD6CFFBE29412DA92C6DA73FD1575D'>
+            <properties context=''>
+              <relation connection='semistructpassivestore-direct.1bqmy461wa8zqt1ffdkci05syo2c' name='plant_diseases.json' table='[plant_diseases.json]' type='table' />
+            </properties>
+          </object>
+        </objects>
+      </_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+    </datasource>
+  </datasources>
+  <worksheets>
+    <worksheet name='Column Chart'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='plant_diseases' name='federated.0zqy3i11mf6kv11afkdaw004m71t' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0zqy3i11mf6kv11afkdaw004m71t'>
+            <_.fcp.ObjectModelTableType.false...column caption='plant_diseases.json' datatype='integer' name='[__tableau_internal_object_id__].[plant_diseases.json_EAFD6CFFBE29412DA92C6DA73FD1575D]' role='measure' type='quantitative' />
+            <column-instance column='[__tableau_internal_object_id__].[plant_diseases.json_EAFD6CFFBE29412DA92C6DA73FD1575D]' derivation='Count' name='[__tableau_internal_object_id__].[cnt:plant_diseases.json_EAFD6CFFBE29412DA92C6DA73FD1575D:qk]' pivot='key' type='quantitative' />
+            <_.fcp.ObjectModelTableType.true...column caption='plant_diseases.json' datatype='table' name='[__tableau_internal_object_id__].[plant_diseases.json_EAFD6CFFBE29412DA92C6DA73FD1575D]' role='measure' type='quantitative' />
+            <column caption='Label' datatype='string' name='[label]' role='dimension' type='nominal'>
+              <desc>
+                <formatted-text>
+                  <run>label</run>
+                </formatted-text>
+              </desc>
+            </column>
+            <column-instance column='[label]' derivation='None' name='[none:label:nk]' pivot='key' type='nominal' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.0zqy3i11mf6kv11afkdaw004m71t].[:Measure Names]'>
+            <groupfilter function='level-members' level='[:Measure Names]' />
+          </filter>
+          <slices>
+            <column>[federated.0zqy3i11mf6kv11afkdaw004m71t].[:Measure Names]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <encoding attr='space' class='0' field='[federated.0zqy3i11mf6kv11afkdaw004m71t].[Multiple Values]' field-type='quantitative' max='10923.24001882672' min='-1377.7633977252685' range-type='fixed' scope='rows' type='space' />
+            <format attr='width' field='[federated.0zqy3i11mf6kv11afkdaw004m71t].[Multiple Values]' value='64' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <lod column='[federated.0zqy3i11mf6kv11afkdaw004m71t].[none:label:nk]' />
+            </encodings>
+          </pane>
+        </panes>
+        <rows>[federated.0zqy3i11mf6kv11afkdaw004m71t].[Multiple Values]</rows>
+        <cols>[federated.0zqy3i11mf6kv11afkdaw004m71t].[none:label:nk]</cols>
+        <mark-labels>
+          <mark-label id='0' label-state='on'>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields>
+                    <field>[federated.0zqy3i11mf6kv11afkdaw004m71t].[none:label:nk]</field>
+                  </x-fields>
+                  <y-fields>
+                    <field>[federated.0zqy3i11mf6kv11afkdaw004m71t].[Multiple Values]</field>
+                  </y-fields>
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.0zqy3i11mf6kv11afkdaw004m71t].[none:label:nk]</field>
+                  <field>[federated.0zqy3i11mf6kv11afkdaw004m71t].[:Measure Names]</field>
+                  <field>[federated.0zqy3i11mf6kv11afkdaw004m71t].[Multiple Values]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>&quot;Apple___Apple_scab&quot;</value>
+                <value>&quot;[federated.0zqy3i11mf6kv11afkdaw004m71t].[__tableau_internal_object_id__].[cnt:plant_diseases.json_EAFD6CFFBE29412DA92C6DA73FD1575D:qk]&quot;</value>
+                <value>1000.0</value>
+              </tuple>
+            </tuple-reference>
+          </mark-label>
+          <mark-label id='1' label-state='on'>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields>
+                    <field>[federated.0zqy3i11mf6kv11afkdaw004m71t].[none:label:nk]</field>
+                  </x-fields>
+                  <y-fields>
+                    <field>[federated.0zqy3i11mf6kv11afkdaw004m71t].[Multiple Values]</field>
+                  </y-fields>
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.0zqy3i11mf6kv11afkdaw004m71t].[none:label:nk]</field>
+                  <field>[federated.0zqy3i11mf6kv11afkdaw004m71t].[:Measure Names]</field>
+                  <field>[federated.0zqy3i11mf6kv11afkdaw004m71t].[Multiple Values]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>&quot;Tomato___Tomato_Yellow_Leaf_Curl_Virus&quot;</value>
+                <value>&quot;[federated.0zqy3i11mf6kv11afkdaw004m71t].[__tableau_internal_object_id__].[cnt:plant_diseases.json_EAFD6CFFBE29412DA92C6DA73FD1575D:qk]&quot;</value>
+                <value>5357.0</value>
+              </tuple>
+            </tuple-reference>
+          </mark-label>
+          <mark-label id='2' label-state='on'>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields>
+                    <field>[federated.0zqy3i11mf6kv11afkdaw004m71t].[none:label:nk]</field>
+                  </x-fields>
+                  <y-fields>
+                    <field>[federated.0zqy3i11mf6kv11afkdaw004m71t].[Multiple Values]</field>
+                  </y-fields>
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.0zqy3i11mf6kv11afkdaw004m71t].[none:label:nk]</field>
+                  <field>[federated.0zqy3i11mf6kv11afkdaw004m71t].[:Measure Names]</field>
+                  <field>[federated.0zqy3i11mf6kv11afkdaw004m71t].[Multiple Values]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>&quot;Tomato___Tomato_mosaic_virus&quot;</value>
+                <value>&quot;[federated.0zqy3i11mf6kv11afkdaw004m71t].[__tableau_internal_object_id__].[cnt:plant_diseases.json_EAFD6CFFBE29412DA92C6DA73FD1575D:qk]&quot;</value>
+                <value>1000.0</value>
+              </tuple>
+            </tuple-reference>
+          </mark-label>
+          <mark-label id='3' label-state='on'>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields>
+                    <field>[federated.0zqy3i11mf6kv11afkdaw004m71t].[none:label:nk]</field>
+                  </x-fields>
+                  <y-fields>
+                    <field>[federated.0zqy3i11mf6kv11afkdaw004m71t].[Multiple Values]</field>
+                  </y-fields>
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.0zqy3i11mf6kv11afkdaw004m71t].[none:label:nk]</field>
+                  <field>[federated.0zqy3i11mf6kv11afkdaw004m71t].[:Measure Names]</field>
+                  <field>[federated.0zqy3i11mf6kv11afkdaw004m71t].[Multiple Values]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>&quot;Tomato___Target_Spot&quot;</value>
+                <value>&quot;[federated.0zqy3i11mf6kv11afkdaw004m71t].[__tableau_internal_object_id__].[cnt:plant_diseases.json_EAFD6CFFBE29412DA92C6DA73FD1575D:qk]&quot;</value>
+                <value>1404.0</value>
+              </tuple>
+            </tuple-reference>
+          </mark-label>
+          <mark-label id='4' label-state='on'>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields>
+                    <field>[federated.0zqy3i11mf6kv11afkdaw004m71t].[none:label:nk]</field>
+                  </x-fields>
+                  <y-fields>
+                    <field>[federated.0zqy3i11mf6kv11afkdaw004m71t].[Multiple Values]</field>
+                  </y-fields>
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.0zqy3i11mf6kv11afkdaw004m71t].[none:label:nk]</field>
+                  <field>[federated.0zqy3i11mf6kv11afkdaw004m71t].[:Measure Names]</field>
+                  <field>[federated.0zqy3i11mf6kv11afkdaw004m71t].[Multiple Values]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>&quot;Tomato___Spider_mites Two-spotted_spider_mite&quot;</value>
+                <value>&quot;[federated.0zqy3i11mf6kv11afkdaw004m71t].[__tableau_internal_object_id__].[cnt:plant_diseases.json_EAFD6CFFBE29412DA92C6DA73FD1575D:qk]&quot;</value>
+                <value>1676.0</value>
+              </tuple>
+            </tuple-reference>
+          </mark-label>
+          <mark-label id='5' label-state='on'>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields>
+                    <field>[federated.0zqy3i11mf6kv11afkdaw004m71t].[none:label:nk]</field>
+                  </x-fields>
+                  <y-fields>
+                    <field>[federated.0zqy3i11mf6kv11afkdaw004m71t].[Multiple Values]</field>
+                  </y-fields>
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.0zqy3i11mf6kv11afkdaw004m71t].[none:label:nk]</field>
+                  <field>[federated.0zqy3i11mf6kv11afkdaw004m71t].[:Measure Names]</field>
+                  <field>[federated.0zqy3i11mf6kv11afkdaw004m71t].[Multiple Values]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>&quot;Tomato___Septoria_leaf_spot&quot;</value>
+                <value>&quot;[federated.0zqy3i11mf6kv11afkdaw004m71t].[__tableau_internal_object_id__].[cnt:plant_diseases.json_EAFD6CFFBE29412DA92C6DA73FD1575D:qk]&quot;</value>
+                <value>1771.0</value>
+              </tuple>
+            </tuple-reference>
+          </mark-label>
+          <mark-label id='6' label-state='on'>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields>
+                    <field>[federated.0zqy3i11mf6kv11afkdaw004m71t].[none:label:nk]</field>
+                  </x-fields>
+                  <y-fields>
+                    <field>[federated.0zqy3i11mf6kv11afkdaw004m71t].[Multiple Values]</field>
+                  </y-fields>
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.0zqy3i11mf6kv11afkdaw004m71t].[none:label:nk]</field>
+                  <field>[federated.0zqy3i11mf6kv11afkdaw004m71t].[:Measure Names]</field>
+                  <field>[federated.0zqy3i11mf6kv11afkdaw004m71t].[Multiple Values]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>&quot;Tomato___Leaf_Mold&quot;</value>
+                <value>&quot;[federated.0zqy3i11mf6kv11afkdaw004m71t].[__tableau_internal_object_id__].[cnt:plant_diseases.json_EAFD6CFFBE29412DA92C6DA73FD1575D:qk]&quot;</value>
+                <value>1000.0</value>
+              </tuple>
+            </tuple-reference>
+          </mark-label>
+          <mark-label id='7' label-state='on'>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields>
+                    <field>[federated.0zqy3i11mf6kv11afkdaw004m71t].[none:label:nk]</field>
+                  </x-fields>
+                  <y-fields>
+                    <field>[federated.0zqy3i11mf6kv11afkdaw004m71t].[Multiple Values]</field>
+                  </y-fields>
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.0zqy3i11mf6kv11afkdaw004m71t].[none:label:nk]</field>
+                  <field>[federated.0zqy3i11mf6kv11afkdaw004m71t].[:Measure Names]</field>
+                  <field>[federated.0zqy3i11mf6kv11afkdaw004m71t].[Multiple Values]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>&quot;Tomato___Late_blight&quot;</value>
+                <value>&quot;[federated.0zqy3i11mf6kv11afkdaw004m71t].[__tableau_internal_object_id__].[cnt:plant_diseases.json_EAFD6CFFBE29412DA92C6DA73FD1575D:qk]&quot;</value>
+                <value>1909.0</value>
+              </tuple>
+            </tuple-reference>
+          </mark-label>
+          <mark-label id='8' label-state='on'>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields>
+                    <field>[federated.0zqy3i11mf6kv11afkdaw004m71t].[none:label:nk]</field>
+                  </x-fields>
+                  <y-fields>
+                    <field>[federated.0zqy3i11mf6kv11afkdaw004m71t].[Multiple Values]</field>
+                  </y-fields>
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.0zqy3i11mf6kv11afkdaw004m71t].[none:label:nk]</field>
+                  <field>[federated.0zqy3i11mf6kv11afkdaw004m71t].[:Measure Names]</field>
+                  <field>[federated.0zqy3i11mf6kv11afkdaw004m71t].[Multiple Values]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>&quot;Tomato___healthy&quot;</value>
+                <value>&quot;[federated.0zqy3i11mf6kv11afkdaw004m71t].[__tableau_internal_object_id__].[cnt:plant_diseases.json_EAFD6CFFBE29412DA92C6DA73FD1575D:qk]&quot;</value>
+                <value>1591.0</value>
+              </tuple>
+            </tuple-reference>
+          </mark-label>
+          <mark-label id='9' label-state='on'>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields>
+                    <field>[federated.0zqy3i11mf6kv11afkdaw004m71t].[none:label:nk]</field>
+                  </x-fields>
+                  <y-fields>
+                    <field>[federated.0zqy3i11mf6kv11afkdaw004m71t].[Multiple Values]</field>
+                  </y-fields>
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.0zqy3i11mf6kv11afkdaw004m71t].[none:label:nk]</field>
+                  <field>[federated.0zqy3i11mf6kv11afkdaw004m71t].[:Measure Names]</field>
+                  <field>[federated.0zqy3i11mf6kv11afkdaw004m71t].[Multiple Values]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>&quot;Tomato___Early_blight&quot;</value>
+                <value>&quot;[federated.0zqy3i11mf6kv11afkdaw004m71t].[__tableau_internal_object_id__].[cnt:plant_diseases.json_EAFD6CFFBE29412DA92C6DA73FD1575D:qk]&quot;</value>
+                <value>1000.0</value>
+              </tuple>
+            </tuple-reference>
+          </mark-label>
+          <mark-label id='10' label-state='on'>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields>
+                    <field>[federated.0zqy3i11mf6kv11afkdaw004m71t].[none:label:nk]</field>
+                  </x-fields>
+                  <y-fields>
+                    <field>[federated.0zqy3i11mf6kv11afkdaw004m71t].[Multiple Values]</field>
+                  </y-fields>
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.0zqy3i11mf6kv11afkdaw004m71t].[none:label:nk]</field>
+                  <field>[federated.0zqy3i11mf6kv11afkdaw004m71t].[:Measure Names]</field>
+                  <field>[federated.0zqy3i11mf6kv11afkdaw004m71t].[Multiple Values]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>&quot;Tomato___Bacterial_spot&quot;</value>
+                <value>&quot;[federated.0zqy3i11mf6kv11afkdaw004m71t].[__tableau_internal_object_id__].[cnt:plant_diseases.json_EAFD6CFFBE29412DA92C6DA73FD1575D:qk]&quot;</value>
+                <value>2127.0</value>
+              </tuple>
+            </tuple-reference>
+          </mark-label>
+          <mark-label id='11' label-state='on'>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields>
+                    <field>[federated.0zqy3i11mf6kv11afkdaw004m71t].[none:label:nk]</field>
+                  </x-fields>
+                  <y-fields>
+                    <field>[federated.0zqy3i11mf6kv11afkdaw004m71t].[Multiple Values]</field>
+                  </y-fields>
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.0zqy3i11mf6kv11afkdaw004m71t].[none:label:nk]</field>
+                  <field>[federated.0zqy3i11mf6kv11afkdaw004m71t].[:Measure Names]</field>
+                  <field>[federated.0zqy3i11mf6kv11afkdaw004m71t].[Multiple Values]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>&quot;Strawberry___Leaf_scorch&quot;</value>
+                <value>&quot;[federated.0zqy3i11mf6kv11afkdaw004m71t].[__tableau_internal_object_id__].[cnt:plant_diseases.json_EAFD6CFFBE29412DA92C6DA73FD1575D:qk]&quot;</value>
+                <value>1109.0</value>
+              </tuple>
+            </tuple-reference>
+          </mark-label>
+          <mark-label id='12' label-state='on'>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields>
+                    <field>[federated.0zqy3i11mf6kv11afkdaw004m71t].[none:label:nk]</field>
+                  </x-fields>
+                  <y-fields>
+                    <field>[federated.0zqy3i11mf6kv11afkdaw004m71t].[Multiple Values]</field>
+                  </y-fields>
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.0zqy3i11mf6kv11afkdaw004m71t].[none:label:nk]</field>
+                  <field>[federated.0zqy3i11mf6kv11afkdaw004m71t].[:Measure Names]</field>
+                  <field>[federated.0zqy3i11mf6kv11afkdaw004m71t].[Multiple Values]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>&quot;Strawberry___healthy&quot;</value>
+                <value>&quot;[federated.0zqy3i11mf6kv11afkdaw004m71t].[__tableau_internal_object_id__].[cnt:plant_diseases.json_EAFD6CFFBE29412DA92C6DA73FD1575D:qk]&quot;</value>
+                <value>1000.0</value>
+              </tuple>
+            </tuple-reference>
+          </mark-label>
+          <mark-label id='13' label-state='on'>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields>
+                    <field>[federated.0zqy3i11mf6kv11afkdaw004m71t].[none:label:nk]</field>
+                  </x-fields>
+                  <y-fields>
+                    <field>[federated.0zqy3i11mf6kv11afkdaw004m71t].[Multiple Values]</field>
+                  </y-fields>
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.0zqy3i11mf6kv11afkdaw004m71t].[none:label:nk]</field>
+                  <field>[federated.0zqy3i11mf6kv11afkdaw004m71t].[:Measure Names]</field>
+                  <field>[federated.0zqy3i11mf6kv11afkdaw004m71t].[Multiple Values]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>&quot;Squash___Powdery_mildew&quot;</value>
+                <value>&quot;[federated.0zqy3i11mf6kv11afkdaw004m71t].[__tableau_internal_object_id__].[cnt:plant_diseases.json_EAFD6CFFBE29412DA92C6DA73FD1575D:qk]&quot;</value>
+                <value>1835.0</value>
+              </tuple>
+            </tuple-reference>
+          </mark-label>
+          <mark-label id='14' label-state='on'>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields>
+                    <field>[federated.0zqy3i11mf6kv11afkdaw004m71t].[none:label:nk]</field>
+                  </x-fields>
+                  <y-fields>
+                    <field>[federated.0zqy3i11mf6kv11afkdaw004m71t].[Multiple Values]</field>
+                  </y-fields>
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.0zqy3i11mf6kv11afkdaw004m71t].[none:label:nk]</field>
+                  <field>[federated.0zqy3i11mf6kv11afkdaw004m71t].[:Measure Names]</field>
+                  <field>[federated.0zqy3i11mf6kv11afkdaw004m71t].[Multiple Values]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>&quot;Soybean___healthy&quot;</value>
+                <value>&quot;[federated.0zqy3i11mf6kv11afkdaw004m71t].[__tableau_internal_object_id__].[cnt:plant_diseases.json_EAFD6CFFBE29412DA92C6DA73FD1575D:qk]&quot;</value>
+                <value>5090.0</value>
+              </tuple>
+            </tuple-reference>
+          </mark-label>
+          <mark-label id='15' label-state='on'>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields>
+                    <field>[federated.0zqy3i11mf6kv11afkdaw004m71t].[none:label:nk]</field>
+                  </x-fields>
+                  <y-fields>
+                    <field>[federated.0zqy3i11mf6kv11afkdaw004m71t].[Multiple Values]</field>
+                  </y-fields>
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.0zqy3i11mf6kv11afkdaw004m71t].[none:label:nk]</field>
+                  <field>[federated.0zqy3i11mf6kv11afkdaw004m71t].[:Measure Names]</field>
+                  <field>[federated.0zqy3i11mf6kv11afkdaw004m71t].[Multiple Values]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>&quot;Raspberry___healthy&quot;</value>
+                <value>&quot;[federated.0zqy3i11mf6kv11afkdaw004m71t].[__tableau_internal_object_id__].[cnt:plant_diseases.json_EAFD6CFFBE29412DA92C6DA73FD1575D:qk]&quot;</value>
+                <value>1000.0</value>
+              </tuple>
+            </tuple-reference>
+          </mark-label>
+          <mark-label id='16' label-state='on'>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields>
+                    <field>[federated.0zqy3i11mf6kv11afkdaw004m71t].[none:label:nk]</field>
+                  </x-fields>
+                  <y-fields>
+                    <field>[federated.0zqy3i11mf6kv11afkdaw004m71t].[Multiple Values]</field>
+                  </y-fields>
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.0zqy3i11mf6kv11afkdaw004m71t].[none:label:nk]</field>
+                  <field>[federated.0zqy3i11mf6kv11afkdaw004m71t].[:Measure Names]</field>
+                  <field>[federated.0zqy3i11mf6kv11afkdaw004m71t].[Multiple Values]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>&quot;Potato___Late_blight&quot;</value>
+                <value>&quot;[federated.0zqy3i11mf6kv11afkdaw004m71t].[__tableau_internal_object_id__].[cnt:plant_diseases.json_EAFD6CFFBE29412DA92C6DA73FD1575D:qk]&quot;</value>
+                <value>1000.0</value>
+              </tuple>
+            </tuple-reference>
+          </mark-label>
+          <mark-label id='17' label-state='on'>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields>
+                    <field>[federated.0zqy3i11mf6kv11afkdaw004m71t].[none:label:nk]</field>
+                  </x-fields>
+                  <y-fields>
+                    <field>[federated.0zqy3i11mf6kv11afkdaw004m71t].[Multiple Values]</field>
+                  </y-fields>
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.0zqy3i11mf6kv11afkdaw004m71t].[none:label:nk]</field>
+                  <field>[federated.0zqy3i11mf6kv11afkdaw004m71t].[:Measure Names]</field>
+                  <field>[federated.0zqy3i11mf6kv11afkdaw004m71t].[Multiple Values]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>&quot;Potato___healthy&quot;</value>
+                <value>&quot;[federated.0zqy3i11mf6kv11afkdaw004m71t].[__tableau_internal_object_id__].[cnt:plant_diseases.json_EAFD6CFFBE29412DA92C6DA73FD1575D:qk]&quot;</value>
+                <value>1000.0</value>
+              </tuple>
+            </tuple-reference>
+          </mark-label>
+          <mark-label id='18' label-state='on'>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields>
+                    <field>[federated.0zqy3i11mf6kv11afkdaw004m71t].[none:label:nk]</field>
+                  </x-fields>
+                  <y-fields>
+                    <field>[federated.0zqy3i11mf6kv11afkdaw004m71t].[Multiple Values]</field>
+                  </y-fields>
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.0zqy3i11mf6kv11afkdaw004m71t].[none:label:nk]</field>
+                  <field>[federated.0zqy3i11mf6kv11afkdaw004m71t].[:Measure Names]</field>
+                  <field>[federated.0zqy3i11mf6kv11afkdaw004m71t].[Multiple Values]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>&quot;Potato___Early_blight&quot;</value>
+                <value>&quot;[federated.0zqy3i11mf6kv11afkdaw004m71t].[__tableau_internal_object_id__].[cnt:plant_diseases.json_EAFD6CFFBE29412DA92C6DA73FD1575D:qk]&quot;</value>
+                <value>1000.0</value>
+              </tuple>
+            </tuple-reference>
+          </mark-label>
+          <mark-label id='19' label-state='on'>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields>
+                    <field>[federated.0zqy3i11mf6kv11afkdaw004m71t].[none:label:nk]</field>
+                  </x-fields>
+                  <y-fields>
+                    <field>[federated.0zqy3i11mf6kv11afkdaw004m71t].[Multiple Values]</field>
+                  </y-fields>
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.0zqy3i11mf6kv11afkdaw004m71t].[none:label:nk]</field>
+                  <field>[federated.0zqy3i11mf6kv11afkdaw004m71t].[:Measure Names]</field>
+                  <field>[federated.0zqy3i11mf6kv11afkdaw004m71t].[Multiple Values]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>&quot;Pepper,_bell___healthy&quot;</value>
+                <value>&quot;[federated.0zqy3i11mf6kv11afkdaw004m71t].[__tableau_internal_object_id__].[cnt:plant_diseases.json_EAFD6CFFBE29412DA92C6DA73FD1575D:qk]&quot;</value>
+                <value>1478.0</value>
+              </tuple>
+            </tuple-reference>
+          </mark-label>
+          <mark-label id='20' label-state='on'>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields>
+                    <field>[federated.0zqy3i11mf6kv11afkdaw004m71t].[none:label:nk]</field>
+                  </x-fields>
+                  <y-fields>
+                    <field>[federated.0zqy3i11mf6kv11afkdaw004m71t].[Multiple Values]</field>
+                  </y-fields>
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.0zqy3i11mf6kv11afkdaw004m71t].[none:label:nk]</field>
+                  <field>[federated.0zqy3i11mf6kv11afkdaw004m71t].[:Measure Names]</field>
+                  <field>[federated.0zqy3i11mf6kv11afkdaw004m71t].[Multiple Values]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>&quot;Pepper,_bell___Bacterial_spot&quot;</value>
+                <value>&quot;[federated.0zqy3i11mf6kv11afkdaw004m71t].[__tableau_internal_object_id__].[cnt:plant_diseases.json_EAFD6CFFBE29412DA92C6DA73FD1575D:qk]&quot;</value>
+                <value>1000.0</value>
+              </tuple>
+            </tuple-reference>
+          </mark-label>
+          <mark-label id='21' label-state='on'>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields>
+                    <field>[federated.0zqy3i11mf6kv11afkdaw004m71t].[none:label:nk]</field>
+                  </x-fields>
+                  <y-fields>
+                    <field>[federated.0zqy3i11mf6kv11afkdaw004m71t].[Multiple Values]</field>
+                  </y-fields>
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.0zqy3i11mf6kv11afkdaw004m71t].[none:label:nk]</field>
+                  <field>[federated.0zqy3i11mf6kv11afkdaw004m71t].[:Measure Names]</field>
+                  <field>[federated.0zqy3i11mf6kv11afkdaw004m71t].[Multiple Values]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>&quot;Peach___healthy&quot;</value>
+                <value>&quot;[federated.0zqy3i11mf6kv11afkdaw004m71t].[__tableau_internal_object_id__].[cnt:plant_diseases.json_EAFD6CFFBE29412DA92C6DA73FD1575D:qk]&quot;</value>
+                <value>1000.0</value>
+              </tuple>
+            </tuple-reference>
+          </mark-label>
+          <mark-label id='22' label-state='on'>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields>
+                    <field>[federated.0zqy3i11mf6kv11afkdaw004m71t].[none:label:nk]</field>
+                  </x-fields>
+                  <y-fields>
+                    <field>[federated.0zqy3i11mf6kv11afkdaw004m71t].[Multiple Values]</field>
+                  </y-fields>
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.0zqy3i11mf6kv11afkdaw004m71t].[none:label:nk]</field>
+                  <field>[federated.0zqy3i11mf6kv11afkdaw004m71t].[:Measure Names]</field>
+                  <field>[federated.0zqy3i11mf6kv11afkdaw004m71t].[Multiple Values]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>&quot;Peach___Bacterial_spot&quot;</value>
+                <value>&quot;[federated.0zqy3i11mf6kv11afkdaw004m71t].[__tableau_internal_object_id__].[cnt:plant_diseases.json_EAFD6CFFBE29412DA92C6DA73FD1575D:qk]&quot;</value>
+                <value>2297.0</value>
+              </tuple>
+            </tuple-reference>
+          </mark-label>
+          <mark-label id='23' label-state='on'>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields>
+                    <field>[federated.0zqy3i11mf6kv11afkdaw004m71t].[none:label:nk]</field>
+                  </x-fields>
+                  <y-fields>
+                    <field>[federated.0zqy3i11mf6kv11afkdaw004m71t].[Multiple Values]</field>
+                  </y-fields>
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.0zqy3i11mf6kv11afkdaw004m71t].[none:label:nk]</field>
+                  <field>[federated.0zqy3i11mf6kv11afkdaw004m71t].[:Measure Names]</field>
+                  <field>[federated.0zqy3i11mf6kv11afkdaw004m71t].[Multiple Values]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>&quot;Orange___Haunglongbing_(Citrus_greening)&quot;</value>
+                <value>&quot;[federated.0zqy3i11mf6kv11afkdaw004m71t].[__tableau_internal_object_id__].[cnt:plant_diseases.json_EAFD6CFFBE29412DA92C6DA73FD1575D:qk]&quot;</value>
+                <value>5507.0</value>
+              </tuple>
+            </tuple-reference>
+          </mark-label>
+          <mark-label id='24' label-state='on'>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields>
+                    <field>[federated.0zqy3i11mf6kv11afkdaw004m71t].[none:label:nk]</field>
+                  </x-fields>
+                  <y-fields>
+                    <field>[federated.0zqy3i11mf6kv11afkdaw004m71t].[Multiple Values]</field>
+                  </y-fields>
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.0zqy3i11mf6kv11afkdaw004m71t].[none:label:nk]</field>
+                  <field>[federated.0zqy3i11mf6kv11afkdaw004m71t].[:Measure Names]</field>
+                  <field>[federated.0zqy3i11mf6kv11afkdaw004m71t].[Multiple Values]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>&quot;Grape___Leaf_blight_(Isariopsis_Leaf_Spot)&quot;</value>
+                <value>&quot;[federated.0zqy3i11mf6kv11afkdaw004m71t].[__tableau_internal_object_id__].[cnt:plant_diseases.json_EAFD6CFFBE29412DA92C6DA73FD1575D:qk]&quot;</value>
+                <value>1076.0</value>
+              </tuple>
+            </tuple-reference>
+          </mark-label>
+          <mark-label id='25' label-state='on'>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields>
+                    <field>[federated.0zqy3i11mf6kv11afkdaw004m71t].[none:label:nk]</field>
+                  </x-fields>
+                  <y-fields>
+                    <field>[federated.0zqy3i11mf6kv11afkdaw004m71t].[Multiple Values]</field>
+                  </y-fields>
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.0zqy3i11mf6kv11afkdaw004m71t].[none:label:nk]</field>
+                  <field>[federated.0zqy3i11mf6kv11afkdaw004m71t].[:Measure Names]</field>
+                  <field>[federated.0zqy3i11mf6kv11afkdaw004m71t].[Multiple Values]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>&quot;Grape___healthy&quot;</value>
+                <value>&quot;[federated.0zqy3i11mf6kv11afkdaw004m71t].[__tableau_internal_object_id__].[cnt:plant_diseases.json_EAFD6CFFBE29412DA92C6DA73FD1575D:qk]&quot;</value>
+                <value>1000.0</value>
+              </tuple>
+            </tuple-reference>
+          </mark-label>
+          <mark-label id='26' label-state='on'>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields>
+                    <field>[federated.0zqy3i11mf6kv11afkdaw004m71t].[none:label:nk]</field>
+                  </x-fields>
+                  <y-fields>
+                    <field>[federated.0zqy3i11mf6kv11afkdaw004m71t].[Multiple Values]</field>
+                  </y-fields>
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.0zqy3i11mf6kv11afkdaw004m71t].[none:label:nk]</field>
+                  <field>[federated.0zqy3i11mf6kv11afkdaw004m71t].[:Measure Names]</field>
+                  <field>[federated.0zqy3i11mf6kv11afkdaw004m71t].[Multiple Values]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>&quot;Grape___Esca_(Black_Measles)&quot;</value>
+                <value>&quot;[federated.0zqy3i11mf6kv11afkdaw004m71t].[__tableau_internal_object_id__].[cnt:plant_diseases.json_EAFD6CFFBE29412DA92C6DA73FD1575D:qk]&quot;</value>
+                <value>1383.0</value>
+              </tuple>
+            </tuple-reference>
+          </mark-label>
+          <mark-label id='27' label-state='on'>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields>
+                    <field>[federated.0zqy3i11mf6kv11afkdaw004m71t].[none:label:nk]</field>
+                  </x-fields>
+                  <y-fields>
+                    <field>[federated.0zqy3i11mf6kv11afkdaw004m71t].[Multiple Values]</field>
+                  </y-fields>
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.0zqy3i11mf6kv11afkdaw004m71t].[none:label:nk]</field>
+                  <field>[federated.0zqy3i11mf6kv11afkdaw004m71t].[:Measure Names]</field>
+                  <field>[federated.0zqy3i11mf6kv11afkdaw004m71t].[Multiple Values]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>&quot;Grape___Black_rot&quot;</value>
+                <value>&quot;[federated.0zqy3i11mf6kv11afkdaw004m71t].[__tableau_internal_object_id__].[cnt:plant_diseases.json_EAFD6CFFBE29412DA92C6DA73FD1575D:qk]&quot;</value>
+                <value>1180.0</value>
+              </tuple>
+            </tuple-reference>
+          </mark-label>
+          <mark-label id='28' label-state='on'>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields>
+                    <field>[federated.0zqy3i11mf6kv11afkdaw004m71t].[none:label:nk]</field>
+                  </x-fields>
+                  <y-fields>
+                    <field>[federated.0zqy3i11mf6kv11afkdaw004m71t].[Multiple Values]</field>
+                  </y-fields>
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.0zqy3i11mf6kv11afkdaw004m71t].[none:label:nk]</field>
+                  <field>[federated.0zqy3i11mf6kv11afkdaw004m71t].[:Measure Names]</field>
+                  <field>[federated.0zqy3i11mf6kv11afkdaw004m71t].[Multiple Values]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>&quot;Corn___Northern_Leaf_Blight&quot;</value>
+                <value>&quot;[federated.0zqy3i11mf6kv11afkdaw004m71t].[__tableau_internal_object_id__].[cnt:plant_diseases.json_EAFD6CFFBE29412DA92C6DA73FD1575D:qk]&quot;</value>
+                <value>1000.0</value>
+              </tuple>
+            </tuple-reference>
+          </mark-label>
+          <mark-label id='29' label-state='on'>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields>
+                    <field>[federated.0zqy3i11mf6kv11afkdaw004m71t].[none:label:nk]</field>
+                  </x-fields>
+                  <y-fields>
+                    <field>[federated.0zqy3i11mf6kv11afkdaw004m71t].[Multiple Values]</field>
+                  </y-fields>
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.0zqy3i11mf6kv11afkdaw004m71t].[none:label:nk]</field>
+                  <field>[federated.0zqy3i11mf6kv11afkdaw004m71t].[:Measure Names]</field>
+                  <field>[federated.0zqy3i11mf6kv11afkdaw004m71t].[Multiple Values]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>&quot;Corn___healthy&quot;</value>
+                <value>&quot;[federated.0zqy3i11mf6kv11afkdaw004m71t].[__tableau_internal_object_id__].[cnt:plant_diseases.json_EAFD6CFFBE29412DA92C6DA73FD1575D:qk]&quot;</value>
+                <value>1162.0</value>
+              </tuple>
+            </tuple-reference>
+          </mark-label>
+          <mark-label id='30' label-state='on'>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields>
+                    <field>[federated.0zqy3i11mf6kv11afkdaw004m71t].[none:label:nk]</field>
+                  </x-fields>
+                  <y-fields>
+                    <field>[federated.0zqy3i11mf6kv11afkdaw004m71t].[Multiple Values]</field>
+                  </y-fields>
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.0zqy3i11mf6kv11afkdaw004m71t].[none:label:nk]</field>
+                  <field>[federated.0zqy3i11mf6kv11afkdaw004m71t].[:Measure Names]</field>
+                  <field>[federated.0zqy3i11mf6kv11afkdaw004m71t].[Multiple Values]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>&quot;Corn___Common_rust&quot;</value>
+                <value>&quot;[federated.0zqy3i11mf6kv11afkdaw004m71t].[__tableau_internal_object_id__].[cnt:plant_diseases.json_EAFD6CFFBE29412DA92C6DA73FD1575D:qk]&quot;</value>
+                <value>1192.0</value>
+              </tuple>
+            </tuple-reference>
+          </mark-label>
+          <mark-label id='31' label-state='on'>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields>
+                    <field>[federated.0zqy3i11mf6kv11afkdaw004m71t].[none:label:nk]</field>
+                  </x-fields>
+                  <y-fields>
+                    <field>[federated.0zqy3i11mf6kv11afkdaw004m71t].[Multiple Values]</field>
+                  </y-fields>
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.0zqy3i11mf6kv11afkdaw004m71t].[none:label:nk]</field>
+                  <field>[federated.0zqy3i11mf6kv11afkdaw004m71t].[:Measure Names]</field>
+                  <field>[federated.0zqy3i11mf6kv11afkdaw004m71t].[Multiple Values]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>&quot;Corn___Cercospora_leaf_spot Gray_leaf_spot&quot;</value>
+                <value>&quot;[federated.0zqy3i11mf6kv11afkdaw004m71t].[__tableau_internal_object_id__].[cnt:plant_diseases.json_EAFD6CFFBE29412DA92C6DA73FD1575D:qk]&quot;</value>
+                <value>1000.0</value>
+              </tuple>
+            </tuple-reference>
+          </mark-label>
+          <mark-label id='32' label-state='on'>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields>
+                    <field>[federated.0zqy3i11mf6kv11afkdaw004m71t].[none:label:nk]</field>
+                  </x-fields>
+                  <y-fields>
+                    <field>[federated.0zqy3i11mf6kv11afkdaw004m71t].[Multiple Values]</field>
+                  </y-fields>
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.0zqy3i11mf6kv11afkdaw004m71t].[none:label:nk]</field>
+                  <field>[federated.0zqy3i11mf6kv11afkdaw004m71t].[:Measure Names]</field>
+                  <field>[federated.0zqy3i11mf6kv11afkdaw004m71t].[Multiple Values]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>&quot;Cherry___Powdery_mildew&quot;</value>
+                <value>&quot;[federated.0zqy3i11mf6kv11afkdaw004m71t].[__tableau_internal_object_id__].[cnt:plant_diseases.json_EAFD6CFFBE29412DA92C6DA73FD1575D:qk]&quot;</value>
+                <value>1052.0</value>
+              </tuple>
+            </tuple-reference>
+          </mark-label>
+          <mark-label id='33' label-state='on'>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields>
+                    <field>[federated.0zqy3i11mf6kv11afkdaw004m71t].[none:label:nk]</field>
+                  </x-fields>
+                  <y-fields>
+                    <field>[federated.0zqy3i11mf6kv11afkdaw004m71t].[Multiple Values]</field>
+                  </y-fields>
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.0zqy3i11mf6kv11afkdaw004m71t].[none:label:nk]</field>
+                  <field>[federated.0zqy3i11mf6kv11afkdaw004m71t].[:Measure Names]</field>
+                  <field>[federated.0zqy3i11mf6kv11afkdaw004m71t].[Multiple Values]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>&quot;Cherry___healthy&quot;</value>
+                <value>&quot;[federated.0zqy3i11mf6kv11afkdaw004m71t].[__tableau_internal_object_id__].[cnt:plant_diseases.json_EAFD6CFFBE29412DA92C6DA73FD1575D:qk]&quot;</value>
+                <value>1000.0</value>
+              </tuple>
+            </tuple-reference>
+          </mark-label>
+          <mark-label id='34' label-state='on'>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields>
+                    <field>[federated.0zqy3i11mf6kv11afkdaw004m71t].[none:label:nk]</field>
+                  </x-fields>
+                  <y-fields>
+                    <field>[federated.0zqy3i11mf6kv11afkdaw004m71t].[Multiple Values]</field>
+                  </y-fields>
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.0zqy3i11mf6kv11afkdaw004m71t].[none:label:nk]</field>
+                  <field>[federated.0zqy3i11mf6kv11afkdaw004m71t].[:Measure Names]</field>
+                  <field>[federated.0zqy3i11mf6kv11afkdaw004m71t].[Multiple Values]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>&quot;Blueberry___healthy&quot;</value>
+                <value>&quot;[federated.0zqy3i11mf6kv11afkdaw004m71t].[__tableau_internal_object_id__].[cnt:plant_diseases.json_EAFD6CFFBE29412DA92C6DA73FD1575D:qk]&quot;</value>
+                <value>1502.0</value>
+              </tuple>
+            </tuple-reference>
+          </mark-label>
+          <mark-label id='35' label-state='on'>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields>
+                    <field>[federated.0zqy3i11mf6kv11afkdaw004m71t].[none:label:nk]</field>
+                  </x-fields>
+                  <y-fields>
+                    <field>[federated.0zqy3i11mf6kv11afkdaw004m71t].[Multiple Values]</field>
+                  </y-fields>
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.0zqy3i11mf6kv11afkdaw004m71t].[none:label:nk]</field>
+                  <field>[federated.0zqy3i11mf6kv11afkdaw004m71t].[:Measure Names]</field>
+                  <field>[federated.0zqy3i11mf6kv11afkdaw004m71t].[Multiple Values]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>&quot;Background_without_leaves&quot;</value>
+                <value>&quot;[federated.0zqy3i11mf6kv11afkdaw004m71t].[__tableau_internal_object_id__].[cnt:plant_diseases.json_EAFD6CFFBE29412DA92C6DA73FD1575D:qk]&quot;</value>
+                <value>1143.0</value>
+              </tuple>
+            </tuple-reference>
+          </mark-label>
+          <mark-label id='36' label-state='on'>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields>
+                    <field>[federated.0zqy3i11mf6kv11afkdaw004m71t].[none:label:nk]</field>
+                  </x-fields>
+                  <y-fields>
+                    <field>[federated.0zqy3i11mf6kv11afkdaw004m71t].[Multiple Values]</field>
+                  </y-fields>
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.0zqy3i11mf6kv11afkdaw004m71t].[none:label:nk]</field>
+                  <field>[federated.0zqy3i11mf6kv11afkdaw004m71t].[:Measure Names]</field>
+                  <field>[federated.0zqy3i11mf6kv11afkdaw004m71t].[Multiple Values]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>&quot;Apple___healthy&quot;</value>
+                <value>&quot;[federated.0zqy3i11mf6kv11afkdaw004m71t].[__tableau_internal_object_id__].[cnt:plant_diseases.json_EAFD6CFFBE29412DA92C6DA73FD1575D:qk]&quot;</value>
+                <value>1645.0</value>
+              </tuple>
+            </tuple-reference>
+          </mark-label>
+          <mark-label id='37' label-state='on'>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields>
+                    <field>[federated.0zqy3i11mf6kv11afkdaw004m71t].[none:label:nk]</field>
+                  </x-fields>
+                  <y-fields>
+                    <field>[federated.0zqy3i11mf6kv11afkdaw004m71t].[Multiple Values]</field>
+                  </y-fields>
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.0zqy3i11mf6kv11afkdaw004m71t].[none:label:nk]</field>
+                  <field>[federated.0zqy3i11mf6kv11afkdaw004m71t].[:Measure Names]</field>
+                  <field>[federated.0zqy3i11mf6kv11afkdaw004m71t].[Multiple Values]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>&quot;Apple___Cedar_apple_rust&quot;</value>
+                <value>&quot;[federated.0zqy3i11mf6kv11afkdaw004m71t].[__tableau_internal_object_id__].[cnt:plant_diseases.json_EAFD6CFFBE29412DA92C6DA73FD1575D:qk]&quot;</value>
+                <value>1000.0</value>
+              </tuple>
+            </tuple-reference>
+          </mark-label>
+          <mark-label id='38' label-state='on'>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields>
+                    <field>[federated.0zqy3i11mf6kv11afkdaw004m71t].[none:label:nk]</field>
+                  </x-fields>
+                  <y-fields>
+                    <field>[federated.0zqy3i11mf6kv11afkdaw004m71t].[Multiple Values]</field>
+                  </y-fields>
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.0zqy3i11mf6kv11afkdaw004m71t].[none:label:nk]</field>
+                  <field>[federated.0zqy3i11mf6kv11afkdaw004m71t].[:Measure Names]</field>
+                  <field>[federated.0zqy3i11mf6kv11afkdaw004m71t].[Multiple Values]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>&quot;Apple___Black_rot&quot;</value>
+                <value>&quot;[federated.0zqy3i11mf6kv11afkdaw004m71t].[__tableau_internal_object_id__].[cnt:plant_diseases.json_EAFD6CFFBE29412DA92C6DA73FD1575D:qk]&quot;</value>
+                <value>1000.0</value>
+              </tuple>
+            </tuple-reference>
+          </mark-label>
+        </mark-labels>
+      </table>
+      <simple-id uuid='{5118EE0A-8BA6-4C0C-BFE4-C62CF1C93975}' />
+    </worksheet>
+    <worksheet name='Pie Chart'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='plant_diseases' name='federated.0zqy3i11mf6kv11afkdaw004m71t' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0zqy3i11mf6kv11afkdaw004m71t'>
+            <_.fcp.ObjectModelTableType.false...column caption='plant_diseases.json' datatype='integer' name='[__tableau_internal_object_id__].[plant_diseases.json_EAFD6CFFBE29412DA92C6DA73FD1575D]' role='measure' type='quantitative' />
+            <column-instance column='[__tableau_internal_object_id__].[plant_diseases.json_EAFD6CFFBE29412DA92C6DA73FD1575D]' derivation='Count' name='[__tableau_internal_object_id__].[cnt:plant_diseases.json_EAFD6CFFBE29412DA92C6DA73FD1575D:qk]' pivot='key' type='quantitative' />
+            <_.fcp.ObjectModelTableType.true...column caption='plant_diseases.json' datatype='table' name='[__tableau_internal_object_id__].[plant_diseases.json_EAFD6CFFBE29412DA92C6DA73FD1575D]' role='measure' type='quantitative' />
+            <column caption='Label' datatype='string' name='[label]' role='dimension' type='nominal'>
+              <desc>
+                <formatted-text>
+                  <run>label</run>
+                </formatted-text>
+              </desc>
+            </column>
+            <column-instance column='[label]' derivation='None' name='[none:label:nk]' pivot='key' type='nominal' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Pie' />
+            <encodings>
+              <color column='[federated.0zqy3i11mf6kv11afkdaw004m71t].[none:label:nk]' />
+              <wedge-size column='[federated.0zqy3i11mf6kv11afkdaw004m71t].[__tableau_internal_object_id__].[cnt:plant_diseases.json_EAFD6CFFBE29412DA92C6DA73FD1575D:qk]' />
+              <size column='[federated.0zqy3i11mf6kv11afkdaw004m71t].[__tableau_internal_object_id__].[cnt:plant_diseases.json_EAFD6CFFBE29412DA92C6DA73FD1575D:qk]' />
+            </encodings>
+          </pane>
+        </panes>
+        <rows />
+        <cols />
+        <mark-labels>
+          <mark-label id='0' label-state='on'>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields />
+                  <y-fields />
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.0zqy3i11mf6kv11afkdaw004m71t].[__tableau_internal_object_id__].[cnt:plant_diseases.json_EAFD6CFFBE29412DA92C6DA73FD1575D:qk]</field>
+                  <field>[federated.0zqy3i11mf6kv11afkdaw004m71t].[none:label:nk]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>1000</value>
+                <value>&quot;Apple___Apple_scab&quot;</value>
+              </tuple>
+            </tuple-reference>
+          </mark-label>
+          <mark-label id='1' label-state='on'>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields />
+                  <y-fields />
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.0zqy3i11mf6kv11afkdaw004m71t].[__tableau_internal_object_id__].[cnt:plant_diseases.json_EAFD6CFFBE29412DA92C6DA73FD1575D:qk]</field>
+                  <field>[federated.0zqy3i11mf6kv11afkdaw004m71t].[none:label:nk]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>1000</value>
+                <value>&quot;Apple___Black_rot&quot;</value>
+              </tuple>
+            </tuple-reference>
+          </mark-label>
+          <mark-label id='2' label-state='on'>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields />
+                  <y-fields />
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.0zqy3i11mf6kv11afkdaw004m71t].[__tableau_internal_object_id__].[cnt:plant_diseases.json_EAFD6CFFBE29412DA92C6DA73FD1575D:qk]</field>
+                  <field>[federated.0zqy3i11mf6kv11afkdaw004m71t].[none:label:nk]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>1000</value>
+                <value>&quot;Apple___Cedar_apple_rust&quot;</value>
+              </tuple>
+            </tuple-reference>
+          </mark-label>
+          <mark-label id='3' label-state='on'>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields />
+                  <y-fields />
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.0zqy3i11mf6kv11afkdaw004m71t].[__tableau_internal_object_id__].[cnt:plant_diseases.json_EAFD6CFFBE29412DA92C6DA73FD1575D:qk]</field>
+                  <field>[federated.0zqy3i11mf6kv11afkdaw004m71t].[none:label:nk]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>1645</value>
+                <value>&quot;Apple___healthy&quot;</value>
+              </tuple>
+            </tuple-reference>
+          </mark-label>
+          <mark-label id='4' label-state='on'>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields />
+                  <y-fields />
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.0zqy3i11mf6kv11afkdaw004m71t].[__tableau_internal_object_id__].[cnt:plant_diseases.json_EAFD6CFFBE29412DA92C6DA73FD1575D:qk]</field>
+                  <field>[federated.0zqy3i11mf6kv11afkdaw004m71t].[none:label:nk]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>1143</value>
+                <value>&quot;Background_without_leaves&quot;</value>
+              </tuple>
+            </tuple-reference>
+          </mark-label>
+          <mark-label id='5' label-state='on'>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields />
+                  <y-fields />
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.0zqy3i11mf6kv11afkdaw004m71t].[__tableau_internal_object_id__].[cnt:plant_diseases.json_EAFD6CFFBE29412DA92C6DA73FD1575D:qk]</field>
+                  <field>[federated.0zqy3i11mf6kv11afkdaw004m71t].[none:label:nk]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>1502</value>
+                <value>&quot;Blueberry___healthy&quot;</value>
+              </tuple>
+            </tuple-reference>
+          </mark-label>
+          <mark-label id='6' label-state='on'>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields />
+                  <y-fields />
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.0zqy3i11mf6kv11afkdaw004m71t].[__tableau_internal_object_id__].[cnt:plant_diseases.json_EAFD6CFFBE29412DA92C6DA73FD1575D:qk]</field>
+                  <field>[federated.0zqy3i11mf6kv11afkdaw004m71t].[none:label:nk]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>1000</value>
+                <value>&quot;Cherry___healthy&quot;</value>
+              </tuple>
+            </tuple-reference>
+          </mark-label>
+          <mark-label id='7' label-state='on'>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields />
+                  <y-fields />
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.0zqy3i11mf6kv11afkdaw004m71t].[__tableau_internal_object_id__].[cnt:plant_diseases.json_EAFD6CFFBE29412DA92C6DA73FD1575D:qk]</field>
+                  <field>[federated.0zqy3i11mf6kv11afkdaw004m71t].[none:label:nk]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>1052</value>
+                <value>&quot;Cherry___Powdery_mildew&quot;</value>
+              </tuple>
+            </tuple-reference>
+          </mark-label>
+          <mark-label id='8' label-state='on'>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields />
+                  <y-fields />
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.0zqy3i11mf6kv11afkdaw004m71t].[__tableau_internal_object_id__].[cnt:plant_diseases.json_EAFD6CFFBE29412DA92C6DA73FD1575D:qk]</field>
+                  <field>[federated.0zqy3i11mf6kv11afkdaw004m71t].[none:label:nk]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>1000</value>
+                <value>&quot;Corn___Cercospora_leaf_spot Gray_leaf_spot&quot;</value>
+              </tuple>
+            </tuple-reference>
+          </mark-label>
+          <mark-label id='9' label-state='on'>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields />
+                  <y-fields />
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.0zqy3i11mf6kv11afkdaw004m71t].[__tableau_internal_object_id__].[cnt:plant_diseases.json_EAFD6CFFBE29412DA92C6DA73FD1575D:qk]</field>
+                  <field>[federated.0zqy3i11mf6kv11afkdaw004m71t].[none:label:nk]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>1192</value>
+                <value>&quot;Corn___Common_rust&quot;</value>
+              </tuple>
+            </tuple-reference>
+          </mark-label>
+          <mark-label id='10' label-state='on'>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields />
+                  <y-fields />
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.0zqy3i11mf6kv11afkdaw004m71t].[__tableau_internal_object_id__].[cnt:plant_diseases.json_EAFD6CFFBE29412DA92C6DA73FD1575D:qk]</field>
+                  <field>[federated.0zqy3i11mf6kv11afkdaw004m71t].[none:label:nk]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>1162</value>
+                <value>&quot;Corn___healthy&quot;</value>
+              </tuple>
+            </tuple-reference>
+          </mark-label>
+          <mark-label id='11' label-state='on'>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields />
+                  <y-fields />
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.0zqy3i11mf6kv11afkdaw004m71t].[__tableau_internal_object_id__].[cnt:plant_diseases.json_EAFD6CFFBE29412DA92C6DA73FD1575D:qk]</field>
+                  <field>[federated.0zqy3i11mf6kv11afkdaw004m71t].[none:label:nk]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>1000</value>
+                <value>&quot;Corn___Northern_Leaf_Blight&quot;</value>
+              </tuple>
+            </tuple-reference>
+          </mark-label>
+          <mark-label id='12' label-state='on'>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields />
+                  <y-fields />
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.0zqy3i11mf6kv11afkdaw004m71t].[__tableau_internal_object_id__].[cnt:plant_diseases.json_EAFD6CFFBE29412DA92C6DA73FD1575D:qk]</field>
+                  <field>[federated.0zqy3i11mf6kv11afkdaw004m71t].[none:label:nk]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>1180</value>
+                <value>&quot;Grape___Black_rot&quot;</value>
+              </tuple>
+            </tuple-reference>
+          </mark-label>
+          <mark-label id='13' label-state='on'>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields />
+                  <y-fields />
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.0zqy3i11mf6kv11afkdaw004m71t].[__tableau_internal_object_id__].[cnt:plant_diseases.json_EAFD6CFFBE29412DA92C6DA73FD1575D:qk]</field>
+                  <field>[federated.0zqy3i11mf6kv11afkdaw004m71t].[none:label:nk]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>1383</value>
+                <value>&quot;Grape___Esca_(Black_Measles)&quot;</value>
+              </tuple>
+            </tuple-reference>
+          </mark-label>
+          <mark-label id='14' label-state='on'>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields />
+                  <y-fields />
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.0zqy3i11mf6kv11afkdaw004m71t].[__tableau_internal_object_id__].[cnt:plant_diseases.json_EAFD6CFFBE29412DA92C6DA73FD1575D:qk]</field>
+                  <field>[federated.0zqy3i11mf6kv11afkdaw004m71t].[none:label:nk]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>1000</value>
+                <value>&quot;Grape___healthy&quot;</value>
+              </tuple>
+            </tuple-reference>
+          </mark-label>
+          <mark-label id='15' label-state='on'>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields />
+                  <y-fields />
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.0zqy3i11mf6kv11afkdaw004m71t].[__tableau_internal_object_id__].[cnt:plant_diseases.json_EAFD6CFFBE29412DA92C6DA73FD1575D:qk]</field>
+                  <field>[federated.0zqy3i11mf6kv11afkdaw004m71t].[none:label:nk]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>1076</value>
+                <value>&quot;Grape___Leaf_blight_(Isariopsis_Leaf_Spot)&quot;</value>
+              </tuple>
+            </tuple-reference>
+          </mark-label>
+          <mark-label id='16' label-state='on'>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields />
+                  <y-fields />
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.0zqy3i11mf6kv11afkdaw004m71t].[__tableau_internal_object_id__].[cnt:plant_diseases.json_EAFD6CFFBE29412DA92C6DA73FD1575D:qk]</field>
+                  <field>[federated.0zqy3i11mf6kv11afkdaw004m71t].[none:label:nk]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>5507</value>
+                <value>&quot;Orange___Haunglongbing_(Citrus_greening)&quot;</value>
+              </tuple>
+            </tuple-reference>
+          </mark-label>
+          <mark-label id='17' label-state='on'>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields />
+                  <y-fields />
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.0zqy3i11mf6kv11afkdaw004m71t].[__tableau_internal_object_id__].[cnt:plant_diseases.json_EAFD6CFFBE29412DA92C6DA73FD1575D:qk]</field>
+                  <field>[federated.0zqy3i11mf6kv11afkdaw004m71t].[none:label:nk]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>2297</value>
+                <value>&quot;Peach___Bacterial_spot&quot;</value>
+              </tuple>
+            </tuple-reference>
+          </mark-label>
+          <mark-label id='18' label-state='on'>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields />
+                  <y-fields />
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.0zqy3i11mf6kv11afkdaw004m71t].[__tableau_internal_object_id__].[cnt:plant_diseases.json_EAFD6CFFBE29412DA92C6DA73FD1575D:qk]</field>
+                  <field>[federated.0zqy3i11mf6kv11afkdaw004m71t].[none:label:nk]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>1000</value>
+                <value>&quot;Peach___healthy&quot;</value>
+              </tuple>
+            </tuple-reference>
+          </mark-label>
+          <mark-label id='19' label-state='on'>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields />
+                  <y-fields />
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.0zqy3i11mf6kv11afkdaw004m71t].[__tableau_internal_object_id__].[cnt:plant_diseases.json_EAFD6CFFBE29412DA92C6DA73FD1575D:qk]</field>
+                  <field>[federated.0zqy3i11mf6kv11afkdaw004m71t].[none:label:nk]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>1000</value>
+                <value>&quot;Pepper,_bell___Bacterial_spot&quot;</value>
+              </tuple>
+            </tuple-reference>
+          </mark-label>
+          <mark-label id='20' label-state='on'>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields />
+                  <y-fields />
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.0zqy3i11mf6kv11afkdaw004m71t].[__tableau_internal_object_id__].[cnt:plant_diseases.json_EAFD6CFFBE29412DA92C6DA73FD1575D:qk]</field>
+                  <field>[federated.0zqy3i11mf6kv11afkdaw004m71t].[none:label:nk]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>1478</value>
+                <value>&quot;Pepper,_bell___healthy&quot;</value>
+              </tuple>
+            </tuple-reference>
+          </mark-label>
+          <mark-label id='21' label-state='on'>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields />
+                  <y-fields />
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.0zqy3i11mf6kv11afkdaw004m71t].[__tableau_internal_object_id__].[cnt:plant_diseases.json_EAFD6CFFBE29412DA92C6DA73FD1575D:qk]</field>
+                  <field>[federated.0zqy3i11mf6kv11afkdaw004m71t].[none:label:nk]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>1000</value>
+                <value>&quot;Potato___Early_blight&quot;</value>
+              </tuple>
+            </tuple-reference>
+          </mark-label>
+          <mark-label id='22' label-state='on'>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields />
+                  <y-fields />
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.0zqy3i11mf6kv11afkdaw004m71t].[__tableau_internal_object_id__].[cnt:plant_diseases.json_EAFD6CFFBE29412DA92C6DA73FD1575D:qk]</field>
+                  <field>[federated.0zqy3i11mf6kv11afkdaw004m71t].[none:label:nk]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>1000</value>
+                <value>&quot;Potato___healthy&quot;</value>
+              </tuple>
+            </tuple-reference>
+          </mark-label>
+          <mark-label id='23' label-state='on'>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields />
+                  <y-fields />
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.0zqy3i11mf6kv11afkdaw004m71t].[__tableau_internal_object_id__].[cnt:plant_diseases.json_EAFD6CFFBE29412DA92C6DA73FD1575D:qk]</field>
+                  <field>[federated.0zqy3i11mf6kv11afkdaw004m71t].[none:label:nk]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>1000</value>
+                <value>&quot;Potato___Late_blight&quot;</value>
+              </tuple>
+            </tuple-reference>
+          </mark-label>
+          <mark-label id='24' label-state='on'>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields />
+                  <y-fields />
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.0zqy3i11mf6kv11afkdaw004m71t].[__tableau_internal_object_id__].[cnt:plant_diseases.json_EAFD6CFFBE29412DA92C6DA73FD1575D:qk]</field>
+                  <field>[federated.0zqy3i11mf6kv11afkdaw004m71t].[none:label:nk]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>1000</value>
+                <value>&quot;Raspberry___healthy&quot;</value>
+              </tuple>
+            </tuple-reference>
+          </mark-label>
+          <mark-label id='25' label-state='on'>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields />
+                  <y-fields />
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.0zqy3i11mf6kv11afkdaw004m71t].[__tableau_internal_object_id__].[cnt:plant_diseases.json_EAFD6CFFBE29412DA92C6DA73FD1575D:qk]</field>
+                  <field>[federated.0zqy3i11mf6kv11afkdaw004m71t].[none:label:nk]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>5090</value>
+                <value>&quot;Soybean___healthy&quot;</value>
+              </tuple>
+            </tuple-reference>
+          </mark-label>
+          <mark-label id='26' label-state='on'>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields />
+                  <y-fields />
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.0zqy3i11mf6kv11afkdaw004m71t].[__tableau_internal_object_id__].[cnt:plant_diseases.json_EAFD6CFFBE29412DA92C6DA73FD1575D:qk]</field>
+                  <field>[federated.0zqy3i11mf6kv11afkdaw004m71t].[none:label:nk]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>1835</value>
+                <value>&quot;Squash___Powdery_mildew&quot;</value>
+              </tuple>
+            </tuple-reference>
+          </mark-label>
+          <mark-label id='27' label-state='on'>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields />
+                  <y-fields />
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.0zqy3i11mf6kv11afkdaw004m71t].[__tableau_internal_object_id__].[cnt:plant_diseases.json_EAFD6CFFBE29412DA92C6DA73FD1575D:qk]</field>
+                  <field>[federated.0zqy3i11mf6kv11afkdaw004m71t].[none:label:nk]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>1000</value>
+                <value>&quot;Strawberry___healthy&quot;</value>
+              </tuple>
+            </tuple-reference>
+          </mark-label>
+          <mark-label id='28' label-state='on'>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields />
+                  <y-fields />
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.0zqy3i11mf6kv11afkdaw004m71t].[__tableau_internal_object_id__].[cnt:plant_diseases.json_EAFD6CFFBE29412DA92C6DA73FD1575D:qk]</field>
+                  <field>[federated.0zqy3i11mf6kv11afkdaw004m71t].[none:label:nk]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>1109</value>
+                <value>&quot;Strawberry___Leaf_scorch&quot;</value>
+              </tuple>
+            </tuple-reference>
+          </mark-label>
+          <mark-label id='29' label-state='on'>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields />
+                  <y-fields />
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.0zqy3i11mf6kv11afkdaw004m71t].[__tableau_internal_object_id__].[cnt:plant_diseases.json_EAFD6CFFBE29412DA92C6DA73FD1575D:qk]</field>
+                  <field>[federated.0zqy3i11mf6kv11afkdaw004m71t].[none:label:nk]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>2127</value>
+                <value>&quot;Tomato___Bacterial_spot&quot;</value>
+              </tuple>
+            </tuple-reference>
+          </mark-label>
+          <mark-label id='30' label-state='on'>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields />
+                  <y-fields />
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.0zqy3i11mf6kv11afkdaw004m71t].[__tableau_internal_object_id__].[cnt:plant_diseases.json_EAFD6CFFBE29412DA92C6DA73FD1575D:qk]</field>
+                  <field>[federated.0zqy3i11mf6kv11afkdaw004m71t].[none:label:nk]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>1000</value>
+                <value>&quot;Tomato___Early_blight&quot;</value>
+              </tuple>
+            </tuple-reference>
+          </mark-label>
+          <mark-label id='31' label-state='on'>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields />
+                  <y-fields />
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.0zqy3i11mf6kv11afkdaw004m71t].[__tableau_internal_object_id__].[cnt:plant_diseases.json_EAFD6CFFBE29412DA92C6DA73FD1575D:qk]</field>
+                  <field>[federated.0zqy3i11mf6kv11afkdaw004m71t].[none:label:nk]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>1591</value>
+                <value>&quot;Tomato___healthy&quot;</value>
+              </tuple>
+            </tuple-reference>
+          </mark-label>
+          <mark-label id='32' label-state='on'>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields />
+                  <y-fields />
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.0zqy3i11mf6kv11afkdaw004m71t].[__tableau_internal_object_id__].[cnt:plant_diseases.json_EAFD6CFFBE29412DA92C6DA73FD1575D:qk]</field>
+                  <field>[federated.0zqy3i11mf6kv11afkdaw004m71t].[none:label:nk]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>1909</value>
+                <value>&quot;Tomato___Late_blight&quot;</value>
+              </tuple>
+            </tuple-reference>
+          </mark-label>
+          <mark-label id='33' label-state='on'>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields />
+                  <y-fields />
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.0zqy3i11mf6kv11afkdaw004m71t].[__tableau_internal_object_id__].[cnt:plant_diseases.json_EAFD6CFFBE29412DA92C6DA73FD1575D:qk]</field>
+                  <field>[federated.0zqy3i11mf6kv11afkdaw004m71t].[none:label:nk]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>1000</value>
+                <value>&quot;Tomato___Leaf_Mold&quot;</value>
+              </tuple>
+            </tuple-reference>
+          </mark-label>
+          <mark-label id='34' label-state='on'>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields />
+                  <y-fields />
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.0zqy3i11mf6kv11afkdaw004m71t].[__tableau_internal_object_id__].[cnt:plant_diseases.json_EAFD6CFFBE29412DA92C6DA73FD1575D:qk]</field>
+                  <field>[federated.0zqy3i11mf6kv11afkdaw004m71t].[none:label:nk]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>1771</value>
+                <value>&quot;Tomato___Septoria_leaf_spot&quot;</value>
+              </tuple>
+            </tuple-reference>
+          </mark-label>
+          <mark-label id='35' label-state='on'>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields />
+                  <y-fields />
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.0zqy3i11mf6kv11afkdaw004m71t].[__tableau_internal_object_id__].[cnt:plant_diseases.json_EAFD6CFFBE29412DA92C6DA73FD1575D:qk]</field>
+                  <field>[federated.0zqy3i11mf6kv11afkdaw004m71t].[none:label:nk]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>1676</value>
+                <value>&quot;Tomato___Spider_mites Two-spotted_spider_mite&quot;</value>
+              </tuple>
+            </tuple-reference>
+          </mark-label>
+          <mark-label id='36' label-state='on'>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields />
+                  <y-fields />
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.0zqy3i11mf6kv11afkdaw004m71t].[__tableau_internal_object_id__].[cnt:plant_diseases.json_EAFD6CFFBE29412DA92C6DA73FD1575D:qk]</field>
+                  <field>[federated.0zqy3i11mf6kv11afkdaw004m71t].[none:label:nk]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>1404</value>
+                <value>&quot;Tomato___Target_Spot&quot;</value>
+              </tuple>
+            </tuple-reference>
+          </mark-label>
+          <mark-label id='37' label-state='on'>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields />
+                  <y-fields />
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.0zqy3i11mf6kv11afkdaw004m71t].[__tableau_internal_object_id__].[cnt:plant_diseases.json_EAFD6CFFBE29412DA92C6DA73FD1575D:qk]</field>
+                  <field>[federated.0zqy3i11mf6kv11afkdaw004m71t].[none:label:nk]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>1000</value>
+                <value>&quot;Tomato___Tomato_mosaic_virus&quot;</value>
+              </tuple>
+            </tuple-reference>
+          </mark-label>
+          <mark-label id='38' label-state='on'>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields />
+                  <y-fields />
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.0zqy3i11mf6kv11afkdaw004m71t].[__tableau_internal_object_id__].[cnt:plant_diseases.json_EAFD6CFFBE29412DA92C6DA73FD1575D:qk]</field>
+                  <field>[federated.0zqy3i11mf6kv11afkdaw004m71t].[none:label:nk]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>5357</value>
+                <value>&quot;Tomato___Tomato_Yellow_Leaf_Curl_Virus&quot;</value>
+              </tuple>
+            </tuple-reference>
+          </mark-label>
+        </mark-labels>
+      </table>
+      <simple-id uuid='{53AA4477-46CB-429A-B360-6DFCD8617CCC}' />
+    </worksheet>
+  </worksheets>
+  <windows source-height='30'>
+    <window class='worksheet' maximized='true' name='Pie Chart'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.0zqy3i11mf6kv11afkdaw004m71t].[none:label:nk]' type='color' />
+            <card pane-specification-id='0' param='[federated.0zqy3i11mf6kv11afkdaw004m71t].[__tableau_internal_object_id__].[cnt:plant_diseases.json_EAFD6CFFBE29412DA92C6DA73FD1575D:qk]' type='size' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <zoom type='entire-view' />
+        <highlight>
+          <color-one-way>
+            <field>[federated.0zqy3i11mf6kv11afkdaw004m71t].[none:label:nk]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{8460F1A6-4E92-4015-89BE-90B85BDDA509}' />
+    </window>
+    <window class='worksheet' name='Column Chart'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+            <card type='measures' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <zoom type='fit-width' />
+        <selection-collection>
+          <tuple-selection>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields>
+                    <field>[federated.0zqy3i11mf6kv11afkdaw004m71t].[none:label:nk]</field>
+                  </x-fields>
+                  <y-fields>
+                    <field>[federated.0zqy3i11mf6kv11afkdaw004m71t].[Multiple Values]</field>
+                  </y-fields>
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.0zqy3i11mf6kv11afkdaw004m71t].[none:label:nk]</field>
+                  <field>[federated.0zqy3i11mf6kv11afkdaw004m71t].[:Measure Names]</field>
+                  <field>[federated.0zqy3i11mf6kv11afkdaw004m71t].[Multiple Values]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>&quot;Tomato___Tomato_Yellow_Leaf_Curl_Virus&quot;</value>
+                <value>&quot;[federated.0zqy3i11mf6kv11afkdaw004m71t].[__tableau_internal_object_id__].[cnt:plant_diseases.json_EAFD6CFFBE29412DA92C6DA73FD1575D:qk]&quot;</value>
+                <value>5357.0</value>
+              </tuple>
+            </tuple-reference>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields>
+                    <field>[federated.0zqy3i11mf6kv11afkdaw004m71t].[none:label:nk]</field>
+                  </x-fields>
+                  <y-fields>
+                    <field>[federated.0zqy3i11mf6kv11afkdaw004m71t].[Multiple Values]</field>
+                  </y-fields>
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.0zqy3i11mf6kv11afkdaw004m71t].[none:label:nk]</field>
+                  <field>[federated.0zqy3i11mf6kv11afkdaw004m71t].[:Measure Names]</field>
+                  <field>[federated.0zqy3i11mf6kv11afkdaw004m71t].[Multiple Values]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>&quot;Tomato___Tomato_mosaic_virus&quot;</value>
+                <value>&quot;[federated.0zqy3i11mf6kv11afkdaw004m71t].[__tableau_internal_object_id__].[cnt:plant_diseases.json_EAFD6CFFBE29412DA92C6DA73FD1575D:qk]&quot;</value>
+                <value>1000.0</value>
+              </tuple>
+            </tuple-reference>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields>
+                    <field>[federated.0zqy3i11mf6kv11afkdaw004m71t].[none:label:nk]</field>
+                  </x-fields>
+                  <y-fields>
+                    <field>[federated.0zqy3i11mf6kv11afkdaw004m71t].[Multiple Values]</field>
+                  </y-fields>
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.0zqy3i11mf6kv11afkdaw004m71t].[none:label:nk]</field>
+                  <field>[federated.0zqy3i11mf6kv11afkdaw004m71t].[:Measure Names]</field>
+                  <field>[federated.0zqy3i11mf6kv11afkdaw004m71t].[Multiple Values]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>&quot;Tomato___Target_Spot&quot;</value>
+                <value>&quot;[federated.0zqy3i11mf6kv11afkdaw004m71t].[__tableau_internal_object_id__].[cnt:plant_diseases.json_EAFD6CFFBE29412DA92C6DA73FD1575D:qk]&quot;</value>
+                <value>1404.0</value>
+              </tuple>
+            </tuple-reference>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields>
+                    <field>[federated.0zqy3i11mf6kv11afkdaw004m71t].[none:label:nk]</field>
+                  </x-fields>
+                  <y-fields>
+                    <field>[federated.0zqy3i11mf6kv11afkdaw004m71t].[Multiple Values]</field>
+                  </y-fields>
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.0zqy3i11mf6kv11afkdaw004m71t].[none:label:nk]</field>
+                  <field>[federated.0zqy3i11mf6kv11afkdaw004m71t].[:Measure Names]</field>
+                  <field>[federated.0zqy3i11mf6kv11afkdaw004m71t].[Multiple Values]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>&quot;Tomato___Spider_mites Two-spotted_spider_mite&quot;</value>
+                <value>&quot;[federated.0zqy3i11mf6kv11afkdaw004m71t].[__tableau_internal_object_id__].[cnt:plant_diseases.json_EAFD6CFFBE29412DA92C6DA73FD1575D:qk]&quot;</value>
+                <value>1676.0</value>
+              </tuple>
+            </tuple-reference>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields>
+                    <field>[federated.0zqy3i11mf6kv11afkdaw004m71t].[none:label:nk]</field>
+                  </x-fields>
+                  <y-fields>
+                    <field>[federated.0zqy3i11mf6kv11afkdaw004m71t].[Multiple Values]</field>
+                  </y-fields>
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.0zqy3i11mf6kv11afkdaw004m71t].[none:label:nk]</field>
+                  <field>[federated.0zqy3i11mf6kv11afkdaw004m71t].[:Measure Names]</field>
+                  <field>[federated.0zqy3i11mf6kv11afkdaw004m71t].[Multiple Values]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>&quot;Tomato___Septoria_leaf_spot&quot;</value>
+                <value>&quot;[federated.0zqy3i11mf6kv11afkdaw004m71t].[__tableau_internal_object_id__].[cnt:plant_diseases.json_EAFD6CFFBE29412DA92C6DA73FD1575D:qk]&quot;</value>
+                <value>1771.0</value>
+              </tuple>
+            </tuple-reference>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields>
+                    <field>[federated.0zqy3i11mf6kv11afkdaw004m71t].[none:label:nk]</field>
+                  </x-fields>
+                  <y-fields>
+                    <field>[federated.0zqy3i11mf6kv11afkdaw004m71t].[Multiple Values]</field>
+                  </y-fields>
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.0zqy3i11mf6kv11afkdaw004m71t].[none:label:nk]</field>
+                  <field>[federated.0zqy3i11mf6kv11afkdaw004m71t].[:Measure Names]</field>
+                  <field>[federated.0zqy3i11mf6kv11afkdaw004m71t].[Multiple Values]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>&quot;Tomato___Leaf_Mold&quot;</value>
+                <value>&quot;[federated.0zqy3i11mf6kv11afkdaw004m71t].[__tableau_internal_object_id__].[cnt:plant_diseases.json_EAFD6CFFBE29412DA92C6DA73FD1575D:qk]&quot;</value>
+                <value>1000.0</value>
+              </tuple>
+            </tuple-reference>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields>
+                    <field>[federated.0zqy3i11mf6kv11afkdaw004m71t].[none:label:nk]</field>
+                  </x-fields>
+                  <y-fields>
+                    <field>[federated.0zqy3i11mf6kv11afkdaw004m71t].[Multiple Values]</field>
+                  </y-fields>
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.0zqy3i11mf6kv11afkdaw004m71t].[none:label:nk]</field>
+                  <field>[federated.0zqy3i11mf6kv11afkdaw004m71t].[:Measure Names]</field>
+                  <field>[federated.0zqy3i11mf6kv11afkdaw004m71t].[Multiple Values]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>&quot;Tomato___Late_blight&quot;</value>
+                <value>&quot;[federated.0zqy3i11mf6kv11afkdaw004m71t].[__tableau_internal_object_id__].[cnt:plant_diseases.json_EAFD6CFFBE29412DA92C6DA73FD1575D:qk]&quot;</value>
+                <value>1909.0</value>
+              </tuple>
+            </tuple-reference>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields>
+                    <field>[federated.0zqy3i11mf6kv11afkdaw004m71t].[none:label:nk]</field>
+                  </x-fields>
+                  <y-fields>
+                    <field>[federated.0zqy3i11mf6kv11afkdaw004m71t].[Multiple Values]</field>
+                  </y-fields>
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.0zqy3i11mf6kv11afkdaw004m71t].[none:label:nk]</field>
+                  <field>[federated.0zqy3i11mf6kv11afkdaw004m71t].[:Measure Names]</field>
+                  <field>[federated.0zqy3i11mf6kv11afkdaw004m71t].[Multiple Values]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>&quot;Tomato___healthy&quot;</value>
+                <value>&quot;[federated.0zqy3i11mf6kv11afkdaw004m71t].[__tableau_internal_object_id__].[cnt:plant_diseases.json_EAFD6CFFBE29412DA92C6DA73FD1575D:qk]&quot;</value>
+                <value>1591.0</value>
+              </tuple>
+            </tuple-reference>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields>
+                    <field>[federated.0zqy3i11mf6kv11afkdaw004m71t].[none:label:nk]</field>
+                  </x-fields>
+                  <y-fields>
+                    <field>[federated.0zqy3i11mf6kv11afkdaw004m71t].[Multiple Values]</field>
+                  </y-fields>
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.0zqy3i11mf6kv11afkdaw004m71t].[none:label:nk]</field>
+                  <field>[federated.0zqy3i11mf6kv11afkdaw004m71t].[:Measure Names]</field>
+                  <field>[federated.0zqy3i11mf6kv11afkdaw004m71t].[Multiple Values]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>&quot;Tomato___Early_blight&quot;</value>
+                <value>&quot;[federated.0zqy3i11mf6kv11afkdaw004m71t].[__tableau_internal_object_id__].[cnt:plant_diseases.json_EAFD6CFFBE29412DA92C6DA73FD1575D:qk]&quot;</value>
+                <value>1000.0</value>
+              </tuple>
+            </tuple-reference>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields>
+                    <field>[federated.0zqy3i11mf6kv11afkdaw004m71t].[none:label:nk]</field>
+                  </x-fields>
+                  <y-fields>
+                    <field>[federated.0zqy3i11mf6kv11afkdaw004m71t].[Multiple Values]</field>
+                  </y-fields>
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.0zqy3i11mf6kv11afkdaw004m71t].[none:label:nk]</field>
+                  <field>[federated.0zqy3i11mf6kv11afkdaw004m71t].[:Measure Names]</field>
+                  <field>[federated.0zqy3i11mf6kv11afkdaw004m71t].[Multiple Values]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>&quot;Tomato___Bacterial_spot&quot;</value>
+                <value>&quot;[federated.0zqy3i11mf6kv11afkdaw004m71t].[__tableau_internal_object_id__].[cnt:plant_diseases.json_EAFD6CFFBE29412DA92C6DA73FD1575D:qk]&quot;</value>
+                <value>2127.0</value>
+              </tuple>
+            </tuple-reference>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields>
+                    <field>[federated.0zqy3i11mf6kv11afkdaw004m71t].[none:label:nk]</field>
+                  </x-fields>
+                  <y-fields>
+                    <field>[federated.0zqy3i11mf6kv11afkdaw004m71t].[Multiple Values]</field>
+                  </y-fields>
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.0zqy3i11mf6kv11afkdaw004m71t].[none:label:nk]</field>
+                  <field>[federated.0zqy3i11mf6kv11afkdaw004m71t].[:Measure Names]</field>
+                  <field>[federated.0zqy3i11mf6kv11afkdaw004m71t].[Multiple Values]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>&quot;Strawberry___Leaf_scorch&quot;</value>
+                <value>&quot;[federated.0zqy3i11mf6kv11afkdaw004m71t].[__tableau_internal_object_id__].[cnt:plant_diseases.json_EAFD6CFFBE29412DA92C6DA73FD1575D:qk]&quot;</value>
+                <value>1109.0</value>
+              </tuple>
+            </tuple-reference>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields>
+                    <field>[federated.0zqy3i11mf6kv11afkdaw004m71t].[none:label:nk]</field>
+                  </x-fields>
+                  <y-fields>
+                    <field>[federated.0zqy3i11mf6kv11afkdaw004m71t].[Multiple Values]</field>
+                  </y-fields>
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.0zqy3i11mf6kv11afkdaw004m71t].[none:label:nk]</field>
+                  <field>[federated.0zqy3i11mf6kv11afkdaw004m71t].[:Measure Names]</field>
+                  <field>[federated.0zqy3i11mf6kv11afkdaw004m71t].[Multiple Values]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>&quot;Strawberry___healthy&quot;</value>
+                <value>&quot;[federated.0zqy3i11mf6kv11afkdaw004m71t].[__tableau_internal_object_id__].[cnt:plant_diseases.json_EAFD6CFFBE29412DA92C6DA73FD1575D:qk]&quot;</value>
+                <value>1000.0</value>
+              </tuple>
+            </tuple-reference>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields>
+                    <field>[federated.0zqy3i11mf6kv11afkdaw004m71t].[none:label:nk]</field>
+                  </x-fields>
+                  <y-fields>
+                    <field>[federated.0zqy3i11mf6kv11afkdaw004m71t].[Multiple Values]</field>
+                  </y-fields>
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.0zqy3i11mf6kv11afkdaw004m71t].[none:label:nk]</field>
+                  <field>[federated.0zqy3i11mf6kv11afkdaw004m71t].[:Measure Names]</field>
+                  <field>[federated.0zqy3i11mf6kv11afkdaw004m71t].[Multiple Values]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>&quot;Squash___Powdery_mildew&quot;</value>
+                <value>&quot;[federated.0zqy3i11mf6kv11afkdaw004m71t].[__tableau_internal_object_id__].[cnt:plant_diseases.json_EAFD6CFFBE29412DA92C6DA73FD1575D:qk]&quot;</value>
+                <value>1835.0</value>
+              </tuple>
+            </tuple-reference>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields>
+                    <field>[federated.0zqy3i11mf6kv11afkdaw004m71t].[none:label:nk]</field>
+                  </x-fields>
+                  <y-fields>
+                    <field>[federated.0zqy3i11mf6kv11afkdaw004m71t].[Multiple Values]</field>
+                  </y-fields>
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.0zqy3i11mf6kv11afkdaw004m71t].[none:label:nk]</field>
+                  <field>[federated.0zqy3i11mf6kv11afkdaw004m71t].[:Measure Names]</field>
+                  <field>[federated.0zqy3i11mf6kv11afkdaw004m71t].[Multiple Values]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>&quot;Soybean___healthy&quot;</value>
+                <value>&quot;[federated.0zqy3i11mf6kv11afkdaw004m71t].[__tableau_internal_object_id__].[cnt:plant_diseases.json_EAFD6CFFBE29412DA92C6DA73FD1575D:qk]&quot;</value>
+                <value>5090.0</value>
+              </tuple>
+            </tuple-reference>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields>
+                    <field>[federated.0zqy3i11mf6kv11afkdaw004m71t].[none:label:nk]</field>
+                  </x-fields>
+                  <y-fields>
+                    <field>[federated.0zqy3i11mf6kv11afkdaw004m71t].[Multiple Values]</field>
+                  </y-fields>
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.0zqy3i11mf6kv11afkdaw004m71t].[none:label:nk]</field>
+                  <field>[federated.0zqy3i11mf6kv11afkdaw004m71t].[:Measure Names]</field>
+                  <field>[federated.0zqy3i11mf6kv11afkdaw004m71t].[Multiple Values]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>&quot;Raspberry___healthy&quot;</value>
+                <value>&quot;[federated.0zqy3i11mf6kv11afkdaw004m71t].[__tableau_internal_object_id__].[cnt:plant_diseases.json_EAFD6CFFBE29412DA92C6DA73FD1575D:qk]&quot;</value>
+                <value>1000.0</value>
+              </tuple>
+            </tuple-reference>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields>
+                    <field>[federated.0zqy3i11mf6kv11afkdaw004m71t].[none:label:nk]</field>
+                  </x-fields>
+                  <y-fields>
+                    <field>[federated.0zqy3i11mf6kv11afkdaw004m71t].[Multiple Values]</field>
+                  </y-fields>
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.0zqy3i11mf6kv11afkdaw004m71t].[none:label:nk]</field>
+                  <field>[federated.0zqy3i11mf6kv11afkdaw004m71t].[:Measure Names]</field>
+                  <field>[federated.0zqy3i11mf6kv11afkdaw004m71t].[Multiple Values]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>&quot;Potato___Late_blight&quot;</value>
+                <value>&quot;[federated.0zqy3i11mf6kv11afkdaw004m71t].[__tableau_internal_object_id__].[cnt:plant_diseases.json_EAFD6CFFBE29412DA92C6DA73FD1575D:qk]&quot;</value>
+                <value>1000.0</value>
+              </tuple>
+            </tuple-reference>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields>
+                    <field>[federated.0zqy3i11mf6kv11afkdaw004m71t].[none:label:nk]</field>
+                  </x-fields>
+                  <y-fields>
+                    <field>[federated.0zqy3i11mf6kv11afkdaw004m71t].[Multiple Values]</field>
+                  </y-fields>
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.0zqy3i11mf6kv11afkdaw004m71t].[none:label:nk]</field>
+                  <field>[federated.0zqy3i11mf6kv11afkdaw004m71t].[:Measure Names]</field>
+                  <field>[federated.0zqy3i11mf6kv11afkdaw004m71t].[Multiple Values]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>&quot;Potato___healthy&quot;</value>
+                <value>&quot;[federated.0zqy3i11mf6kv11afkdaw004m71t].[__tableau_internal_object_id__].[cnt:plant_diseases.json_EAFD6CFFBE29412DA92C6DA73FD1575D:qk]&quot;</value>
+                <value>1000.0</value>
+              </tuple>
+            </tuple-reference>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields>
+                    <field>[federated.0zqy3i11mf6kv11afkdaw004m71t].[none:label:nk]</field>
+                  </x-fields>
+                  <y-fields>
+                    <field>[federated.0zqy3i11mf6kv11afkdaw004m71t].[Multiple Values]</field>
+                  </y-fields>
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.0zqy3i11mf6kv11afkdaw004m71t].[none:label:nk]</field>
+                  <field>[federated.0zqy3i11mf6kv11afkdaw004m71t].[:Measure Names]</field>
+                  <field>[federated.0zqy3i11mf6kv11afkdaw004m71t].[Multiple Values]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>&quot;Potato___Early_blight&quot;</value>
+                <value>&quot;[federated.0zqy3i11mf6kv11afkdaw004m71t].[__tableau_internal_object_id__].[cnt:plant_diseases.json_EAFD6CFFBE29412DA92C6DA73FD1575D:qk]&quot;</value>
+                <value>1000.0</value>
+              </tuple>
+            </tuple-reference>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields>
+                    <field>[federated.0zqy3i11mf6kv11afkdaw004m71t].[none:label:nk]</field>
+                  </x-fields>
+                  <y-fields>
+                    <field>[federated.0zqy3i11mf6kv11afkdaw004m71t].[Multiple Values]</field>
+                  </y-fields>
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.0zqy3i11mf6kv11afkdaw004m71t].[none:label:nk]</field>
+                  <field>[federated.0zqy3i11mf6kv11afkdaw004m71t].[:Measure Names]</field>
+                  <field>[federated.0zqy3i11mf6kv11afkdaw004m71t].[Multiple Values]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>&quot;Pepper,_bell___healthy&quot;</value>
+                <value>&quot;[federated.0zqy3i11mf6kv11afkdaw004m71t].[__tableau_internal_object_id__].[cnt:plant_diseases.json_EAFD6CFFBE29412DA92C6DA73FD1575D:qk]&quot;</value>
+                <value>1478.0</value>
+              </tuple>
+            </tuple-reference>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields>
+                    <field>[federated.0zqy3i11mf6kv11afkdaw004m71t].[none:label:nk]</field>
+                  </x-fields>
+                  <y-fields>
+                    <field>[federated.0zqy3i11mf6kv11afkdaw004m71t].[Multiple Values]</field>
+                  </y-fields>
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.0zqy3i11mf6kv11afkdaw004m71t].[none:label:nk]</field>
+                  <field>[federated.0zqy3i11mf6kv11afkdaw004m71t].[:Measure Names]</field>
+                  <field>[federated.0zqy3i11mf6kv11afkdaw004m71t].[Multiple Values]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>&quot;Pepper,_bell___Bacterial_spot&quot;</value>
+                <value>&quot;[federated.0zqy3i11mf6kv11afkdaw004m71t].[__tableau_internal_object_id__].[cnt:plant_diseases.json_EAFD6CFFBE29412DA92C6DA73FD1575D:qk]&quot;</value>
+                <value>1000.0</value>
+              </tuple>
+            </tuple-reference>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields>
+                    <field>[federated.0zqy3i11mf6kv11afkdaw004m71t].[none:label:nk]</field>
+                  </x-fields>
+                  <y-fields>
+                    <field>[federated.0zqy3i11mf6kv11afkdaw004m71t].[Multiple Values]</field>
+                  </y-fields>
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.0zqy3i11mf6kv11afkdaw004m71t].[none:label:nk]</field>
+                  <field>[federated.0zqy3i11mf6kv11afkdaw004m71t].[:Measure Names]</field>
+                  <field>[federated.0zqy3i11mf6kv11afkdaw004m71t].[Multiple Values]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>&quot;Peach___healthy&quot;</value>
+                <value>&quot;[federated.0zqy3i11mf6kv11afkdaw004m71t].[__tableau_internal_object_id__].[cnt:plant_diseases.json_EAFD6CFFBE29412DA92C6DA73FD1575D:qk]&quot;</value>
+                <value>1000.0</value>
+              </tuple>
+            </tuple-reference>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields>
+                    <field>[federated.0zqy3i11mf6kv11afkdaw004m71t].[none:label:nk]</field>
+                  </x-fields>
+                  <y-fields>
+                    <field>[federated.0zqy3i11mf6kv11afkdaw004m71t].[Multiple Values]</field>
+                  </y-fields>
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.0zqy3i11mf6kv11afkdaw004m71t].[none:label:nk]</field>
+                  <field>[federated.0zqy3i11mf6kv11afkdaw004m71t].[:Measure Names]</field>
+                  <field>[federated.0zqy3i11mf6kv11afkdaw004m71t].[Multiple Values]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>&quot;Peach___Bacterial_spot&quot;</value>
+                <value>&quot;[federated.0zqy3i11mf6kv11afkdaw004m71t].[__tableau_internal_object_id__].[cnt:plant_diseases.json_EAFD6CFFBE29412DA92C6DA73FD1575D:qk]&quot;</value>
+                <value>2297.0</value>
+              </tuple>
+            </tuple-reference>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields>
+                    <field>[federated.0zqy3i11mf6kv11afkdaw004m71t].[none:label:nk]</field>
+                  </x-fields>
+                  <y-fields>
+                    <field>[federated.0zqy3i11mf6kv11afkdaw004m71t].[Multiple Values]</field>
+                  </y-fields>
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.0zqy3i11mf6kv11afkdaw004m71t].[none:label:nk]</field>
+                  <field>[federated.0zqy3i11mf6kv11afkdaw004m71t].[:Measure Names]</field>
+                  <field>[federated.0zqy3i11mf6kv11afkdaw004m71t].[Multiple Values]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>&quot;Orange___Haunglongbing_(Citrus_greening)&quot;</value>
+                <value>&quot;[federated.0zqy3i11mf6kv11afkdaw004m71t].[__tableau_internal_object_id__].[cnt:plant_diseases.json_EAFD6CFFBE29412DA92C6DA73FD1575D:qk]&quot;</value>
+                <value>5507.0</value>
+              </tuple>
+            </tuple-reference>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields>
+                    <field>[federated.0zqy3i11mf6kv11afkdaw004m71t].[none:label:nk]</field>
+                  </x-fields>
+                  <y-fields>
+                    <field>[federated.0zqy3i11mf6kv11afkdaw004m71t].[Multiple Values]</field>
+                  </y-fields>
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.0zqy3i11mf6kv11afkdaw004m71t].[none:label:nk]</field>
+                  <field>[federated.0zqy3i11mf6kv11afkdaw004m71t].[:Measure Names]</field>
+                  <field>[federated.0zqy3i11mf6kv11afkdaw004m71t].[Multiple Values]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>&quot;Grape___Leaf_blight_(Isariopsis_Leaf_Spot)&quot;</value>
+                <value>&quot;[federated.0zqy3i11mf6kv11afkdaw004m71t].[__tableau_internal_object_id__].[cnt:plant_diseases.json_EAFD6CFFBE29412DA92C6DA73FD1575D:qk]&quot;</value>
+                <value>1076.0</value>
+              </tuple>
+            </tuple-reference>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields>
+                    <field>[federated.0zqy3i11mf6kv11afkdaw004m71t].[none:label:nk]</field>
+                  </x-fields>
+                  <y-fields>
+                    <field>[federated.0zqy3i11mf6kv11afkdaw004m71t].[Multiple Values]</field>
+                  </y-fields>
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.0zqy3i11mf6kv11afkdaw004m71t].[none:label:nk]</field>
+                  <field>[federated.0zqy3i11mf6kv11afkdaw004m71t].[:Measure Names]</field>
+                  <field>[federated.0zqy3i11mf6kv11afkdaw004m71t].[Multiple Values]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>&quot;Grape___healthy&quot;</value>
+                <value>&quot;[federated.0zqy3i11mf6kv11afkdaw004m71t].[__tableau_internal_object_id__].[cnt:plant_diseases.json_EAFD6CFFBE29412DA92C6DA73FD1575D:qk]&quot;</value>
+                <value>1000.0</value>
+              </tuple>
+            </tuple-reference>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields>
+                    <field>[federated.0zqy3i11mf6kv11afkdaw004m71t].[none:label:nk]</field>
+                  </x-fields>
+                  <y-fields>
+                    <field>[federated.0zqy3i11mf6kv11afkdaw004m71t].[Multiple Values]</field>
+                  </y-fields>
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.0zqy3i11mf6kv11afkdaw004m71t].[none:label:nk]</field>
+                  <field>[federated.0zqy3i11mf6kv11afkdaw004m71t].[:Measure Names]</field>
+                  <field>[federated.0zqy3i11mf6kv11afkdaw004m71t].[Multiple Values]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>&quot;Grape___Esca_(Black_Measles)&quot;</value>
+                <value>&quot;[federated.0zqy3i11mf6kv11afkdaw004m71t].[__tableau_internal_object_id__].[cnt:plant_diseases.json_EAFD6CFFBE29412DA92C6DA73FD1575D:qk]&quot;</value>
+                <value>1383.0</value>
+              </tuple>
+            </tuple-reference>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields>
+                    <field>[federated.0zqy3i11mf6kv11afkdaw004m71t].[none:label:nk]</field>
+                  </x-fields>
+                  <y-fields>
+                    <field>[federated.0zqy3i11mf6kv11afkdaw004m71t].[Multiple Values]</field>
+                  </y-fields>
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.0zqy3i11mf6kv11afkdaw004m71t].[none:label:nk]</field>
+                  <field>[federated.0zqy3i11mf6kv11afkdaw004m71t].[:Measure Names]</field>
+                  <field>[federated.0zqy3i11mf6kv11afkdaw004m71t].[Multiple Values]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>&quot;Grape___Black_rot&quot;</value>
+                <value>&quot;[federated.0zqy3i11mf6kv11afkdaw004m71t].[__tableau_internal_object_id__].[cnt:plant_diseases.json_EAFD6CFFBE29412DA92C6DA73FD1575D:qk]&quot;</value>
+                <value>1180.0</value>
+              </tuple>
+            </tuple-reference>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields>
+                    <field>[federated.0zqy3i11mf6kv11afkdaw004m71t].[none:label:nk]</field>
+                  </x-fields>
+                  <y-fields>
+                    <field>[federated.0zqy3i11mf6kv11afkdaw004m71t].[Multiple Values]</field>
+                  </y-fields>
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.0zqy3i11mf6kv11afkdaw004m71t].[none:label:nk]</field>
+                  <field>[federated.0zqy3i11mf6kv11afkdaw004m71t].[:Measure Names]</field>
+                  <field>[federated.0zqy3i11mf6kv11afkdaw004m71t].[Multiple Values]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>&quot;Corn___Northern_Leaf_Blight&quot;</value>
+                <value>&quot;[federated.0zqy3i11mf6kv11afkdaw004m71t].[__tableau_internal_object_id__].[cnt:plant_diseases.json_EAFD6CFFBE29412DA92C6DA73FD1575D:qk]&quot;</value>
+                <value>1000.0</value>
+              </tuple>
+            </tuple-reference>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields>
+                    <field>[federated.0zqy3i11mf6kv11afkdaw004m71t].[none:label:nk]</field>
+                  </x-fields>
+                  <y-fields>
+                    <field>[federated.0zqy3i11mf6kv11afkdaw004m71t].[Multiple Values]</field>
+                  </y-fields>
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.0zqy3i11mf6kv11afkdaw004m71t].[none:label:nk]</field>
+                  <field>[federated.0zqy3i11mf6kv11afkdaw004m71t].[:Measure Names]</field>
+                  <field>[federated.0zqy3i11mf6kv11afkdaw004m71t].[Multiple Values]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>&quot;Corn___healthy&quot;</value>
+                <value>&quot;[federated.0zqy3i11mf6kv11afkdaw004m71t].[__tableau_internal_object_id__].[cnt:plant_diseases.json_EAFD6CFFBE29412DA92C6DA73FD1575D:qk]&quot;</value>
+                <value>1162.0</value>
+              </tuple>
+            </tuple-reference>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields>
+                    <field>[federated.0zqy3i11mf6kv11afkdaw004m71t].[none:label:nk]</field>
+                  </x-fields>
+                  <y-fields>
+                    <field>[federated.0zqy3i11mf6kv11afkdaw004m71t].[Multiple Values]</field>
+                  </y-fields>
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.0zqy3i11mf6kv11afkdaw004m71t].[none:label:nk]</field>
+                  <field>[federated.0zqy3i11mf6kv11afkdaw004m71t].[:Measure Names]</field>
+                  <field>[federated.0zqy3i11mf6kv11afkdaw004m71t].[Multiple Values]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>&quot;Corn___Common_rust&quot;</value>
+                <value>&quot;[federated.0zqy3i11mf6kv11afkdaw004m71t].[__tableau_internal_object_id__].[cnt:plant_diseases.json_EAFD6CFFBE29412DA92C6DA73FD1575D:qk]&quot;</value>
+                <value>1192.0</value>
+              </tuple>
+            </tuple-reference>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields>
+                    <field>[federated.0zqy3i11mf6kv11afkdaw004m71t].[none:label:nk]</field>
+                  </x-fields>
+                  <y-fields>
+                    <field>[federated.0zqy3i11mf6kv11afkdaw004m71t].[Multiple Values]</field>
+                  </y-fields>
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.0zqy3i11mf6kv11afkdaw004m71t].[none:label:nk]</field>
+                  <field>[federated.0zqy3i11mf6kv11afkdaw004m71t].[:Measure Names]</field>
+                  <field>[federated.0zqy3i11mf6kv11afkdaw004m71t].[Multiple Values]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>&quot;Corn___Cercospora_leaf_spot Gray_leaf_spot&quot;</value>
+                <value>&quot;[federated.0zqy3i11mf6kv11afkdaw004m71t].[__tableau_internal_object_id__].[cnt:plant_diseases.json_EAFD6CFFBE29412DA92C6DA73FD1575D:qk]&quot;</value>
+                <value>1000.0</value>
+              </tuple>
+            </tuple-reference>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields>
+                    <field>[federated.0zqy3i11mf6kv11afkdaw004m71t].[none:label:nk]</field>
+                  </x-fields>
+                  <y-fields>
+                    <field>[federated.0zqy3i11mf6kv11afkdaw004m71t].[Multiple Values]</field>
+                  </y-fields>
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.0zqy3i11mf6kv11afkdaw004m71t].[none:label:nk]</field>
+                  <field>[federated.0zqy3i11mf6kv11afkdaw004m71t].[:Measure Names]</field>
+                  <field>[federated.0zqy3i11mf6kv11afkdaw004m71t].[Multiple Values]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>&quot;Cherry___Powdery_mildew&quot;</value>
+                <value>&quot;[federated.0zqy3i11mf6kv11afkdaw004m71t].[__tableau_internal_object_id__].[cnt:plant_diseases.json_EAFD6CFFBE29412DA92C6DA73FD1575D:qk]&quot;</value>
+                <value>1052.0</value>
+              </tuple>
+            </tuple-reference>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields>
+                    <field>[federated.0zqy3i11mf6kv11afkdaw004m71t].[none:label:nk]</field>
+                  </x-fields>
+                  <y-fields>
+                    <field>[federated.0zqy3i11mf6kv11afkdaw004m71t].[Multiple Values]</field>
+                  </y-fields>
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.0zqy3i11mf6kv11afkdaw004m71t].[none:label:nk]</field>
+                  <field>[federated.0zqy3i11mf6kv11afkdaw004m71t].[:Measure Names]</field>
+                  <field>[federated.0zqy3i11mf6kv11afkdaw004m71t].[Multiple Values]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>&quot;Cherry___healthy&quot;</value>
+                <value>&quot;[federated.0zqy3i11mf6kv11afkdaw004m71t].[__tableau_internal_object_id__].[cnt:plant_diseases.json_EAFD6CFFBE29412DA92C6DA73FD1575D:qk]&quot;</value>
+                <value>1000.0</value>
+              </tuple>
+            </tuple-reference>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields>
+                    <field>[federated.0zqy3i11mf6kv11afkdaw004m71t].[none:label:nk]</field>
+                  </x-fields>
+                  <y-fields>
+                    <field>[federated.0zqy3i11mf6kv11afkdaw004m71t].[Multiple Values]</field>
+                  </y-fields>
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.0zqy3i11mf6kv11afkdaw004m71t].[none:label:nk]</field>
+                  <field>[federated.0zqy3i11mf6kv11afkdaw004m71t].[:Measure Names]</field>
+                  <field>[federated.0zqy3i11mf6kv11afkdaw004m71t].[Multiple Values]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>&quot;Blueberry___healthy&quot;</value>
+                <value>&quot;[federated.0zqy3i11mf6kv11afkdaw004m71t].[__tableau_internal_object_id__].[cnt:plant_diseases.json_EAFD6CFFBE29412DA92C6DA73FD1575D:qk]&quot;</value>
+                <value>1502.0</value>
+              </tuple>
+            </tuple-reference>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields>
+                    <field>[federated.0zqy3i11mf6kv11afkdaw004m71t].[none:label:nk]</field>
+                  </x-fields>
+                  <y-fields>
+                    <field>[federated.0zqy3i11mf6kv11afkdaw004m71t].[Multiple Values]</field>
+                  </y-fields>
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.0zqy3i11mf6kv11afkdaw004m71t].[none:label:nk]</field>
+                  <field>[federated.0zqy3i11mf6kv11afkdaw004m71t].[:Measure Names]</field>
+                  <field>[federated.0zqy3i11mf6kv11afkdaw004m71t].[Multiple Values]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>&quot;Background_without_leaves&quot;</value>
+                <value>&quot;[federated.0zqy3i11mf6kv11afkdaw004m71t].[__tableau_internal_object_id__].[cnt:plant_diseases.json_EAFD6CFFBE29412DA92C6DA73FD1575D:qk]&quot;</value>
+                <value>1143.0</value>
+              </tuple>
+            </tuple-reference>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields>
+                    <field>[federated.0zqy3i11mf6kv11afkdaw004m71t].[none:label:nk]</field>
+                  </x-fields>
+                  <y-fields>
+                    <field>[federated.0zqy3i11mf6kv11afkdaw004m71t].[Multiple Values]</field>
+                  </y-fields>
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.0zqy3i11mf6kv11afkdaw004m71t].[none:label:nk]</field>
+                  <field>[federated.0zqy3i11mf6kv11afkdaw004m71t].[:Measure Names]</field>
+                  <field>[federated.0zqy3i11mf6kv11afkdaw004m71t].[Multiple Values]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>&quot;Apple___healthy&quot;</value>
+                <value>&quot;[federated.0zqy3i11mf6kv11afkdaw004m71t].[__tableau_internal_object_id__].[cnt:plant_diseases.json_EAFD6CFFBE29412DA92C6DA73FD1575D:qk]&quot;</value>
+                <value>1645.0</value>
+              </tuple>
+            </tuple-reference>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields>
+                    <field>[federated.0zqy3i11mf6kv11afkdaw004m71t].[none:label:nk]</field>
+                  </x-fields>
+                  <y-fields>
+                    <field>[federated.0zqy3i11mf6kv11afkdaw004m71t].[Multiple Values]</field>
+                  </y-fields>
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.0zqy3i11mf6kv11afkdaw004m71t].[none:label:nk]</field>
+                  <field>[federated.0zqy3i11mf6kv11afkdaw004m71t].[:Measure Names]</field>
+                  <field>[federated.0zqy3i11mf6kv11afkdaw004m71t].[Multiple Values]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>&quot;Apple___Cedar_apple_rust&quot;</value>
+                <value>&quot;[federated.0zqy3i11mf6kv11afkdaw004m71t].[__tableau_internal_object_id__].[cnt:plant_diseases.json_EAFD6CFFBE29412DA92C6DA73FD1575D:qk]&quot;</value>
+                <value>1000.0</value>
+              </tuple>
+            </tuple-reference>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields>
+                    <field>[federated.0zqy3i11mf6kv11afkdaw004m71t].[none:label:nk]</field>
+                  </x-fields>
+                  <y-fields>
+                    <field>[federated.0zqy3i11mf6kv11afkdaw004m71t].[Multiple Values]</field>
+                  </y-fields>
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.0zqy3i11mf6kv11afkdaw004m71t].[none:label:nk]</field>
+                  <field>[federated.0zqy3i11mf6kv11afkdaw004m71t].[:Measure Names]</field>
+                  <field>[federated.0zqy3i11mf6kv11afkdaw004m71t].[Multiple Values]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>&quot;Apple___Black_rot&quot;</value>
+                <value>&quot;[federated.0zqy3i11mf6kv11afkdaw004m71t].[__tableau_internal_object_id__].[cnt:plant_diseases.json_EAFD6CFFBE29412DA92C6DA73FD1575D:qk]&quot;</value>
+                <value>1000.0</value>
+              </tuple>
+            </tuple-reference>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields>
+                    <field>[federated.0zqy3i11mf6kv11afkdaw004m71t].[none:label:nk]</field>
+                  </x-fields>
+                  <y-fields>
+                    <field>[federated.0zqy3i11mf6kv11afkdaw004m71t].[Multiple Values]</field>
+                  </y-fields>
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.0zqy3i11mf6kv11afkdaw004m71t].[none:label:nk]</field>
+                  <field>[federated.0zqy3i11mf6kv11afkdaw004m71t].[:Measure Names]</field>
+                  <field>[federated.0zqy3i11mf6kv11afkdaw004m71t].[Multiple Values]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>&quot;Apple___Apple_scab&quot;</value>
+                <value>&quot;[federated.0zqy3i11mf6kv11afkdaw004m71t].[__tableau_internal_object_id__].[cnt:plant_diseases.json_EAFD6CFFBE29412DA92C6DA73FD1575D:qk]&quot;</value>
+                <value>1000.0</value>
+              </tuple>
+            </tuple-reference>
+          </tuple-selection>
+        </selection-collection>
+        <highlight>
+          <color-one-way>
+            <field>[federated.0zqy3i11mf6kv11afkdaw004m71t].[none:image_path:nk]</field>
+            <field>[federated.0zqy3i11mf6kv11afkdaw004m71t].[none:label:nk]</field>
+          </color-one-way>
+        </highlight>
+        <default-map-tool-selection tool='2' />
+      </viewpoint>
+      <simple-id uuid='{9F7DE606-12DE-400A-B68F-87B00A77DAD0}' />
+    </window>
+  </windows>
+  <thumbnails>
+    <thumbnail height='192' name='Column Chart' width='192'>
+      iVBORw0KGgoAAAANSUhEUgAAAMAAAADACAYAAABS3GwHAAAACXBIWXMAAA7DAAAOwwHHb6hk
+      AAAgAElEQVR4nOy9aZAd13Wg+eXLt+9b1at9r0KhqrARILFwAUkJIiVSEi3LomRJ9ljWyHZ4
+      7JiIcUd39I9pu2NiJmb8wxPdMR0hR4xtjR0xtpviSDZ3iiRAgCAAYkehUCtq399Sb1/yZeb8
+      KKKIqpdZKJIAgVblF4EfwDs4efO9e+4999xzzxVUVVUxMNimmO53AwwM7ieGARhsawwDMNjW
+      GAZgsK0xDMBgW2MYgMG2xjAAg22NYQAG2xrDAAy2NYYBGGxr7osBKIqCkYFh8CBw3wzAwOBB
+      wHCBDLY1hgEYbGsMAzDY1hgGYLCtMQzAYFtz1wygmE0wODYNQDo6w+lzVyiWy8TjSVSlzMLi
+      8t16lIHBXcN8txTFV9JIhTwAQ2PT7OqIMDA6j10tkl64iaW+5249ysDgrnHXDKC2voGV1Cig
+      4HB58IRqEWfGSUSnmLFWcazHhqIoyLKMoijGXoDBA8FdM4BsOkk6nSKdLVLIJpm5OQKuKgJW
+      K222IqNzK7TX+bGYTJTLZURRRBCEu/V4A4PPxF0zgJXoIna7leVEmp6dO5hYSLOzo5pCtoDb
+      7cCaSN6tRxkY3DWE+1EWxZgBDB4UjDCowbbGMACDbY1hAAbbGsMADLY1hgEYbGsMAzDY1hgG
+      YLCtMQzAYFtjGIDBtsYwAINtjWEABtsawwAMtjWGARhsa+6JAcTnbnLqw/NkipJxJNLggeau
+      nQe4nZHJBQ70NtM/Mo1LVEgv3MRqHIk0eAC5Jwbgtiqc/miAxu59LA+eN45EGjyw3IMDMWXO
+      fHCO1rYaJueLeBwWgvYiaVs97XV+BIwDMQYPDvdgBjDTs6OV6aU0fX2dKKUiLpcDy4pxJNLg
+      wcM4EmmwrTHCoAbbGsMADLY1hgEYbGsMAzDY1hgGYLCtMQzA4Nea0dFRzp07R7lc1vzcMACD
+      X2v6+/uRZZlXXnmFU6dOVRjCPUmFMDB4UHC73bS1tXH48GEWFhaYnZ2lubl57XNjI8zg15p0
+      Os27776LxWKhXC7zzDPPYLPZ1j43XCCDX2tOnz5Ne3s7zzzzDN3d3bz11lvrPjdmAINfa5aX
+      l3nzzTfxer0kk0m+8pWvEIlE1j43ZgCDX2uWlpb4+te/TigU0vx8SwZw7cYIK8nUXW2YgcEX
+      wcjICEtLSwwNDfHEE09w+vTpdZ/f0QBUVeXawDB//f+8RDKd2dJDp4cu8+57x5mNpxkbm0LK
+      LNE/MvPZ3sDA4HNw+PBhpqenCYfDlEol9u/fv+7zTdcA7394gaHRcS73D+HzuunpauMHv/X1
+      Oz709Ml3aWzdQTgSYvDSNYqywP5DBzCjoqoqsiwjCIKxBjD4QpEkiZGREXbs2IEoisAd9gEa
+      62v4/179FXablT/6vRdprKvZ0oMEVaFUSHOtP45ZVZBlFUUFhNUZxcDgi+JWwEWSJKLRKCaT
+      iWKxiNPpBO5gABNTs3zr+S9z/vL1LXd+gNpwkImZOaqbu7HKXnbVuRkYHGd3TyuiKKKqqhEF
+      MvhCeP3119m3bx+/+tWvcLlc1NTU0Nvbu/b5pi5QYiVFwO+lUCxiv23z4PNihEENviiOHz9O
+      NptlaGiIZ599lrm5Ob785S+vfW7sAxj8WpJKpZBlGVmWyWQyqKqKxWLBarVisViA1TSJLRlA
+      dG4SxepGtDoIeZ2fu3GGARjca/bt27dpoGV6epp//Md/3EoyXJpX/utL1PUdIJe18sI3Dt/l
+      phoY3Bv+u3/zf9A/ldb8bMfVl4AtZYPa8PttXD1zht5jv3k322dgcE9J58osJouanzk/9nu2
+      YAAK1XXtSM4cNV77XWyegcH9ZwupEFb2HHqMY4/tZH5h5d63yMDgC2QLM0CRs+/+ilghi7dh
+      /53FDQz+G2JTAygXs0xPzdHY00cj4A5Uf0HNMjD4YtjUAGQpz+z0NAuL0yyv5Gjf+yS1Yd8X
+      1TYDg3vOpmsAmzvMY08fIDm/iMNkpyQZJc0Nfr3Y1AAURUaWzTS0d2ES0uQy+S+qXQYGXwib
+      ukD51Byv/etxzL4wvYefpW9nxxfVLgODL4RNZwCXv5Fvffc7PLKnk7Fzr/I3Pz/5RbXLwOAL
+      YdMZIJec5Y1XT4DLS8ehr/NCd9sW1arEFhZwhqtQiiWcTjupVAafz3sXmmxgcPfY1ADs7ghf
+      /86LWMzip1JayiY4f/IcvV97mvTUIkFbiayrAZ8RQDJ4wNjUAEyi+TOUjVCZmJimvbMdE5CY
+      G2XWVs2XH/Mal+QZfGFsJcu/XC7fg9KI5SzTU/Nkkwm8JpFIXQe1apLZeJ76oAOTyWSkQxvc
+      c7bSt8xm8z0wALObL331WbKxKKrXSzGVIxhoYW4hiooDo8sbPEjcs+K4rlAYAHfICkD9pzhT
+      bGDwRWFUhjPY1hgGYLCtMQzAYFtjGIDBtmbbGYAkSQwPD5NMJvnFL37BwMDA/W6SwX1k2xlA
+      sVjkgw8+4NSpU+zYsYMPP/wQWZY/ky5VVbl58ybLy8soisLc3JxR+vG/MbadAdjtdkKhEFNT
+      U/h8PpqamjCZPtvXkE6nee211zh//jyLi4u8/vrrxg73HZAkiVKpRDqdJpPZWrXxe8m2uyRP
+      EARaW1tpb2/n5Zdf5plnnvnMuqxWK16vl6effpo333yTWCx2F1v664eiKPzt3/4tXq8XQRBI
+      JBL8+Mc/xmy+f91w280Aqqry/vvvMz4+Ti6Xw2q1asopikKxWKRcLpNMJjVdG5vNxuHDh7lw
+      4QKRSIQf/ehHn3k2uZuoqsrExAQXL15ElmXGxsaQJElTLp1OoygKqqpSKBQ+13MlSWJ5eZl8
+      Pq/5fSmKgiiKPPzwwzQ3N2OxWD6z+3m3uP+/1heM2WzmD//wD2loaKBcLhOJRDTzRt59911+
+      /vOf87Of/Yw33niD2dnZCplMJsM777xDZ2cn1dXVvPrqq59rDVAqldZmkUwmo3u5851QFIW3
+      3noLh8PBqVOn+PDDD8nnK0/zjY+P88tf/pK3336bfD7PK6+88pnbPjs7yz/8wz8wNjbGL3/5
+      S/r7+ytkzGYzzz33HIFAgObmZnp6enQHoK2iqioDAwNEo9HP9P/vuwt069KCbDZLMBikpaVl
+      7fKC21lYWGBubg5RFGlubsbv91fIlEolRkZGyOVyhEIhWlpaKkbkcrnMuXPnqKqqIhKJ8P77
+      73Ps2LEKI1haWuKpp57i/fffp66ujkQiQUNDwzoZu92OKIqcOXOGbDZLXV2dpjEpisL09DTL
+      y8vY7Xba29txOBwVMn//939PfX09kUiEsbExjh49SlVVVYXc1NQU0WgUh8NBe3s7dvv6gmUm
+      k4n6+npqampQVZV3331Xc2bK5XI0NDTQ3NzMqVOnWFnRrvu0srLC5OQksixTV1dHTU1lWsvS
+      0hJVVVU0NjYiiiITExPs2rVrnYwsy/z85z+nqqqKYrFILBbjwIEDa8Vqb5e7efMmKysruN1u
+      Ojs7K9wkSZL4u7/7O44ePcqNGzd47733+MlPflKh607c9xngV7/6FfF4nMbGRvr7+7l27VqF
+      TKlU4p/+6Z+oqqrC6XTy0ksvaU6db775JqlUisbGRi5evMjg4GCFjCzLXLx4keHhYZ544gmm
+      pqY0F67PPvssPp+PF154AZPJRFtb5WEgWZb50pe+xKFDh7BYLLS0tGgawOzsLO+99x51dXWU
+      SiXNkVYQBFwuFwcOHCCfz3P16lXN2WR8fJwPPviA+vp6crkcr7/+uqauvXv3cvr0aQYGBvjO
+      d76Dy+WqkOvu7mbHjh3U1taiqipPPvmk5ju+9NJLOBwOqqqq+Od//mdKpVKF3J49e/D7/UxO
+      TjIxMcFXvvKVChlYnQUkSdo0W/PixYsMDQ3R2NhINBrl3XffrZARRRGn08mpU6eYm5vD6XR+
+      avdzZmbm/s8AdXV1nD9/nmw2y/z8PPv27auQEUURm83G5cuXKZVK+P1+zZetra3l2rVrpFIp
+      lpeXNWcJm83GU089xdmzZ0mn03z1q1/V1HUrsiOKIv39/fT09FR0omw2y5kzZ3A4HOzatYuT
+      J0/S3t5eoc/tdpPL5bhy5QqxWIzGxkbN7+LLX/4yPp+P2tpafvM3f5NgMFgh4/V6SaVSXLly
+      haWlJTo6Ks9p33KBDh48yMDAACdOnNCcKQYGBigWixw/fpz6+npu3LhRoc9kMhEIBLh69So2
+      mw2LxaI5Qw8ODjI1NcX09DR9fX0cP368IsAgiiLPP/88uVyOYrG4VrJ8I+FwmIsXL2KxWJie
+      nubQoUOa39eBAwdwOBzYbDYCgYBmuzbjzJkz92YGyCWjDA6NkCuVyWRyqKpCUueWyR07dtDR
+      0YGqqjz00EPU1dVVyIiiyFNPPYXdbsfv9/Poo49qjiA9PT20traiqioPP/zwuvtgb6e3t5cf
+      /ehHvPjiiywtLWlO/Y899hjhcBiPx8PevXsJBAIVMi6XC6fTyczMDB6Ph+bmZs12eb1eDh8+
+      jMlkoqGhgb1791bIKIrCL3/5SwqFAv/yL//C6dOnyWazFXLBYJCDBw8iCAJNTU3s3r27QkYQ
+      BGpra7l8+TI7d+6kq6tL08gDgQDXr19nampqzd3Q0nX48GECgQB2u52nn35as6PdOuNhMplw
+      Op0Ui5VFaWVZ5uWXX+bq1atcu3aNEydOaM4mDQ0N7N69G1VV6erqoqurq0JGkiRefvll+vv7
+      uXHjhubztsI9MYBoLI7XBUMjU0xPz7E0foOYToDhjTfeIBwOc+TIEdLpNBcvXqyQKRaLvP32
+      2xw4cIC+vj7+9V//VdMFev3114lEIhw5coTl5WXNhdjt3HIxtCIkTqeTZ599ll27dtHa2koy
+      mayQsdvtvPDCC/zJn/wJkUiEPXv2aLot09PTDA8Pc+jQIRobG3n11VcrZARBwOv18sorr1BT
+      U4PX69XsaGNjY0xOTnL48GHq6+s1dQEcO3aMF154ge7ubgRB0FxQNzQ08PWvf53f+I3fYM+e
+      Pbpu3quvvkpfXx8PP/wwv/rVrzQ7W29vL0eOHOH3f//3aWhoWHcN0e243W4OHz7MQw89hMPh
+      0Bwwzp07R6lU4siRIwQCAd58801NXTU1NXz1q1+lt7eXy5cvf6agwT1xgeoaGpkYG6W+oYXR
+      8x9seiSys7OTM2fOMD4+zvz8PM8++6zmqOB2uzl+/DiSJFFbW7t2+8ftdHR0cObMGaqqqpif
+      n2fPnj0VumRZ5tSpU9jtdhRF4cyZM/zpn/5phdzw8DDxeBxBEBgcHESWZR566CHdd1ZVlfPn
+      z9PR0UFTU9O6z7xeL+l0mhMnTpBMJuno6NB8x6NHjzI2NoYsywQCAaxWa4Wc3+8nGo1y4sQJ
+      4vE4PT09FTKqqvLSSy/hcrkQRZGTJ0+yd+/eioVkLBbjxo0bWCwWisUiw8PD/PjHP65oV21t
+      LSdOnMBisaxdLrfxmcvLy4yOjmI2mykUCty8eVPT1fv+978PrLo5LpcLRVEqdDU0NPD222+T
+      TqdZWFjgscce0/y+Dh48yIcffoiqqjQ1Na3TtZVonCzL98YAxsdGqWnZgcchEKvroE5N6R6J
+      bGlpYXh4GFmWaWxspKamRtMv7OnpYX5+HqvVqhs+a21t5ebNm8iyTEtLC1VVVRW6FEVhcnKS
+      b37zm2shNIvFUtE5UqkUVquVzs5O8vn82vU6tyPLMpOTk2uGPT09zbFjxypGbp/PR3t7O6lU
+      Co/HQ2dnZ4UuRVF4/fXXOXLkCF6vl1/84hc0NDTg21BJIBgM0traSjabxefz0dHRofld7N27
+      l8bGRrxeL+FwGKfTqSmXSCQ4evQohUKBqakpTZnu7m76+/sRBIG+vj5sGvfFKYpCMpnk8ccf
+      J5fLMTs7e8cQZzKZZHZ2locffnidi1ZTU0NdXR2SJBEOh2lpaanQVS6XOX78OC+88AKCIPDy
+      yy+viwJt5UikKIr3xgAK6TgXzp6mpmUH1dXhTY9Evvrqqxw+fJja2lrOnz/PRx99xJEjR9bJ
+      FItFzp8/z09+8hMkSeJnP/uZZrj0tdde4/HHHycSifDBBx9w9erVtYuRE4nEWqz4scceW/P7
+      n3rqKcbHx4HVjlpdvVoA+NbCy2Qy8dRTT2m+pyRJvPbaazz99NPIsqwZaweYnJwkmUzy/PPP
+      k0gkeO211/id3/mddTKCIFBXV8eFCxfWfPGNi1ZYvflckiSee+45otEor776Kj/4wQ8q5G53
+      Qdra2sjlctjt9nUdo6amZi3KBfDbv/3bFXpkWeadd97hhz/8IVarlb/+679m9+7dFUbQ0NBA
+      XV0doigSDAb57ne/W6FLVVXy+fyaqzIwMMDzzz9f0VnPnDlDdXU1e/fuZXZ2lldeeYVvf/vb
+      62RMJhOhUIizZ89iMpnweDyfehEM98gF2vXI0Yp/0zsSefjwYY4fP47f7yeZTPK1r32tQsZq
+      tVJXV8e//Mu/IMsyvb29mou6gwcP8t577+Hz+UilUjz//PNrn/30pz/lH/7hHzRj2LAa696/
+      fz8//elPAdbpTyQSnD9/nq985SvrZgqbzca3v/1tIpEIqqoSDAY121VTU8O5c+d49dVXyWaz
+      HDhwoEJGEASOHTtGuVxec++0UgQaGxu5fPkyr732Gul0mkceeUTzfW4nmUySz+cJBALrOpsg
+      CGudRpZl3nrrLR577LF10SeTyURfXx+vvPIKFouF2tpazZF9o6433niDJ598cl0kTlVV/umf
+      /mltf6a/v5/nnnuuwgD6+vp4/fXXmZ+fJ5FIrLvV8fZ2vfjii0iShKqqdwyt6nHfw6CNjY38
+      4Ac/QFEUJEkilUqhqmrFD/XNb34TRVEQBIGlpSUkSar4IVpbW2lpaVlLY8jlcut0PfW1bxN3
+      92m242HLEvGJK2t/L5fLayPV/Pw8ra2taz/wX/7lX/LTn/5Ud4qXJInvfe97/Mf/+B+B1QX1
+      iy++uLbuWVxcRJZlzRHLbDZjNpu5efMmk5OTHD16dJ1Rud1uvvvd726qS1VVxsbGyOVyALz1
+      1lv8wR/8QYVx3vrOVVWlVCphNpsrXC5BEHj00UfX0iUSiQS5XA6n07nuN7pdV7FYxGaz4fF4
+      1ukymUwcOnSItrY2bDYbXq9X090NhUJ8//vfX/eOiqJoDi63/v/AwADlcpn9+/d/KkO47wYA
+      n4we6XSaS5cucfTo0Yrp/5bMrRTkTCajGQO/JZfP57l48SJPPvnkWkeVFZVMQTtSIJnWb4a9
+      88475PN5XC4XQ0NDHDp0aO2LTafT/NYP/3tMkcoQJIAlOUpy4aZmu2RZpr+/H7PZvOZuwWqn
+      TSaTa/k4Z8+e5Stf+Yrmj367rqtXr3LgwAHC4fA6mfPnz9PX14fH48Fqtepuqp08eZL6+nqK
+      xSIzMzO6bsStdiwtLZHP59duYbzF8PAw586do7a2lkKhsLaHAnD9+nX+4i/+QlPvLZqbm/nL
+      v/zLincsl8tcvHiRJ554Aq/3k8qCqqoSj8fXIniXL1/mu9/97qeeBe67AcTjcZaWlgCYmprC
+      ZrNVdH5FUdaiI6qqcunSJX7yk59U6IpGo2t+/ujoKOFw+DPnmuzZswdJkmhsbKSzs7OiY2QK
+      ZaamKkOjAG2W9WHVYrHIxMTE2lQ9NTWluVP65ptvUltbi8PhYHp6WjPUm8/nmZqaWhu15+fn
+      1zq/qqpr/+drX/saVqsVs9nM97//fex2O+VyeZ2rUldXx/79++nr60OSJC5dulTxPFVVmZ6e
+      XptN3n77bX784x9XGGZTU9Oae1osFrl8+fLaZ0tLS+RyOXY9qX3JYsRr42//r/99zQDS6fTa
+      2Yp8Pk8qlVrX+WG1T7z00ktrhvhZz2LcdwMYGBggl8vR2toKoPmjq6rKG2+8wTPPPLPWibS4
+      du0aiqLQ1NS0rjN8Gv7wD//wjl+ky+UCjUiIHslkktOnT/Poo49iMpk02y8IAkePHsXpdOL1
+      egmFQhUuBKwOGGfPnl3bWLs9PNjf38+jjz6quZl4i1wux7/9t/+Wq1evan7+N3/zNwD87u/+
+      LkeOHEFVVd577z0eeuihNSO6nb/6q7/STDm5XVdnZycer4+BuENTzh1cv8k4NTXF4OAgu3fv
+      1v2+RFHk2LFjNDc3I4qirjt1J+67ARw8eJBsNovf76ehoUEz3iuKIt/73vcIhULAaixca6o+
+      cuQIhUIBn89HXV3dZzKA1157jR/96b/XdJXsFpGXf/afefLJJxG33v8Jh8N84xvfIBgMoqrq
+      OndldnaW3/qt39r0/3s8nrXNoNraWp577rk1Xbe7UQCPP/443c/8EaVyZX5Te42bv/5f/gfe
+      eustevYdRjJX7vwCTFz9gOHhYY4cOYLJZOIb3/gGbrcbi8XCD3/4w3Uz9GuvvcbhJ79KTtWe
+      aUcvvPepozPd3d3U1tYSDAbXEvBucfr0af7sz/5s0//f16e9ztPivhlAV1fXpl9MPB7n+9//
+      /tqGjhaSJPH000/zxhtv6MrA6obPd77zHXCEdWVuYbfbWTHXM56rTEMIeysXdpvxx3/8x7z+
+      +uu6blgul+Nb3/oWFouFr/3uv6EoVRpstc/OX/2HP+X3fu/3eP/993VHuWw2y7e+9S0AZmI5
+      Chq3+fhcn/xf0dfAwLL2zx8OVXP+/Hn+3b/7d5r5VLdwOp2EQiEEXyMjc9qDTSBUpfnvWhw7
+      dozJyUndpLZUKsW3v/1tWtva2fH4tzVlIh4Tf/ef/9ctP/O+GYDZbOaP//y/MLmcq/jMbjFx
+      7uX/k2KxyG+8+DvYWo5oaICguszAuXdwuVz80f/8X5iJV8bh3XaRd//+f7svZ3ULhQI/+tN/
+      T9Jcq/l5eeYcxdQyoihybbZAOl8563TXmzGZTBQKBX7yP/05UaUyQQ6gcPMkUkE73+qzoCgK
+      jz76KJ1P/whZ46vrrHXzn/7DH9+158HqgPA//sV/YjymbUxLF15eXceIZi5Mau+57G92fqpn
+      3lcXaC6eZ3iu8ip7p+2TmaEoyUxqyAB0+z7xDWfiOYbnKs+Y+pyf3i+8myRzEsMZ7fbXleRP
+      VSs1kZEYXtHWFZHuzbb+8HwGWam0AI/93nSdaKrI8Jx25/ZqtOPzct/PAxgY3E8MAzDY1hgG
+      YLCtMQzAYFtjGIDBtuaeGEAhHWNodAJJkT8+EimzonMk0sDgfnJPYlnXB24QDrq5MW7DUsoS
+      sBbJeRrR31IxMLg/3AMDULC7/DR3tnP1yjiJ6BQztmqOta8/Elkul3EX5+hyVeZ5mEWB8Y/P
+      4GZXluiqTmg+SU4tUygUKBaL+KR5ulyVG0lWs4n+dHq1Wllpka5W7fMA0soCsJq4FlQWsGjo
+      sosmzmQy5PN5zOoiXQ3am1K55QXK+Rz5fB45NU+Xzubx0sISJnU1BfyQNYpk0oi3S5m1XBgl
+      PUeXK6Spa3Z6GZtZYGVlhV32OLK1UpezsKqrWCyipufocmk3bOLmMlVBP/F4nIedcbT2EK25
+      7FqdT9KzdLm0c0NG41EEn4d4LMbuXu3f0XxbjVBTepYul/buyI14FLMpxEo8xs4ubV2mTHwt
+      lV3Mzmj2L4Br8RgBvw9BvQdbpOfPnqG7I8LIshm7WsShpjDX7KQhuJoMVS6X+bM/+zPSae1N
+      nVs89dRTvPfee5vKHD58mEuXLt2xrN9WdB09epSTJ0/escDtVnQdO3aMfD7PqVOnPrcul8tF
+      b28v586d+9y6blVluz1b87PqikQihEKhO5aY34quxsZGbDYbo6Ojn1tXe3v7WtbtnXTdEwNI
+      LU9zfTzGvof6yKUyBPwe5heXqa2tQQDjmlSDB4Z7YgB3wjAAgwcFIwxqsK0xDMBgW2MYgMG2
+      xjAAg22NYQAG2xrDAAy2NYYBGGxrDAMw2NYYBmCwrblvh+K3cpnBxhqhn1XG0PXg67qbz/w0
+      z7uvZVHu1EhJku5Y7WtjWoVcllAEEZMqoyBiMZu2rEuSJM12lfJZyoIVp93yqXRtpVLZerky
+      k8PDZLFTE6km4HMjfGZdn13mVlW9yurUKuWygtksblnXVuVuFd+9UxEtPV1yuYzJbEZgtbqg
+      IAgV9YVUVUGW1XXtvy8ukNZLlgpZcoX1qavrfwCFdCqDoiqkU2lu5Wuur4qssHhziPG5GEuT
+      Q4zNJnR0ycxNTVHYUIhK78Zyk9mMWTTpyMnMTE5VVGLbqCuXjDIfrTwUtF5OQLTYUHIxxmeW
+      79iucqlEWVZ05MqkUllQy6TSOVRNGcjEFlhaqSwCpt0RyyTin7xDxTumUkhALp2mfFsJE732
+      rywucasO4MYOq8h5pqbmK0qy6OlKxxPc8ilMJpPm4KoqRVZWPqlDZTab748BCIKwroG52DRn
+      Lg4yfOUsE8vZdXK3KOaSfHT6PNF4jMuX+tde9nZdqlJiYWGJhdkpUqqLlvqApi4wEa4KMXL1
+      Iz48e5FEtqjZrltI+Ry54ifGuVFXVXWQG5fO8uG5SyRzJQ0ZsLt9iPklTr5/kuHJhbUOuVGu
+      kM8hmO24HJ/k1+vNlFKxgHRb6vYnciq5zBJnTl8hHp3j0rVRDZlVHL4QUmKa998/xfhcFHWT
+      72F1Bvhk0LhdRpaKXD99hul4nOvnL5KStdq1HncwsOaCbHymYLLhdwlcOHOKi/2jFD8eYPR0
+      We32tRpLeu0XBBG73XLb34X7vwjOJWPcHJ+mrKiYrSLplcriVgBSqYTTbSeRSNK3fx9axQZN
+      op1djxxkb287lMvIWiXNAFBYnJ3G5Ayyc2cjMxPzmlLZlSWGh0fJKBZ87srbWm7pWpiexuIN
+      09Ndz9TEgqZUMZdkIZajubMbEktol34Cm8UMohWX887FR1VFQbtWlEoxX8bltpJMl9m7t1u3
+      AFchEyealGjb0UNpeY6N19+p6mrd/9U/AlUR7UNAiixhcbvIJ+LU9e4mYL5z10rH42gfV1kd
+      rWdnFvFFmmgKmlmMbn52RDAJWygyVmkY990ALHYnjR097N7RTHV9Bx3N2iee3Ey83hsAACAA
+      SURBVP4qfA6VslTixsAoekdWErMT9H/0AbOJDFNzcR2p1VsTBRRWkgq9vS2aUk5fmLoqL/3n
+      TjO/UlnC8RNdEoIqs5IW6O1p0haTy8iCQC6ZpG5nD9oF/EzYbCI2uxvRdOef0+ayEJ2PaeoJ
+      VFVhMQnMz4xwfWAc3Zz3soQsmMgkEjT19rHRzMulHOMjI4x8/Gd+Wfs2eYvdTXOjn1SqyNjA
+      DQqbVHFbHLvCK2+cZnxmVr/TqgJlWUaV8iiOKppqfJpis8MX+ef/+gveOnEWvVLIxcwSb7zy
+      OqePv8UvXv0VC8lPDk/d9+rQFpsDcybO26+8gzXio33XUXobtU4PK2RzZeqbQsSXJpDRtt5Q
+      fTPLRQs9tQEEm94p5DILSxkOPHYQyyYdrZhdYXoxxaNPfxmr7ohWYj6a58jjuzBtsqhPzM7h
+      qeuio0q7IvMqBYZujiFQDaJATXVw01FNNJeZGl+guVnrPmQRyincwXpkRX9huTw+Sbj3EE1O
+      nYsxBBOFfAa7P0BqOYrNr13nFCAdT+OraiO9EqOoqDh0HpuMryBJEolYgTJozuaylCIjOTjc
+      3a37PIB4NIk3VIVTLunqQhDwBCO015uJpeZJp/PU+FZNXfzzP//zP9/0CV8A+WSUxEoaWyCA
+      0xEkEtSq9KyiKgoyJhpbWnDZtKMKxVyS2Zk5bo6OYq9qIODa+JUUuXH5BplSjkQiQSonEwx6
+      NTualE1y+aMLjE5N4ayqx2vfeONkgRtXBskWsyQSCdIFlUDAU6ErOjvObGyFeCxOIpbA6Q9g
+      M2v1DhG1lGVxKU6ktY0qDV0b32VqYoXmFq1zzgrpRJJMPo8zENbQpbIwOcZiOkNsKUY8msAb
+      DmHZEDlJR6dJSD4K0yM0H9zLzWtTNDdrn6tWAVktE65vIuTWvgMYwFdVjcdpo7a5jYCz0rXM
+      JZcZGp4hV0iSSCRQzC48Oi6hP1xNJOjGHqgi7HVrfl+ixYHXbUUxuejc2UHI50L8OKhx32cA
+      ALPdSeeBR/GYMmRUPd9XILYwjaN+B15VWV2saUhZ7B5a29tJLIgUswWoGHFt7Nzbx8JcnOra
+      EEvzUd12JZeWEEQrVbVVFLJF8K+/4MFkstOzt5f5uRVqagMsLmi7XOH6Vqw2F4I3iJBdQdE4
+      hKfIecZHxlmKF2loqta5BERl8Px5SqpAsGsHIauJ9q4Gndab6dq1B6UY58y1ZWjbeGmGQE1z
+      BzarC3ukhmJ0CS0/yWy1UUguIAtm5sensbv1qy/LhRizK052NnuQ0epcRU6+8Q5Fm4uA34ct
+      KxEK+9g4lDl9VfTtdhKNlakOm5lf1t8zGr50kaiqIqcVIg0RtK7gKGaWOHPmOi1tDYTtbjyu
+      TwafB2IGkLJxhiYWkHMxVGcVIa/WglPFYrVRlkrkMxlEhwubpXIUza4sMbu4gtXlp6mhBrNY
+      aSaJxQlOnryIYFaYmV+hobFW051yeDxE6moQTTZqa0JYxI1SKrGFcU6evILJXGZmMU1DQ6RC
+      V7mU5eL7p1golInNzuAI1eDZMJsIJgvBsJvxm8sc2NfJ8PAsjU21FUZus4lMjt6kKJop50pU
+      10U02gUgMXjlCuOzi7gC1UTCvgpdpXyKj945QVw0sXBzikB9A44NM5PV4aWhsY6mtlYi4QjS
+      0hymmghaw5QgWjFRRpIK5EsmPK6Nv6OZhuYGbGYzSrlEWTYRrglT+SuWmRy6woUr0whygnjB
+      SV2VdgULKbdCTvBS5XNSFanW0AVKOc/E9AKBgB+n27u2n7PaogcAR6CW3V0OlhN5GiJ6F1CY
+      CEbqCALzw9dYTGTxOio9PlGQSebKtLZUoe22KyA66Ohsw+8PU1Pn1vzSYPW+43feOEf3kW6i
+      yQCN4fWumaoqCKKTjs4W/P4qauo9moZULivUtLSCN4C7vpagRy+iZKer2c+N0Rka2ps1ZjgB
+      T6iGQ08c4tLlfuYUC6H6ehwaAwEoZEpmHjn0qM7aREWWVeo6OrD5/DhDVXitd+4O2cQKer+Q
+      wxukxRsE4pw8PkNd9caFq0oxXyC5soKsgq86rNkBy1IZp7eatrYyviovjX6tyJNCfGkZwR2m
+      yQ0m0aoT0VExOwI89tghVMC64Wqr+x4FAliZG+fGtcuMTE4xMq7vkmwFs8NHlcfM7OwM84tx
+      jVldIZct4Qt6KBULFApF3QhJIZNBVmSiy7F1G05rqDL5nIQ/6KH4sS4tpGIBs9uDWSlTyBco
+      a5RdUeQi0xOTFLDisDtwbBJGnL0xyPJKEadbpFDSi32ImEtxzpy/xNj0kuY7FgsF7AE/QqlI
+      PpdH1nDN5HKJQrFINrsaOTGZTJ/qToP1SAxe60cx27DZ7ZSyWc3IjSKVKJZNeL1WioUCxVKl
+      CyQV8yiCGafTidPpxOGwI+WyFMobNZaJLUeZHh9nfHyCRGZ9+ZwHwgUSRRPzyxl2dDbicPvw
+      OLXW8upagSZVUbC63Dg1FsKixUYoHCYUcnL9wjD1LfUbrNyE1+9lafI6ly6PkSqptDbXVbot
+      UgmT3UlVlQ+Xr5qG6mBFaFIQRLx+Dwvj17h8eYy0LNLSWFPptjhcWKQ0pz84x0IiTqiuGY+t
+      cuy7lQogimasdjsOu1V7nWMVsDgdZHMy9XU12DSNRaS2uZXG+loSw4NQW4tj3UwgYHe6MeVi
+      fHDmEvPROI1tbdg36MqvzHPp+gAjQ/N4vDac1RECLofmyKmqKggCKDIKVgKBjcEMkdqmZiLV
+      VYTDYTyOIoODCSKR9TOFaLHhdlm5cvoUM3MzSK4G6oIb1x4K89NTRGMxFhaXSGcypHNlQiH/
+      ht9JxOmwEV1eoCip1DQ0YLvNLX4gXCCrO8ChIwcBibGhaeRQm4ZbojA5MoLJZiWRVujr0w/H
+      3RmJeFoiEAphVcooUPG8XCrOYvzjzRcpS3wlrelHg0Q8IxMKhRDLJd3ZZGUpisPtwRX0USxK
+      sCHiLphERJOJTD5HvlTGgYWATztkarE7WJ6boa4twlYqy0j5vG6MPDqziDscwm4yUSzLsMEw
+      XYF69vaYuTEUxWQyYXM4dF3GlfkJYpJIailO90PadyjfjqqWKRS0t8LkcoZ8UaS+q45MLAkd
+      6/eHRLOdzp6+2+SLFEtg1VgPFbLLZMpu9nTZuHBtmsP7m9c+eyBcoE9QWJ6PamxylRgdGCSZ
+      jvLeiYvYndrXba7HTE19tc50baW1uQF/0Ee4vkZzFPCGaujs7Pz4Tx2j/XoVy2y0NtbhC/mp
+      btBeTANE2toI+gO4PR6CHq32C3j8HrLJJPl8npKkH/mYHx4hkc6wEouSyFXeqlmheRO3pal3
+      Bz67C3coiF8rtCwIuLxVWMqLnDn1Af3jixpaFBanbjIbT3PxxHsUTFa2sI8HCJh0BC22IK3t
+      tdgFC/Vtdx7sCukFBkcqd+GziUWGRubIZ5boH5qnOrL+vuEHzADQjm1ioaWzA4cjzG+9+DxC
+      Kac70mZjs/zz//3/cmNyBNUV0HlBiYnJmyRXyiTnF7lzYvZmlJiYHie1UiYxu6g70i6N32R2
+      LobJVCaW0ttVVoiu5GhpaSES1trEU1EUhbqdO6jy2Siodqp1F9Qy/Rc/4sbgII62LkI6HXLm
+      xjBLyQxCMUuiqJeYkCOakAhHqimntFJVBMJ1TQStIk9++3vUu0U0bmldYyUeQyqXiS1L9O5r
+      1pQpF1cYHphEdNuZG5nVV3YHXIEIfX07sAplCvk8UxOjZIqf/EoPhAFIuSTHX32LiblpvPVN
+      GlOsgNliJpNYYnFpkYVl7RvaAcrFAgiwtBBF1TUTM5HqKoq5GBZ/aAt+oFk3BwYsVFeFKWSj
+      2EMhXfcgUFeLywbL8TxBj14sXaFUKJJOp8kXtEf2+MIUQ2MzuAJ+PBaz5oJ6FYmVrMDO7m6a
+      6sK6m1LVLQ1Y5SLxAviseinLbvYffoSWxlq6NdNGBESzGaQcM7MLTM8ubPLdg9VU4v333qdg
+      dePQuRJVtLiJ1PiYGZultl1/BsilM8hAsaTir1hzrCIVU4iueg7sbmFlfpm52/rPfSmNuJHE
+      7CjH371C+8F2BKGOXZ3VmnKlXJqleBKXN4Df66qYLKRinnyhSGYlQUGwUVcbwa4ZIlSRSiWk
+      sozZYsViMVfoUlWV5Ykxyv5abNlFcrYqGjVj0SpSsYgkK7q6AFSlTKFQApOIzWrVmfpLvPPa
+      24Tq6nEFauhorlxQryfN2Q+nOXi4R+Mzif4LlygJZnxVDbQ1aruDilymUCwhmERsNqtOyLTM
+      2ffeRPDUI9p87N/VqtkaVS6xuLAIFjfVVX4NXTKTw8PEs3kK+SIOd5Ce3Ts00xdUVaVYyKMg
+      YLXa1qWjr7WqVOCjEx/QevBhxj+6xO4vHUUzh0CWGB4aQpZlrJ4AoXCEgHs1HPpAzAD+mib2
+      7O9CLdvpaNG7zFpm6NpZ3j/xEafPXNR0NUr5LLF4gkyhgFQoaIcuAZD48Pj7zC4sshxLao5V
+      cjnHyI0BBgauM7G4skl2ZolT751kfnGRaEL/EpCFoatcGBpnYX5RI1R3Cytf+tpz7N27F08p
+      zcom64BVFEq6bouIRTRhFgXKqr4ZTV8+y9WJWRbml5B0E9hKZHISqViMTFY71AuwMNzPu++f
+      4eSpU2Q0v3uR5q6dBG1Weh85hMdU1nUZy8UoJ947x+LCAimdZ0qFHFjMJGMx2vc9pNn5AcpS
+      jsRKGpPFjj8QXuv88AAYQGp5jmvXB8mUVYRymZxOLB1UJNVGKOTBKQqandblD1PtMbO8UiAT
+      XyBT1PoRity4fJ1YOklyZYVMVjsx2Wxx0XdgLw7KFAsSiqoRu1cKDFy+TixzS1dBs13R2XEm
+      5uZJJFZIJlPrDovokY7FKOimc99CQNTMKQIosJBQ2NXTysLUnMbnKguTo8wsLxGPrrZLax9g
+      FSeHHn+Crp3tdLRoJd6tUsoXqKqN4LTaNS/XXkPOMDI0wvhCXNNlzCWXud4/RrqYIplMUtDY
+      B4DVjbeQx0ImmyeZSOiu5ZRyCdEZZMeOLkLe9QGIB8IFUpUyiwvzyIKNSKQKc4V7oCJ/PKIo
+      sowqmHRdjfjUIGMrJvymJLFSgAN72zX0fUJibhrZW0VYN98fZoavIPnaaNXdpV4lOjWJWF1L
+      wK6Zk/gxBUaHl+noatxU1+jZs7j2PEStvdIvL2XinDt/hZJqYd/hgwQ0ZAAWJ0dYSOapaeog
+      4r/TDeo5RocTdHTVbyKT5uTxMR5/cu+Gf1c/PtL4ybFDq9Wiu+5IR6f54Ow1zK4Qjz95UDOt
+      4nbdU8NjRLo6NsgpJOMJhq5ewNexh5DDRiDk1zSospRh4MoNSoKZhtZOaoKfhJcfiH2A1OIk
+      k0syVdZFRiUz3U0bF5xlJoZGKHxsqzann9bWes2X9UQaCRWmkcUwDX4H+mlzq2TiUcpWv6YB
+      ZFcWuT44Tqms0F27WadeJR1dxuyvJqBvS4DE/FxUxwDKTI3PUdvUSENvLyad1ITZwWFSeYVI
+      rYN8saxjAGUSySwmQSSXzaL6nXfMLJ2fi1cYQLmUYeLmzMejq0yoXstFVVmenSSaujWbWmjf
+      2YFdxwAmbgwjOIO4RYky3MEAIDo3T7DCAKAsSdR17ERFQirpOzOCCgVJxmYpU5AfsAMxAKLZ
+      TDq2wFI8yeTICNkK39eMaCpjdbkRykVkQdRteCGxyGyiQHppBhxerDpRhlsI6J8kstsd2Gw2
+      XG7PugQqfV1bQ78YgEikJkD/+dNcvjFKoag9qVc1N9C9sw2w4dPIh1pFJrqSo7W1lZqQ9mGS
+      Da3SbJfZ6qaju5vu7m66u3sxLU5RmfMqYDGbKKkibruJgqxi2WSHrql7J+1NYez+cMUBHM2W
+      aeoyEYrUEL95g7HpGd5/9w2Of3hF86CUVEwjm9w0NwZZ3HBI6oEwAFewlvbmGkK17Tz15CO4
+      LBtHvhST8zKm5UlMNa0kJm6it/1TlkqoqorJpDA6OEbxDtcdIQi6PXd5chxbdQvVToXZJf3Q
+      6xomYQs7swKCrksmMzc5hT1QQ293LZMTWptOUMwkKYhe9u/tw2XVWwMolPIFEokEmbz+wnVd
+      y7aweyWXZY11jszY8Ayt9TZG5sGRjhKXtJa3MkuzU0RTeQQEfB73JsHS9e3SHaRcLuoamoiE
+      q1cHxw2fK4qMaAtSH7YyF4O+nvUz3APhAq0sTLJSshGxpRiZjNHbVjnNKsU0y0gwP4WkG20H
+      b20rvfbVBV2TxY75jjVkFM1L4ACqmltZuDFGXjCzo+XOo6iqqLq6bpNC0Y1OlVleKXHgYA8m
+      QWDXTm0pmy9A4sYQl6JeOnu7cWu6SibKpSyxWAwPNsKBzdcvm7frEyw27axL0aQyPR9DzhSI
+      mySqdUZtt8+PxaVgQkURtlaVQZEVTUMpSxIN3X0kVtJ073sYn89V0aELmQSTM7eSAQVy2Twu
+      /yfxogfCAGwOB6nRCUoWmaxUpKXRv2EW8PHUs0+s/W1lfppEIkuNxsZHLrbAO68ex14XonvP
+      EwTvYACCYNIdtQuZFCVFwOuyIyt6hzBv17WVGWA1NUEbM1Ypzunzl4hU1+nuA1jMJqw2B2VF
+      3uQYpo2jX3qSZCaP1bHZMcy1Vm0yA0hcOP0RzmAQb3sXgYrPzTz0+OMA7OoByDB0Y57wzo2H
+      dWQGLl1EsFlIS2ZKmQJPPHP0jm7Qxvo+tyjl8+SKOQqFImLZRFjjCKnTG2bHDh/zs7OUFchn
+      05S9zrXAyAPhAjmDDTx2eB9ul589+/s0XKD15NMrpPPaTpBULBKuDuJw+1HuGEcHzWNQH1NI
+      JfFEmuju7qw4wPIZ1G1ByITNbUZULOSzeukSsDg2TrhjJwFTibhuXD7HuTPX1q6l/XzIFBQr
+      O7u7qa+u7P6VlFha1HIZSxRlN+0tNXh9ddTaTLrVMW5He1e5zPLiHPMLUXK5HLm8dggaoJhZ
+      ZGR8GaEc44PjZ5lauq220Raef0+JTQ0xNJ/G6SwTj7vo2X3nciAC+iNtoLGTpxo7kaQc05NR
+      FIKbWrmqarst8flJJqIZJOEmFxYmae7euWmodE3XHVu/6ippUySWzJHPQUmSdeNXjX27uHZ9
+      EMEeoMWrlxhoQ1VW4+guwUbgjh6cukm7wCnKXL58GV9VA62akaD1aM0mctlEfb2PhbiE0yxh
+      qmvEUSohiSKWTSrCabdLpKm9C6mYZWE5gcunn9JidfixW6bJpKGupXbds+77DODwV1ET8qBI
+      ZVZWouSlLYxWgoDeyvVWUSSr1cTirPZBkPXy2lXEAjWNVLvsVDW2U+0xsZLe/B5iuFWR7I6N
+      x6R5hBHAwZ69+2lqraFv9w7dH0dVQTRbsFm1zwusUkI1B+ju7qaxZvPqEndul4mSrLJz154t
+      df5VbRrtVhSKpSKoKlJJQpbzjI5O3HFj0CRqZbMKCCYTI5cvItscXL9wsaKm0ZqkyUpVyI/N
+      G2HPnt00Vj1A+wBOb5A2bxBV6WBHZ5qZ8Snad7Russy9tXDdwlir2xtVYnNjLKQtuD1hGjXW
+      Ekq5wPzCIoWMTHXAT0uVV0MPQJnxkXECNXXU9e5aTQrTIBNfYDknUFsd4JFDvZXPk/OMj0wQ
+      S2Xwuu0sLMUIehs0O9LMwHXsjT1IEzdYTFdR59OaBcx4rQXeefdd6lp30t1aeb4YILM0xdB8
+      GpfNxu6HO3XeETxOkWtXLhOKNG7JCBSNTm22Ounq6aVUXE1TUZUciaSIQ8PlVRWZkWtX8URC
+      BDp3a9RRKjM+OMx8fAWHeaaizOXtFHNRllOwd1cdZsv6sPF9nwFuIZhEXB4H8fll3aJXa7I6
+      ozZAenmG2WgKsLJzV6duOvTI2BhLs1HmJmZQNBd/As3dPYScFqRikaLuesJMS1szE9fP8+HZ
+      CywmKutsAriDEfxijlMnTtI/MlnxjibRQXt3M4U8dHe1kFiM6s5enqCX2ZFhoukM06PjOiFh
+      hUxepautnlhUP4Qbn5kl3LGD7u4OPLo72GZMlHA4XJR0j2BueB+dBbUgCNjsDlwuFxZTifl5
+      7UJbUjHO4MBN0oU0UzcXNYzXTGt3D19+7ps8+vA+nni0l9mJZQ1Nq4ZXTC8wODjIcnL92uqB
+      MYA1thBFWR39tbuHaIZzJ9/n8uUBVKtNQ52KqpppbmpCKSfx1tZrToOixYHX50SWVWqbmjdZ
+      BJe5OTiMv7Gbgw/3kNMp7ZhNLDIdLXLg8GGqrehM1w5a61zcGJmmpqle96uwuvx0ttVhdYfZ
+      vUs7mxJMiIJCPl/QnZUAvDVVzF6/yuXL18npJunlmJ6LkU2mWJhd0tV1O583wcZi9dPaFmFu
+      Ypn2ns3TRgBkKUcyqR04EEwiHqeDXDZbWcT48zXz7qMX8lqPfrzd4a/l8UdFCiVFs2wKSAxf
+      G6QIVNWEsZpN+jWGLHaqqwJc+eAE3YePUh/QyqdRiCez7O7uxSYKtLdpu0qFlTgWfwS/24m/
+      o13nvWRUVUA1WfG59IMB0alphldWcFoCRLMFGq2V1SrKZYHDTx4lly/QYrPrGlMhmaK69U4V
+      69zs3rOTybkE3X16bV/PZi6qLBVYXIoiyzIt7dqp76oqI2HG67JsKbTMJoERs9XDQ4cOUVwZ
+      48p0hubqT36jB24G2MpmjCCYdOPfK7PjHH/tBGMzo8zFtRauVnbs3k1t0AUION0u3S+hmE0w
+      NrVAQ0cn/ooKc7cw4bWrXLx4ieHxOV33zREIsHRzgMuX+0npnIMFAdUkouQTzC4ldGSgobeP
+      7o4euns7qdGIAhUzy9wYmUEwiTitMleujuq6U66qKmYGLt1hBigwOjKLx+elXNrarrKou6CG
+      m1fO8eFH1+kfGMEX1DY8WcpQFv3s29vE6PVpzTYN3hhn4sYQBcDhqWFHp3bFunIpzcUzZ7g4
+      MEekev0A9cDNAJtUSyU6O8rsiojP7aFVp1iqaDbT2FpNTrZi0khhXqXI6NgyDx3ezYWz/VRX
+      PVJRnQzA4vDgdVrIZ7MUJBmX5o6rQqoosv+RfVg1inDdIhePU9vZR1fd5nF0RS5jMlux6KY5
+      Q2p+gsmogjA2RvcjhwltqKIhmq2kEpPEEn6k1AKqRT+Rz26343a7UQQBs1DZaRVZIp1KkpMF
+      eiIRLDb9rNJSJsal/mmq6vzsP9ylK2exuwhXWZHzJd0Bw2RxYlMzXOnPYreKxDMFguvC0FbM
+      aor+/hFiShmX2Un7Du2DOibRhs2iks7IlJX1Rv7AzQD6iWJlbo7fJLqYYGFiFklDLpeMEc/J
+      hBtbaawKEdZ0WQDMuJ0K1/tvUCit+rdaiFYnvbv2sHdfL+TzOqOoCbe5xEcXLm46AzgDAaZv
+      XLnDDKAiCioF2YTfq3e8A8olCavDgUUUKi6QALA4/DzU104ykaBg8tIZ8VLScUmmrw9S3b0b
+      RzFJXOMYpqKUSSUzRCJhkisxlmL6C+rJa9eJZTLEZuZIbxLaDETqeeTgI/T1dmkOPLBacqaY
+      ibG0MIct3LSh8wOY6OjZwxNPP4ZTgM0Wj4XMEmPDC1TV+olH1wcpHjgD0N70UFEUkZbWNkQ1
+      jaeuUXPhZ3V6MBVSZBUrNnLML+vVlDcRDPoRTCZadvTRWqddkl0UzR9HM4rc6B/T0SVSVVdN
+      KFiN027R/RlsLh9Bj5/quiCixkh7i4X5ZZxWhRnNsuerWJxeqvxuQtU12DRdDQGnL0RbWyst
+      jXUsDg6S0vhaFUWhcVcv0cGr5O1+QhqZpWaLnXCVg+XFLAGvlZkZ7UgLQPOunbgFCcnuI7DJ
+      DDY3OsJKocTE0Ihu7L5cWmF5qUBdaz2pTRIRp0euMzoVZ3FuSnPwURUF0eqj76EdFFLFB78q
+      hHY+isTYjQEW4wVC1SEsIpova7ZYqWluopiMEk8XCfj0ZgCJ6bk0fbt6WBy/+TmrQhQZvjnG
+      4tQiU6OTukf8FoaHmJ5dIBZbYimpHSoFmZJsIuD3UsrpzTir2aCJbIlkbHm1ls9nQmXs+lWK
+      lgAP7d+H3yyT1Tx5pZJNZ8gXciTSsH/fDl2NxXQKqz+ISS5vGspu37OL1NQYvuYO3WOMosVL
+      38O7cYlOdnRvLOz7Cd5QNVVBJ2aL9kK/kEkwOTXNzfFZbB4/LtvGMmkPAKoiMXjlGsuJBM29
+      OzUWJlY6e3upCTgoyzIWu1O34Ra7B6cAta2tOHVrXYr4PSLXrl5HFiRmNFwgVV095bT6x0xD
+      k/YCC6w0NTQglZL46+p0N/CqWloIeqwkMgpVPo2fXVVRVQsPHdiFIth5aF+37js6AhHCLpHG
+      7j7C7junjphEUbNzFHNpktkCilwmHk/ounjhmlaqA1aq6xtw2PRH9ujMAo29u/BKWVaksq4B
+      Tw2NkizmmBkbQ3d/XZVZWIxR39ZF2KO/hjGLMomUjNOpPfs6vCG6dnTisXvo2LGD8IZB8YEw
+      gJW5CQavjRJPr7AUzei4EWXGx5fp2dXLwuiQ7tU6sakxhgduEs/EmV7QjqSoCkQamrCpZfw1
+      zTRruECp2ALn3nuLEx9d4cPjJ5Bd2ncIABSyJcKRwKY3HJbyWeyhMNUeL1p7GLKU5YMTJ+i/
+      doW04sS1SfKdWk4yNhlFLUtbOl+syFo5/AI9/3935/XcRpbd4a8bORA5MYA5R1HUaLS2d9ZT
+      a69T1T747/Ozq/ziKj+4Zu1ae3fLo5nd2ZHEJOYEEkQgAhEaqRHaDxxJQ7IbhARqpNL3xmLX
+      7QZwb99zT/idlccUontsbGzSO72Eq8093U4rm6sviLQxzbxDg1zsbFCzWLg4OtPcWfX6FsWK
+      iEcrj0lRUBCxGmFjdZVYRj22AnCZziLXyuQyedX7VQoZdnf2kRWZw51d0h9jIMzuDeAP2IhH
+      s4R6tfR3RBx2HZtrG8gtmVMNW9QRCOHzWknEcwT9auJSJX7zH19xUaiQuygSHh9Q/RKcvl5m
+      Z8cx6o1YLeY2dcV1ktk6i4szZM6imiZQKZvG0TfC9PQ4dhVd0Lqcx2gb9U9soQAADbVJREFU
+      5NGTWS4O1XuWvcLs6mci7KFeb3QVcBL1Jmbml1h68IB+n/YCB5FSqYTVBKWqtskltBpEI6ec
+      xdIMTQ6rHHDrnJ7ECI1OMDs2Tq/Po7pL5GOHRLI1GuUSOn2VlKo7+4qJpccsTA0QHh1VPVBb
+      HF6mpmf5+ZdfMDs9Qfro4Nqu88EXQCEVY3s/gj0YxG3rQSdofcEiPQ47giAQGppkbMB/64qL
+      w23yooO/+vu/ZSEcpFZTSxKw8uWvvqApZSjVSkRPtRPm7P5BJsN+whPzKuKsr1QhthGEKt/+
+      aRWrX10Y6+LsgGixQe5sj2fP1sireFsMZjcum8zefga3p8nRyTkNjdldzSb59v+ek8olKFS0
+      9sI3aJlAnVOlUNYxPBjiMqm9A8SPopicLjw2M7JqPKfO2UmMaiVHMlUkdRpVNYGqkoRcbzE8
+      s8DMaB+S5pnpqjfZ6Pg45fNTtK96g5QvXjuffPA4gMPfx6K/D7lapikYsai8Ha9oEIsXWPzZ
+      Ci+ePqM+0nvLE1TKZ2m6ZPxmM6V8lppDzecuYLY5mF18yOzCMrKsPYHSxzscSHoG/S5szdat
+      RhSvOsR8//S3XJYt6IScqtCudFlgdHEFt1Hk/GCbSrWB03zTd29lcvZNCdj+H/9IKhRQVYWo
+      lkogNEmnLukdfFcT6G2wMT/bTzxdZXFpXPMq/1AYu9FGRariVPUC6XE7dURjOWRZQGexqxbE
+      B8amSK6/JCIaqFZllh6uqFzV5Pz4hOIPukgNc8+dxfXArYzXD74AAMrZKM92k/SIVbzjy4S9
+      at4bEY/bzMv1TVr6FmfR1K1dYGhhhd3tbVYjCkaHn7GAvb0mhCBgNGkfsEwWA/nTNGmhid3j
+      xaJ6qBZeF/UbbCPq92rVSKULWL1mMtlLAn71gM3dKFTLEq7RWf7G00tRbuLpoJ1qN9RrRfZ3
+      j6krCpVihniuwReP1D1BLblAsmxidlBLtdrI7PLy678acpGLeA5r73VTVdBbWFxeeV3GqD6W
+      jv6RN2kZcjVP9iJP6FZTjuvcdLN/cBMIrqq4RJ0ei1XP0e4RNZXtU2kpOL0B9I0adv8Awyom
+      kGgwM7O4zIOHD5kd9/Ps6Ys7M0vbYfEOMDcWxul0tCnYEBgITzO7OMHEqHoC28jiIwylBIcH
+      h3hH5gg679ZC0Kot2H3+nAoG3P4A9fQ5yaJWTZVCOhkjmUxiCw/heEcbyGCyMzQ8gF5oYfUO
+      8WRZPWVaabUwOvwIpSR7+8eagbcf06wXiEY1Wtn+UNfRWR4Q1Cs5YhqZpdeeU/kIF4Dd189Q
+      wI7R2c/MuJrEeImv/v0/uawplLMlwhNqArr3jyDqMJpM5BInJHNaE03AYDThsBvZ2T1SXXCC
+      aGBkYprZuTn6/Wo9Bm7zSmjqJr3hAOt//o7N9VXOpVabHaDMxtohBoMBV8CPsdOZdINKIcHv
+      f/cNVcWASWyQyqjJP7bYWV8Fm4GLaI5UMtGRd+pDcNNT91GYQJVcgsNYHpdOojW0TOBWdNPK
+      3/36V+zv7SDVK5wdx3GOaGvxv0Js45bsBLlS5DQSoVRpElDNLIWrngbnZKQSJrO7y8PmXQj4
+      B6fxhxUazRZ6fZ3DgwTjE2pqbkZ0QpnT01N6vH3YbzWs6wxzT4h//PU/vf47cXBIKeC6EcBS
+      KEslWth4/JePONl8Qb2j+S8gtsmfeisE7V4DP8YT8l+b9B/FAmg1GzTkKk1zk4OXu/T6lrFe
+      O0QJ6IwWpueXmZ57QL1e7+wt2nzXKOkV1h4XHrcLpzdIwHXbZ60oCo16i6GpOYa42jHuawFo
+      mUCCIIAg/NDPt0T8PK2xAFq4gyMsLGonpXXCzdys7Hkc48TNCK6OqbkJtjdeYtQL6IKDuNr0
+      OHuDQutO/dMOURTVKrSbpM4T+CfGXjtQPooFYA+M8Bc9IaRSiRGTDXObVFoEAYPxbpnC+yB1
+      tEvNHMJeOieSyDPedyOuoMhEDo9eB+UsPV4GB7S60rwdWibQTbSTB0Wk+B5f1yR6Q9ry6G+L
+      1v3s7hCPHgXveCa1Ae/hoV6P1UHl841rPvgZoFLIcHx0yM7+Gt98s43RbG6jdfM26PD4uzNJ
+      nMEg0kWUlNTA61LLWtFRlnIgKkj5PMWK/J5NoJuY6BvQqs81MLO8TK/XhdfT2bmjEzwDfZo6
+      Pq8ECTpHuKff+mosrXs361X+9Lv/JRI9RPQOXHOXfvAFUMqlucjkEQ167A4PFk2pv7elRVnS
+      Tijr6NnyBXz9wyw/eoTbetsf32xkKcoulGSC3sV5irGYZiS4MxQajQaKouAdGMB+pxlR4/xM
+      KzuzwvpmhIDHzPraXpdxgDdkzs6183fems7Mlk7HUjT0j+RKlkT8klKlTLWmXHOgfHATyDc4
+      hW8Q6pUie80TcqWaSu73u6BQrXT3U1kcdr775nuKF70MT07iuuFxEUQjulYRCQNyJILR3tPl
+      m7ZJ9PgQqVanx+1noKPyUC2MOKwKp2dJnH71ssOPgXvbANqURJrtQZYeTpIqNJibv15f/MEX
+      wCsMlh7mFhfudcxuvUCiaCTgdyHXykTO4jgnh65tszq9iyc/f9ztY/74jpgNOi6LElUpwfON
+      Gp8tDba5XlAtPWzUSsRSRZY+/xlyuUAse3cnyY6fsOu0CkifbvFsXyLo1TE1291vnjzeYO1E
+      JuhSGJ9Wb80qVy45OIlhMbX4r69S/PUvf4G/5yNqkXSflNJR/u1f/pWtyBHekdGuPmD2PIqt
+      b5xel4mj1U1y7923XSNThKXlh0xNLbKycFNb8yZvGof8mHo1RyyRAwT0uiZnp7fbh74r3adV
+      QDp+Qa1WJpcqoFNtiv4WYyVTVKslchkJnZZUvNLE5u5lZnoYY6vF5Y9yiz6aHeC+aMgygiBw
+      EU8zMBju6m3lG+jnfP+cSqtJeHzwRqf194Ge3PkOq2ITv9fHQEi9Uu0uzD1BAvYMz1fXUBoN
+      ZubnfuLDeXvGllbQnZxjdPg0C2I6ZWLpEYZIDLPLryKedYXR5mdsqEGp3uKLX/4Ms+UjUoa7
+      TxRFoSc4xD/8s4MaRtzOuyTB29MQjMzNTFOXLmlZHJg76/7cBQqh0TmC/QH0eu3c/FazTrXW
+      QBQFhlSaSAuintHpxR/C/p2nE7R7rmqlgiKIeAYHNSdap1QKl+TLZUxIKH2+rhZnOZ+hWK4g
+      iyWUkFd1LLmUZm1tj/BQHxaH95qj5ZMygQqpGC+3tjiJxolHoxQ0FKQ7xagXWfvua/aTBWyW
+      95t0doVI8mSH00SKvGaOD8RePmf16JREIk9Ao54ZOpdrv5syf/jt1yQTCXQuD1pyvJ0SPYgw
+      uvCQevKsoxTmdpwdRRlbXKYWj6Clpy0IAqJej9VqudVu9ZNaAM5AP3NTo7QaDVoKWNpket5F
+      Nh5h/eUu9ZZIoyJpyrHfLyLznz3G77BjNmnvACaLjnw6Ry6X/4lybvQorTK5XI5Sh91m2uEO
+      utlbfUYJhdP9065cx26fk90XzygLCqeHUfVacYuLB4vTWCyWW3Izn5QJBJA5j2D0hvEpFxxH
+      M8xo9h1uj6d3CLmQIx9awlE+I5Mr42mj1nY/NNnd/JZ8PYDNbuXzx/OqW7rO4uPzJwN4zD/d
+      zzcxt8LY+N0ShZ0glyX2d08xmq189ovuEhvlSoG93TgWq43HX6hX9zWqRZ7+929oWY2EZr7k
+      yfQbt/AntwCsTie53UOKQoMGdcphD9Z2qRVt8A6EOd85RgImB7o7T3SGQqMlUEwn0ZmHNW1j
+      nVjl9//zB8aHBxieHLuzoUj3CES2vidbyhMM9jEY0ipb7YxqRcbfG0KsyV0GDqFabeILBTA0
+      tJUoWs061h4XlkAP3KjG+yj6BN8njXKOta0DBNHA5Nw89jYqBnfRrEm8+P4FUlNkdnmFQM99
+      BOjaoVDMZclLVRxuLz02damPVkMmdZFCMVjx+1zo3rt3SqF4mSFflnF7/W0L9juhVikj6PU0
+      mwpms5qA8VuMVS4jGPS0WmAyqfdLqFfzJNIyfq8Nvclyrb77kzoDAOQu4lgDw4R9Rs5i2vqa
+      nXBxfEg8nscT7KFU+inOAFW++3YNBDTqma9IH20RLdaJ7m6Slrq3yTt5rhfPthCbBVY3j7se
+      LX64RbLYwNLl5AeIHrwkXWpi1pj8V7R4ufpnTqIxCtL17IBPbgHY3B6kxAmRZIFCKka5A7Fd
+      Ldy9/SwsT1IrKTjf89u/2SjzcnWHfDVPOpUiV9TuEWa0mKlIErWm0ra10P2hRy82KBTLGMzd
+      nYMURcHmdHK2u8Ha+q5mu9tOx7I7ejjZWWd9c19TKkfQWVh5/IiAz4fNcn33+rTOAIqCoDcT
+      DDo4Oc6w8Hjqne3/QjLC9tklLpueZr3RVu34PhAEPb6+MHMPlmk1qlxcqrlBFXLpJMbQJE+C
+      MplsDqvh/T5XUy6TKcpXUutSnqLczZRpsru9R3+fi1Y9Q0GSungDN9ne2iMc6kGJ5ilKRfUY
+      QCHBs60oNouRekWid2aFPuebz/BJ7QAn6095unGC2SaC4MLdRcF4ZDfC+FyY03iVYZ+JRKqD
+      RtldUK9mOTq+yuwUhTr7O8eqKQcn2zvIiOiNZqRElNR7NoHKuSTReP6qg48FdnciXYxWJ32R
+      R2+0MjU3h00uddQlUh2ZdKqAwWRnen4eU1VSzVJNHJ0SmppjcWmRxfkBTvZj1/7//y16smJT
+      u5XwAAAAAElFTkSuQmCC
+    </thumbnail>
+    <thumbnail height='192' name='Pie Chart' width='192'>
+      iVBORw0KGgoAAAANSUhEUgAAAMAAAADACAYAAABS3GwHAAAACXBIWXMAAA7DAAAOwwHHb6hk
+      AAAgAElEQVR4nO29aXAc53nv++tl9n3BDDAACID7ToqkRNKiSO2KFh85ihzbUU5yrGzlbK6K
+      c+re+81V595vPnUrN07KdSqLU4mdaHEkJ7YsmTa1UBIl7isIEiD2dTCYfe2e7r4fBhhgCJCi
+      tuSQ078qVjV6emW9/36f93mf53kFwzAMTEyaFPE/+wFMTP4zMQVg0tSYAjBpakwBmDQ1pgBM
+      mhpTACZNjSkAk6bGFIBJU2MKwKSpMQVg0tSYAjBpakwBmDQ1pgBMmhpTACZNjSkAk6bGFIBJ
+      U2MKwKSpMQVg0tSYAjBpakwBmDQ1pgBMmhpTACZNjSkAk6bGFIBJU2MKwKSpMQVg0tSYAjBp
+      akwBmDQ1pgBMmhpTACZNjSkAk6bGFIBJU2MKwKSpMQVg0tSYAjBpakwBmDQ1pgBMmhpTACZN
+      jSkAk6bGFIBJU2MKwKSpMQVg0tSYAjBpakwBmNw2FAoFjh49SrVaBcAwDN566y2OHj2Kpmn8
+      4he/4NixY+i6zs9+9jNOnjz5kdeUP++HNjH5rJiYmCCbzaKqKrIsE4/HuXz5Mn19fTgcDkRR
+      ZGxsjKNHjyIIAl1dXZw5c4ZVq1Zx8OBBfvSjHxGLxbj//vsRxdq3X/r2t7/97f/c1zK5XXn7
+      7bc5fvw4nZ2d2Gw2RkZGOHz4MH6/n3w+z09/+lMqlQpXrlzhww8/JJ/P09HR8YnvFwqFmJqa
+      or29HYvFwvj4OB6Pp/77unXrUBSFd955h9HRUdauXcu6detIpVJ8//vfB8Bms/Hzn/+c8fFx
+      WltbTRPI5JNhGAaTk5M8/PDDuFwuAERRZN++fbz55ptcvnyZe+65h40bN7J792727t1LMpn8
+      VPfMZDLMzc0xNzdHqVQiGAwyMTHBxMQE3d3dXLp0iQsXLvDII4/gdDo5efIkkUik3ht0dXUx
+      MzPDk08+STAY5MiRI6YATD4Zuq4zNjbGSy+9RC6XA8Dr9fLKK6/Q0dFBpVLhtdde48KFC3i9
+      Xvr7+zlw4MCnuufY2BiSJDEwMMDhw4dxuVyoqsrU1BTFYhGAHTt2kEqlyOfzPPHEE7z77ruc
+      OXOGDRs2cOLECV577TVsNhtWqxVVVREMwzA+9f+GSdNRLBaZnJxkfHycQCDAli1bmJiYwOPx
+      8OMf/5j9+/cTDof593//d5599lmOHTvGo48++pnc2zAMyuUydrudRCJBNpvFarXS29vLAw88
+      wIsvvsiRI0f49V//dURRZNWqVfzkJz+hUqmwevVqBgcHiUQi7NmzxxSAySfDMAyOHDmCqqrs
+      3LmTc+fO0dnZyalTp7jvvvsQRZGjR4/yyCOPIEkSsizj8/lufk1dp1pV0aoquqahqSq6rlHA
+      iVWWkCQBqyxhs8rI0kcbL4qicObMGe655x4EQQDggw8+YNOmTfh8PsbHx00BmHx6KpUKUBtg
+      3iq6ppFLzpKZnSYzO0U6PklmdoZKKY9WVTE0Da1apaoZvC7dj0WWkCURiyyyY/taNvS04rFJ
+      BBwyTqtI1CkiyZab3vPs2bO89NJLbNiwgfvvvx+32226QU0+PbfS8KuqQjYxw9zECONXLxAf
+      uUYxm8LQ9ZuepyFQkFRAre9boxqMpSv1v0Vd5fFT/xWHvw25Yw9S1xcQgz2I7mjDtbZu3cqm
+      TZsQBIEPPviA/fv3mwJodjRN48c//jEdHR3cc889AFy+fJk33niDgwcPIkkSb775Jg899BCV
+      SoX333+fRx99lI0bN37ktXVdI5uIM3LpFKO9Z5mbGEbXtE/9zDabteFvV2kCSyWFPj2LMn0e
+      Tv4dUrAb557fgugOCPSAZEWWZWS51uQPHjwImBNhTc+C63JsbKy+r7e3l2984xv89Kc/BeAb
+      3/gGP/7xj7HZbPzO7/wOv/jFL24oAMMw0FSFkd4zDJx6j/jIAGql/Jk9rySJywTgK1xDMBqF
+      JdlcEL8Is71g80J4E7TdBa4ICIvjB1MATY4gCDidzoZ9kiRhtVqXbcuyXN9eiXIhx8DpY/Sf
+      PEpqevxzeV6LRUYUhYZ9wdxlBJYMZQUJ2dta2zZ0KKdh/BhMHIeWTdCxD3yrAFMATYVhGFy9
+      ehVN09i8eTNQ85R8//vfZ3JyElEUOX/+PD6fj+985ztIkoTf7+c73/kOe/bsoVwu8xd/8Rfs
+      27ev4bpKucTV429z+dgRcskE8Pn5VaxWSz2MofZSGt7CcMMxksOHaHMvP9nQIH4RZfYy/yh7
+      eXjzl0wBNBOGYZBOp1EUpb5PEARkWeaRRx6ht7eX7du3MzAwwO///u/zwgsv0NPTw/PPP18/
+      /vHHH69v65pOfGSAD3/yz8xNDP+HvIPdbm0QgE3N4i5PNBwjeaMIonTDaxzJzvDL9BneHHrX
+      nAluJkRRZOvWrXWfOMCxY8c4dOgQsiwTCoW4++67sdvtnD59+qYzt2pJYfL4EFfeOM7cxMh/
+      xOMDtQHwUhPIriSwK0tCLAQR2RNd4cwaWa3Kz/MJAHRDM3uAZmIhfGFqaopsNothGCQSCY4d
+      O0Y+n2fXrl0cP36cSqXC1NQUH374IZqm1b1BAIZukJtIMX16BLWoEPKtJeG5SiY39hF3/2yw
+      2xvHIN7CEKJRrf8tWl2IzsCK5xqGwdFCiunqYg9oCqCJWAhgc7vdDA8PMzU1xTPPPEOlUiGf
+      z+NwODh+/DhPPvkkHo+nvn+h8atlhZmL42QH5zC0mv9eEAQ62+4hV5hC16s3u/1nQoMADINQ
+      9lLD75I71NDDLSWva7w+//VfwBRAEyFJEg8++CAA1Wq1PhC22Wz1yaz777+/fvzS/cV0nlMv
+      vktuKk3HmlV1UQA4HWFaW3YwOXPqc38Hu33ppJuBpzja8Lvsv3G49ZuFJHOa2rDPFMAdSiqV
+      4vDhwzz00EOEQiEMw+DkyZOcPXuWBx98kLfffptUKsX9999PoVCgr6+Pr371q3i93uXXGk9w
+      4p/fppQuABAfnyba2VYfjAqCQGvLNpLpa5Qr6c/1vZb2AKJRJZjvq/8tWJ1INzB/MprKz/Nz
+      y/abg+A7FKvVyurVqykUao22XC4zNDTE17/+dbq7u/n617/O3r17iUQijI+P8/zzz+N2L3cd
+      zg3PNDR+gEIuT3ouxdIwMotsp7Nt7+f6TpIkYrEsfrOd5WkkfYk9724BceVv+juFFMnrv/6y
+      bArgTsXlcjVMcCmKwvDwMH/1V3/F0aNHKZfLZDIZAoEAly9f5i//8i85ffp0/XjDMJi8OMKx
+      7/+yofEvkJxJUC6WGvYFfF0EfN2f2zvVJuUWA96iqaU5vwKyL7ai/R+vVvhZrtH2FwSBzvaY
+      KYA7lbGxMX72s5/xxhtvMD4+TqlUoqenB5/PhyRJnDt3jh07duB0Olm7di0+n69u0hiGgTGX
+      o3B+GE298cA2PjFNdcnvgiDS0Xo3knTrUaEfh+t7gGDu8uK9LXZEV3DF897Kp0hfN0D3+7z4
+      fV4zHPpORVEUCoUCgiBw/vx5du/ejdVqpVgs4na70TQNi8VSP7ZcLuPxeBBFET1XQrswjFFR
+      GRyOc/XaJDdqJU6Pi9bOWIN4puLnGJv64DN5Dw2Bn0i1RBqv18VDD92NIAgIepUHzv4R/sIA
+      AHKgE0fX3cvOT1QV/q+Zfgr6YqyQLMts3rAOi8ViDoLvVKxWaz1uZyHyEagnpSz14iz19hj5
+      MtqlEVCqCILA6u4ICHClf3LF+xRzBdKJJMFIGFgYEG9lNtn3mQ+IbTZL3cRxKLM4KvH6b7K3
+      bdnxumHws1yiofEDdLbH6uI3TSCTOoZSpdo3BuXFwaIgCKzuirBxXfsNz0slkhTzhfqgWBRl
+      VsX2IwifbfNyOBZNK2c5jkWbH5uIEpI7tOz4marCu8VUw75gwI/ft+jpMnuAOwDDMDh9+jSZ
+      TKbu5//www85deoUgiCwYcMG+vr6EEWRp556imPHjvHUU0/hcDgarqFdm4L88tBlQRDo6WpB
+      EgV6r05wvdVs6AbxiWnaezqxzPc6fm8nQd9q5tIDn9l7Lk288eevIs6HQEuuEIJsb3wmw+D1
+      fILckq+/1WKhva21IZbI7AHuENrb2+sV0wD27t1bd3k+8MADPPfcc6xduxa3200oFGo4FkCf
+      SWPM3NhkEQSBVZ1hNq1fuSeoqlXikzPo+sIMsUh72x7k6xrmp8HpnL+WYeDP99f3r+T9iWsK
+      b+Yby7C0x9qWhXObArgDEAShXv9mKWfOnGH79u0AXLhwga1bt+L3+7HbFxulYRiUJxLkjvUu
+      +7KvdJ+uzjCbN3QgicvdjaV8kWQ8Ub+Ow+YnFtn5aV+vjs02b7frCt7icG2nZKn5/5dgGAav
+      ZuNUl4Rlh4IBAv7lSfmmAO4AFupiHj16lN7eXvr7+1EUhUQiQSwWo1qtkkwmiUaj9PX18eab
+      b/LLX/6y9rXWDSZ+9Dbj750ncXkYvXrzlMUFEWzdvGpZYgpAZi5NIZev/x0Jb8HljHwm77kw
+      BrBoBbzFWgSqZPci2FwNx42rZU4UM/W/rVYrba3R5XMEhm6OAe4ERFFkz5497Ny5E0EQ6O3t
+      Zc2aNTz22GMIgoAkSfXtzs5Ofu/3fg9JkhAEgdTxy5RGZgBIXhunMJsium0t9oDnhkFlgiAQ
+      aw1gGAaX+sbRtMXEdsMwiE/MYLPbsVgtSKKFjta76R96Hd34dPnACwJwl8brEaCyv71hsK0b
+      Bj/LJygai8/U2R7Ddn0mm6ETmrpm9gB3AoIgEAwGiUQitLS0cOjQIURRrA8al267XC4ikQih
+      UAg1lWP2F40BbJVsgbFjF5i7OnrTBHZBEGhvC7J1UyfSdTV6dE1jZmIKfV4Yfm8nocD6T/WO
+      tXeomUAt6bPzDyEupj7OM6GWebewOJYJB4P4vJ6GYzAM/PERWsYvmwK4XTEMg5mZGd577736
+      PlVVeeWVVzh37hyqqvLiiy9y6dIlVFXlBz/4AVeuXKnb54ZukHjrLGoqt/zaus7c1VEmTvSi
+      Fss3HBss9ATbNnUiiY1NqVwoNYwHOtr2IMuOlS5zS1iti3MACxlgos3TkPpoGAav5hZtf9tK
+      po9h4ElO0jp8AVHXTQHcziSTSdLpxa/dhQsXWL16Nb29vbz11lvs2LGDixcv8vrrr3Pvvfdy
+      6tSpuvenMpsi9eHlG10agOJsmuF3zpAZna5/za9HEARibUF2bOtClhubU3ouRSFbGw9YLS46
+      2+4BVjarPgqHwwoIiFqFUOYCALK3MfNrUClxqpSt/93RHmuIHcIwcGVniQ2eQZw3kUwB3KYI
+      gsCmTZvqdW6gFtIQi8Xo7Owkm83S1tZGa2sr6XSaVatWEQgE6m7KuaMXMD5iwAugq1Vmzg8w
+      dboPtXjj8iatET/bN3ctGxjPTs1QKdeKWIX8a3G7bpyueDNsNiuCAK7yJDa1NsCVlpg/2rzf
+      X5nvca6f8AJw5JO0D5xC0mofAUmSTAHcrhiGwdTUFFNTU8TjcTKZDG63m1OnTtHf309bWxsn
+      T55kdHSUjo4O3n33XRKJBJIkUU5mSZ//eBNU+ek5Ro6eJTc5e0OTKBrxsWNrd0NPoFU1Zidn
+      0DQNSbLQ3XHgE80QLx0AS7qCaPciORbdmsNKiROlmjBsVisdscbQCFshQ3v/SWS1Uj9m49p1
+      pgBuVxbSG9va2piYmOCXv/wlmzZtIhgM8vDDD7N3716cTicPPfRQfVD86KOPIkkSIxNDzK51
+      UmqxoX+MFqApKpOnrxC/eI1qRV32uyAItEWX9wTlYonkTC0c2eUIEwlt/tjvuzAGCOauIKAj
+      uVsQpJp5oxkGr2RnUAyjNjiPtdVjfQAs5QKxa6exKrXwbYfdzub1G/B7vaYb9HZFFEV2794N
+      1JLdt2zZgiRJ9fKGQEP9noUKD0qlwszUBKrPStprQSpruCZL2ONlRFX/aAvdMEgPT1FMpIls
+      XYsz7FvmLm2N+tlhdHG+d7TuIs2k0jhcDlxeD7HoLtLZUSpKdqU7rIjTaQdDx1cYAKEW+79A
+      v1LkfLk21rje9JGUMp1XP8RerN3L43azfvUa7Aseslt+ApP/bRFF8aYV25YyOz1FpTSfyCII
+      aA6Z7BoPs3tC5LtcVO3iLZW1UvIlJo5fJHF5GE1Z3hu0tQbYvqULWZ6POjUgPhmnUq5gtThp
+      b93NxxkQ2+1WLNUC7tIEgmxHmo/9Vw2df5uf9bXZrLS3tdYFKVYVOvpP1Bt/0B9g87r19cZf
+      rIpmD3C7kUwmeemll3j44YdZs2YNmqbx8ssvMzs7yxNPPMGFCxe4du0aTz/9NEePHqVQKPDM
+      M8/Q1tZWc51Orlyy0LCI5LvcFGJO7MkKrokicr560yZq6AbJa+MU59K07tyA1e1o6A3aon5E
+      UeDshWE0TUfXNGYnpon1dBIKrGU2eYVcfuUw6+ux2SzY1DSOShw5tApBlGqV7ipFLlXy8/MS
+      i6aPoGvErp3BlavlAbdGInS1dyDLMoYBYyU73x/pMHuA241gMMhjjz1Wd2dWq1VUVeULX/gC
+      b7/9Njabjeeff54LFy4gyzLbtm3jwoWa2zCTTnPh3DkKhWLdG3Q9hkWkFHWQuCtIcqufis+C
+      8REf6nI6z8jRM6QGJ5ZNnkVbfNy1vRuLpdYTVMoVElNxBES62r+AKN68pv8iAt7iEJJRrU9+
+      6cDLmRlUwyAcCtZjfURNpW3wLN7UVC2Ir72d1au6kGUZRRd4dy7A/+hbS2/OY/YAtztWq5VD
+      hw4xPDxMtVpLYhEEAZfLxfbt2+nt7a1/FfsuXeTKlauIoojH46GlJUQoGFxWHBcAQUAJ2kj6
+      rVjyVZxTReyJCqK2soFkaDqzvUMUZtNEtqzG5lm8ZiTsY8eWLs7M9wS5TA6Hy4nHHyIa3sxU
+      /NwtvWsw24sg25CcNfPnYjnHFaWA1Wol1jrvXjV0whNX8SXGEUWR7s5VtLa01MI+FJl/GO3g
+      RMqPNq9qswe4zZienubFF1/k1Vdf5fLly1y7do3e3l4++OADHn/8cfL5PH/7t3/L6tWrOXv2
+      LP39/ezatatmLvTVJr50XSeTyTAwMMiJk6c5dfoso2O1vOFlPYMooHotZNZ7SewKUog50GXh
+      huOE4myK0ffOkRmdblj8oiXsZffO1bVwBsMgMRWnUirTFrkLu81/S+/uLQwhuUIgySiGzo+y
+      8XpyuyRJYOi0jPcRmuzHIktsXLuO1pYWdATOZzz8P1fW8kEygGYIyKJIVzBg5gTfzvT19RGL
+      xVas5XM9hUKBv/5//yepueW1cRYQRRGv10M4HCIYCOJ0OlYMiBPLGvZkBedkEUvxxpNp3o4I
+      LZt7kJfU80+lC5w6O4iiVrHabbR3d5LODzMwfHjFa2gI/FR+jIcObeM3+r6Ot30TluAqjhfT
+      /H9zo4RCITo7YghAYGaQ1pGL2C1W1q9ejdfjIV+VeHUyyuF4mIouIQkCIbeLzoAfp9VqmkC3
+      M7eySssC6WSSTCp102N0XSedzpBOZ5CkEVwuF9FIC+FwCJvNVheDbpcoxpyUInbsiQqusQJy
+      SVs2YM6Oxykls0S2rsYVCSIIAgG/i107ejh9fgilXCExHacl1k3A100qM7zic0mSSKA8hkU0
+      kNxhFEPntVwCi81KW1sUAfDOTRAd7cVld7Bx7VrsNjv9eSf/MNLBQMEJCHjtNlaHQ7iXvIsp
+      gCZhcKD/hgPfldA0jWw2SzabZeDaIH6/j3A4TCDgxzU/ZjBkkVKrg1LEji2l4JwuYU1VEJfc
+      Ri2WmTjei29VKy2be5AsMsGAm907VnPm/BC5dBa700FH691k85NomrLsWWRZIqwMITu8iFYn
+      p4tpBqolerq6sEgS7tQUscEzhDxu1nR1g2znF7NBXhiLkddkXFYrHQE/YbcLcaFHMwxc+YIp
+      gGbAMAwmxj959WbDMEil0qRSaSRJwuNx09LSQqQlXJt/EAUqIRuVoBVLTsU5WcIxW0ZYYlxn
+      Rqep5ApENq/GEfTO9wSrOXX2GonpWdq7O2hr2cH49Ill95dlmUipH9nbimYY/Ht2loA/gM/r
+      wZFP0jZ0jhaflzXdPWQ0B/8w2MGplA9BFOkM+Gj3+7DMV8EQdB3/XIr1l6/SMTJmCuB2YmGB
+      C0mS6nZ/Pp9ndHSUYDCIy+ViamqKnp4eDMMgmUzS2lpzGc7Nzn4mz6BpWt1MGhi4hs/npSUc
+      JhQKYrfbUb1WMh4L+S4XzukyjngJqVLrEsqpHGPHzhNa34W/uw2f18Geu9Zw6twg8YlpWldt
+      Zi7VT+m6cipWqwW/NovF3847xRQzksG6WCuOYoZV/SfoDAXobF/FhayXvx/pYE510Opz0xnw
+      Y5EkBMBeLNI+OsGaKwOE44m6uWYK4DaiWq1y5MgRIpEI9913HwDvv/8+qqoiyzJHjx7F4/Ew
+      OjpKIBDg3LlzPP/88xiGwVwi8RFX//jUBFkTw+DQMF6vh5aWFoKBAA6HnVyPm0K7A8dMGedU
+      Ebms1/IQ+oYpxJNEtq7B56uZQyfOXGNuJklnbD/9w29gLMnostks2OwuyoLE4UKSWHsbTrVM
+      58BJVkda8IVj/MNoO28nQjhtLra2BfDYbQiAJ5Olp3+QnoEhXPlCwzhFkGVTALcTFouFBx98
+      kP7+xYoI6XSaRCLB2rVrqVarDA0NoSgK3/zmN0nMN3qhXOY+r4e03U5KVUlUKii6TtUwqOo6
+      tz4yuDGapq1oJrWEQ2gdToptDuxzFZyTJSx5lVIyy9j75wlv7Mbf1cqenas5fX4IQ/ES9K9h
+      LrX4jk67hMUd4lQ5Q97rpNsm0zVwgo3RFgqOVfzP/g7G1SDrW4P4HA5sqkpkdJy1fQO0Tk4h
+      VWsDdEEUkew27KEg9qAfm99vCuB25+DBg3g8Hl544QWee+45isUihw83uhSFdIoHIo2J6SVN
+      I6uq5KpVMopKWlVJKgppVSFf1ShWqxQ+4Zq+S82ka9cG8ft8hFtCBPwBSjsD2JIKzskitrRC
+      /OK1WmDdltXs3rGaU+eGCAW3kMmOUdVq+Qd+qYwkw+Fyjo5wkDXDZ9gQbeVkuYfXBjvxugJs
+      b/HiyxfoHLjM6isD+NIZBECy2bD4fNjDQWwBP1a3C2FJ9po5D3AbUalU+Pu//3tKpRIHDhwg
+      l8sRjUZ57733OHDgAMVikbNnz/LMM89w+vRpzp49y9atW3lsw3qEN395S/fQDQNF11F0nbKm
+      kVJV0opKQqmQVlQyqsqcoqDoOrphfKz1IGVZxuVy0RqN0BIK4aiAa6qEfbaC1WalZVM3msvJ
+      xSuTVKQppmZPoSFS2fQIG1yv8UHEy87sKK12P6/MbWaWGKu8PlrTGdZdvkr76Dg2RcXicmIL
+      +HG0hLB6PYiyDIKATi10OqOqTJVKxCsVUwC3K9lsFkmScLlcH33w1Svw7juf2b11w6CsaSQV
+      hYxaJa0qJBWl/ndZ0yhpGpWbuF0FQSAQ8NPSEibk8NCS0LHPVghEw9g6olwdn2Mi8z750hye
+      LXtIR88S0VLYxFZ+kdtKGDfrp+Os6R8kkslh9XmxhwLYgwFkp4OKrpOrVmvPVVGYKJWYLpdJ
+      zIu3/hymAJqAixfg+GdTrfmjqOo6ZV2npGkUqzWRZKsq8XKFfLVKSlHIqCrqkmYnyzJer5dW
+      b4B2XERKFvyxGJfjo4zNfUh0xypUfz9DpbUohTa2jc+wYWaWgM2KPRxCsVmJ6zrxSoVERWG6
+      XCZfrZKrVhsa+0qYAmgGzp6B0yc/+rjPEWPeXDKo9SCFapXUvGmVUlRS8z1I0TBwulzEBA+r
+      3G0MZ66i3mWgz0m0T4sEMzkqPg/TmkZcUYgrFcq6AQIYCIiigCTJSJKIKIpIkoTFYkGa35Zk
+      GVmWkUQRWZZNATQFp0/WRPApMQwDQ9drQW56zaW58LdhGBiaBgvH3KCKxErookjZaadkt5O1
+      2chWKqRKJQQ9QcFpRaIdW66KLeCiqulUi2UM3UCSJbBICDYZbDJYJURZumFBr5UwvUBNgFrV
+      UKbj9QaqaxqGptUasKYtNmJNx9Cv+22+Yde2ob5ShmFgYNQ+6Qu1hpb8toBBrYHrkohqsVB0
+      Ocn6fRTcLvJeDzmPm7zXQ1WWUQWBTFVFVGbYRi9Vr4ImuLENb8OaL1PJGfjcLqKhGF67Bb1Y
+      QimUKMWzqJUCuq6jS6BZRXSLiG4V0awShiyg2SR0i1D7WxJqPYYgmAJoBsqZHKnzlz76wE+B
+      LoqoVitFp4OKw07O66HgcZP1eSk77BTcLkpOB8Z1BbQ0XaegKCTzOVx6gi+4rhHRLzPgj5GM
+      dLFueJxhrUIsYCU9UySRypNI5ZFlEY/bQUvIS0t3O06rjJovUskXUbIFKrkiarJMtVLieleV
+      IVITiGymRDYF4i3mC9+Ipe1HkyUKbhcFd61xFzwusj4veY+bqsWCYrNSnXc73vB6hoGiaSQL
+      ReK5HF4hy39pnaRd7Wd2dpL+js2kW1ahKAqRisIl2YvVquHX7KQTtZLn1apOKl0glS4wMDSN
+      22UnEvbRGg0Q6WoDw0BTq2gVlXImRyVToJTOUckWQNORKrV/pgCaAMG1QsbXCuiCQFWWUWxW
+      yg47ZYeDdNBP0eUi5/OQ97gpuF3LvuK3gjE/65wtl5lKZ8mWS8TsJX6jLc5dzglGRoeYKFWY
+      6tlONtwJQKlQpF3XKYt2rs6c4q6Oe6mqKvlMYzlHXTfI5kpkcyUGhqZxOW0EAm5iUT8ejwOv
+      J4rQKdSfQ8mXKM+LwRRAEyCHww1/a5JE2W6r2+F5j5uCx03G70W1WinbbShWG6xQ/vzjousG
+      uUqF2XyeZKFIpVolZi/zbFecu/1zJGdG6RtLUBZEplbvJBeslTsxDAMpX8KhVbHY7VicEpnc
+      GJHYKqpqddkSrUspFCsUihXGJ+Zw2K0EA26iER+hoAeLLGHzOOspm6YAbiMWitz29PRw6NAh
+      AN555x0+/PBDdu3aBcDp06fZu3cvhUKBS5cuceDAAe656y7O7N1N3u0i6/dScARHIVIAABeq
+      SURBVLnQJRFdFDEE4abmyidBNwzKqjpv4uQpKgpgELOXebxjlvtCc5QLWQaujFAql6habIyt
+      30vJHag/i6bpeFUNh67icRiI7giz0xfxezuJdrYxNTyOUlmeO3A9pbLCxFSSiakkFotEwO8i
+      HPTSGvFhtZrBcLcVFouFp59+uiEYLplM8q1vfYtXXnkFWZb58z//c1588UVcLhd/8id/whtv
+      vIFgtTJ+zy6y5RvX9vwsUKoamVKJ6WyObLmMXnMb0eEo8yvRWb4QSmExFMbGJ5iZnUU3dFSL
+      jYl1d1PyNK7xWyyV2IiMoJZxOKwMT1jY6bGQTA8SDq4n0t7K1OgE2i3UN11AVTXis1nis1mu
+      9E/i9zlNAdzuaJqGNh+0put6vTKEpmn1bQC/3fmZC8AwDAzDIFdRmMpkSZdKqPPPImAQtSn8
+      l7YZ9odSOESNdCZD39gopfnnUC12xjbso+xavnRRJpOhx+rC0BQsssxUWeb+9gij/RcJ+Hqw
+      Ox1EYjURfBI0XWculTcFcDtRqVT44Q9/SDKZxG63Uy6XWbduHd/97nc5dOgQuq7z3e9+l0ce
+      eYRcLsff/M3f1FeGafP6GE0nP/omt4Cu6xQVlblCgdl8gZK6ZFlVDGKOMk9EZ7k3lMImalQq
+      FfonJphNLibklx1exjbcg2p3r3z9bJ6YP4ChlrHIIrOKjGrxIMgKqcwQ4eB6nB4X4bYIian4
+      smvcKqYAbiNsNht/9Ed/BEAikUDTNKLRaH0hPIA9e/bUt/fv31/fXhUI8uHo0Ke6vzrvupzK
+      ZilUlHkTZ5EWa4UvxWbYG0zjlmuTaInkHENjY6hLRFJr/HtR7SsH8pUrFSy6QYsoUjV0HFJt
+      VfvBnERnS5SpyfME/asRRRlf0I+qqGTmbp7wfyNMAdymhK/z7Hzk8S43dtlCubq8jufNUDWN
+      fKXCZLpm4lzf6Be++I9HZzkYTmIVa78XikVGJsZJLVnAwwDKLj9jG/ZStd54tZhMJkubZMFm
+      aKi6BvPj9CtJ2Lk6wvjIIIlUP5HQJgRBIBxtQa0oFPOFj/VuYAqgafDY7IScLiayN14LeAHd
+      MChUKszmCyQLxQYTZylt9jJPRON8IZTGJdds/2q1yszsLGNTk/WxCdQaf8HbwtTqnTdt/Lph
+      kM3n2W5xYFRVWLKw3ngekB34gyFmEhcJ+tcgS1YEUSDS0crk8DjK/GIct4opgNsMwzA4c+YM
+      p0+f5sknn6StrY1iscibb77JoUOHqFarvPrqq/T09CBJEufPn8dut/P8888T8/lvKADdMFCq
+      VZLFIvFsnryirLgQRm1wW+HRaIJD4WS94RuGQb5QYGhslFw+33COAeQDrUys3YMu3bzJKZUK
+      xUKR7kAAQ1Mxlqz0nldhqggt0RiX46dJpQdpCdVqI8myTGtnjKmRcdQVqlXfCLM04m2GYRgE
+      AgGeeOIJLl+ulTosl8vY7XYKhQKlUolnnnmGZDLJnj17+O3f/m1isdrk0tpwC8J15atUTWMu
+      X+Dy1Aynxya4NjtHrlJZofEbtNnL/OaqCf7Hlqs80Tpbb/xqtcrY5CQXr/St2PhzgTYm1uz+
+      yMYPNfenYRissjgwNAUMA0lXap4tQ2AgDV5fAIfTzWT8LPoSgVhtViLtrYjSrTdrswe4zRBF
+      EafTyalTpzh48CBQqxgdCoUAiEajHDlyhC1btmCz2Thx4gSbN9dWZOn0B/HYbaRLJfKVCtOZ
+      HOlSkcpNfekGYavCk601P75XrrJYW8ognckwOjlBvrDc/jaAXDDGxJpdGLfQ+AHSmSwOQSQs
+      WWoCAARDqy+RNJiBBzokQi21scBceoCW4Ib6+Xang3BrhPjkTENU6o0wBXCboaoqr776Ktu3
+      byeTyZDP57FarVy8eJG5uTlUVaVarVIulymXy8zOztY9Q5IoEvMGeOvqAAXl5rOoAgYtNoWH
+      IwkeCM/hsTSKpKIojE1MEJ9LrGgqGQgkW3uY6doKt7gmWK0aXY41Fjs2UURXivXfnE47AGM5
+      gWLVINzSytT4CFPxcwR83chSTSCCIOAN+NA0jbnpj66FZArgNkMURe677z6KxSKKonDp0iXu
+      vffe+oqRoVCImZmZejbUgQMHEJcEr60PR244qF0gYFF5ojXOvaEUAYvaEClhGAZzqRSjE+P1
+      Ca2VmIutZbZj4y03foBsLo+m67RZbFgEkXJ1UaQLAlB0mC7AWr8Ljy9AOplgLtVPNLy14Vr+
+      UAC1opBNZW56T1MAtxmSJNVNGsMw6OrqalgvDKCjo6O+ff3SSWtbImyIRLk8M73s2gGLwq9E
+      EzwUSeCStGUNv1ypMDoxQSJ54wrTuiCSbFtLvHPTx44xyuZqUZ5rrE4Mw0BXSwgYyFoJu32x
+      hPqlOVgXEIhEY6STCSbj5wgH1iNJi+8qCAKh1hZUVaWULy671wKmAG5jFhbD+DjYZJmntmzj
+      Snym7tP3ySoPtMzxcCRB2La8dzAMg6n4DBNTUyg36T10QWS2YyPJtjUfu/FrmkY+X0AC2mUb
+      YIBerf/udNoQhJpZfy0DugH+YBiL1Yai5Eik+omGtzRcU5Ikou1tjA+OUr3Bc5sCuI0xDIN8
+      Po/T6awtEEFtsexqtYrT6aybST6fj1wuh2EYeL1e9nV30+7zky3EuT88x2PRxDJTZ+H6pXKZ
+      wdERMtmbr+ioixLTXdtIR7o+UXRpuVyhoih4RZmobANDr80DzGOz1VaKB4NUBeJFiDolwi1R
+      piZGmYyfJeRfiyzbGq4rW2TaumJMDo+vGDhnCuA2ZnJykp/+9Kc8/vjjdHZ2omkaR48eJR6P
+      8+Uvf5l/+qd/olqtcvDgQY4ePYrFYuGpp56itbWVP9m7EffMUYLWlb+MmqYxFY8zft2E1kro
+      osRUzw4y4c5P1PgNwyCTzWIYBn5Zxi/JoFcxtMVnczrtiKKIpmmousBozqDVJRCOtDI9NY6i
+      5JhN9tEW2bHs+ja7nUh7GzNjk8tKxJvzALcx7e3t9fV/odblP/TQQwSDQbLZLJs2beJXf/VX
+      mZycJJPJkM1m63MHWzo3EbouBBkWJrTyXOi7zMj42Ec3fkFkcs2uT9z4F8hka/Z/t9VRq+Fv
+      GBh6TQDSfIlEh2PRxh/M1Mwhl9uD212rlD2TuEi1uvJMsMvjIhRdHj5iCuAOxWq1kk6nyWQy
+      hMNhvvWtb7F//36i0dpicoLkwN72qyBI9XNUVWV4bJTzly9TKN544Fg/3mJjdON+sqH2T9X4
+      FUWhOL928SpLzdtjaCrM9wALK5IteIIAhrNQrIIoSrRE2wCoKDlm5m6c/O8N+gm0NIreNIFu
+      Y65du8brr7+Oy+Viy5YttLW1cfr0aQYGBgiFassaffjhhzzzzDP86Ec/QhAEnnnmmfr5sn8n
+      cmo7avo0mVyOodGRekP8KKqyhfH191DyhD71e+SWBLGttc6vPrPCl9xuX7Tv0xWBRMnAZYFg
+      OMLw4FV0TWMmcYloeEt9XmApgiAQaAlRVavk0rUxjSmA25g1a9bwZ3/2ZwBcvXqVYDDIl7/8
+      ZaAWUz85Ocm9996Lw+Hg3nvvJRQKIQgCY2NjtLS0YLfbscWe4erFnzI9M7HihNb1GIBqczKx
+      Zjcl93IT6uNiGEY9YtSCQOv8IFZfQQALs8ELz3E1BV1esFpthFtaiU9PoKoFZhKXiEXuWnmB
+      P1GkJRZFqShUSmVTAHcCuq4zPj7OuXPn6gI4ffo0V65cQdd1uru7GRsbQxAEYrEYExMTSJLE
+      V77yFURbK+6OL2FMf/eW7qXY3Uyu2bUshfGTolarFEs1G7/VYsMp1kyyxR7AQNJr2y6XveHc
+      kSXFIcKRmgAAZmYvEg6sx2ZdnmwDNRG0dsaYHB4zxwB3AqIocv/99+P3L04WZTIZvvSlLxGN
+      RhkfH+drX/sabrebZDLJV7/61fri2YIg0L3tNwnG7rnpPQyg7KwlsnxWjR8gny/UV73vtNjr
+      DXKpCSTMrxbjcDQKYCgL5fmpArfHh8NZS7BRq0Vm5y7f9L4Wq4VoR8wUwJ2KYRhkMhlyuRyy
+      LJNOpymXywiCQDqdRlkSCyRbnGw7+G1sjhsn2ZSdPsY27ENxeD7TZ1waRBeVrXWzxVCXh1k4
+      nY12fVUXuDYf6SDLMuFIW/236cQF1OrNxzN2p90UwJ2Apmm8/PLLnDlzhuPHj/PKK6+we/du
+      Xn/9dbq7u3nooYd46aWX2LBhA/v37+fll19mx45Gf7nT28GmL/yfiNLyKnJlp5exjftQbbdW
+      YOtW0XW9Hv4AsN66eH2julwAsixhsUgN+waWpDeEwhHEeRNK0xRmEh9dDtKsDn2HUSqVKBaL
+      9fDoj4Ohawyc/l9cO/O/MOYzsXL+aC2RRbZ81o9KPl/gysA1AOyCyP8dXUts3g1aHHgHLV9b
+      4+zUuj9npPVxFEXlzTdPUSgsftmjToM/3Qny/Kf88oUzpJK1KFCL7GTL+l/FZr1xr2X2AHcY
+      DoeDYDDIxYsXmZ1fGtUwDMbHx/nRj35EJpPh3Llz9e2LFy/yz//8zwwNDSGIEmt2/R7tG54G
+      5hv/us+n8QOkl4RXBCULQWnxPkZ1ebi2JElYrY3PkqlAaklnsTAnALWxQHzu8k29W6YX6A6k
+      UCgwOVmb9m9paQHgzTff5ODBgxw+fJg9e/awfft23nrrLRRF4Vd+5Vdwzq/+Looym7/wf5CR
+      Ra7YS+jS59P4a3FMi/Z/RLZiX/AA6fqK8wCSJGKzNT5PWRMYyhq0zFtP/mAIq9WGotTOjycu
+      EQ1txnojj9Bn8TIm/3vhdrvZsmVLQx5AIBDglVdeIRaLYRgGr732GmvWrKFQKPAv//IvjIyM
+      1I+VZAd77vnvdAW2rnT5z4RKpdKQT7BmaaK8Xm1YJ3gpS2eDF1gIiwCQZQvhSGv9t6pWuelY
+      wBTAHYiu6xSLRYrFItVqlWq1SiKR4Gtf+xp9fX2Iosiv/dqvceHCBfbu3cvDDz/MlStXGq5h
+      lx08uepZVnvWfy7PmM3lGwLTVlkWBaBXK7BEALK2aPMvnQxb4GoaqkusnFA4irAkESee7KNc
+      WTma1TSB7kCy2SzHjx+vJbGUyzidTg4dOsSRI0f44he/yMDAACMjIzz22GNMTEzQ29vLY489
+      tuw6VsnGU12/zluTr3MheYqPtyjqjanlEi82SAnosi5+2ReS4ZecUd9yuZaXVCmotbCItvk6
+      Wy6PF5fHQz5b85FWqyVmEhdZFdu/bHbYFMAdiN/v57nnngOgWCxitVqRZZmenh4AWlpa6lXj
+      gsEg27Ztu+G1LKKVB2NPYJPsnJh99zN5PrVabTB/3KJMcKn7VVMbeoCl2GwWBEFYNrC9kqIu
+      AFEUiba21wUAkEheobVl2zKPkGkC3eE4nU5k+dN95yRR5kDrwzy56ss45ZUHkx+HQmFx9heg
+      x+pAXvJl1leYBFvAZrMgrrBuQX+qsdMIhiKI0uKcQVWrMD17ftl5pgBMbglRENno38av9fwW
+      bc6Ojz7hJizE/i+wEAJdR2tM0lmIBYJafVRxhRVqpgqQXeI5lS0WQuFowzGzyatUlMZ7mwIw
+      +VhEHK38Ws9vsSd8L7Lw8V2kuq4vS6/sua5Uoq42hjAIS8ojWq0ystw4GwxQqApMLKnJJQgC
+      LdG2Bptf0ypMz15oMJ9MAZh8bGySnUOxx/jy6v9Gp6tnWbW5m5EvFKguyc2VEGi/rgdYKQ5o
+      AUEQsNtXXvRv6DpHj9vjrQfILZBIXaVcWRwbmAIw+cTEXJ080/ObPNrxNA7p1uKEsrnG0olu
+      UcItLn7RDcNYcRJsKU7nysV1B9KgLMngvH5OAKBaLdfGAoKAu81nCsCkRqVSacghAIjH4/W/
+      h4eHuXbtWj3RZmBgAMMwkEULW4O7+PqGP+UL0QfxWJav9rKAruvkrhNAu8WGR1wySDd0jCXl
+      UAAsWmN65vV5AQskSgK56yIoQuFow5hBki3YIlZ6HtrEqkMbTDeoSY2FuYGNG2vVlsvlMq+9
+      9hpOp5NEIsHY2BgWi4Vqtcq7776LIAh4PJ56jrFDdrI/ej87Qnu4nLrA2bkPSSuNK9KUyxXK
+      11WTa5VtSA0VuHTQGgVwPTcygRQdBjIQWtJBOJwu/IEwqWSCzs072XLgEaJd6+oeIlMAJgDk
+      cjmGh4cJh8Ns2LCBXC7Hxo0bWb16NWfPnmVmZgZlvmT6li1b6OrqYmhoqC6ABZyym90t+9kR
+      2sN4YYT+TC/9mV5KWpFcPr9sgY0NtkYb3dCrt2ACrdwDAAxnYO+81SNIEjaXlz2PP4u7tQNf
+      KIpwnQfJFIAJAD09PezYsYOXX36ZXbt2YbfbmZqawu12EwwG+YM/+APef/99PB7PskC7lZBF
+      C92etXR71rIvej/DuQHeLb6D6jGYydXKMsoIROXrvub6chPoelYKh1hgrChj8/lx+oP4Oldj
+      c3sRxOVeo/pz3vROJk3FD3/4Q7Zs2cKZM2fo6uqira2N3t5evvjFL/KTn/wEp9PJfffdRz6f
+      Z3p6mr17997SdT0WL9uCu9hyz07K1TLTuSmuzPQyOttHzCJCtVxbCUavzodBXFe86jpBOJ12
+      ZElElkQcNpmg18H21VHWtAfY0h3B77I2TIItJR6P89JLL/HUU0/R1dVlJsSYLCcejxOJRP7j
+      blgtQykFlQx6bho1fgWjkqsJopJjzreNydiTWCUBWRKwCKAUCkQDLkJeB9JNFsTIZrMkk0m6
+      u7uBWvbca6+9RiwWY+fOnaYATD45hmEwOzvL4OAg+/btA2rFtf7t3/6NTZs2sW7dOv71X/+V
+      nTt30tPTw8svv8y+ffvo6en52EV9Pwm6rnPy5ElGR0d59tlngVq1jJMnT5JMJtm/f79pApl8
+      OuLxOMnkorfnzJkzdHZ2cvjwYUZHR9m1axcnTpzgnXfe4e677+a9996jUqkQi8VwuVwMDAzQ
+      3t6Ox/PJk+0Nw+D999/HbrfXy8QbhsGJEyeQZZkrV67w13/91/h8PqrVKiMjIwwODmK325G+
+      /e1vf/vT/ieYNCeCIBCJRBgcHGTt2rUADA8Pk0gkGBgYwO/3s3v3bs6fP88LL7zA3NwcVqsV
+      RVE4cuQIL774In19ffT19XHs2DEqlQqVSoV//Md/RNd1Vq1a1XC/fD7PCy+8gN1uJxwOYxgG
+      7733Hi+99BJer5eTJ09y4sQJotEo77//Pt/73vfo7Oykq6uLBx98EFVVuXTpEk8//TSDg4Os
+      WrXKnAgz+eQYhkE8Hmd2dpZkMkkul8PpdOJ2u1FVlUgkwunTpxkeHuZ3f/d3yWQy9UG1pmns
+      2bOHvXv3kkgk+OM//mOSySS9vb384R/+IVNTU8vu53Q6OXDgQH3R7YX7/+mf/ikzMzPIsszz
+      zz/PuXPnOHz4MF//+tf5wQ9+QF9fH9/73ve4cuUKe/bs4ciRI2zevJmvfe1rpgBMPjmGYTA4
+      OIjf72d4eJif//znbNu2DavVyrZt2zhw4AC6rrNp0yZ27txJqVRiz549zM3NkcvlGgr4yrJc
+      X/BjYft6RFGsF/RaYOHY3t5e+vv7mZqaYnZ2lo6ODiYmJuju7ua5555j3759PPvssySTSdau
+      XYvdbsdut5uDYJPPBl3XqVarSJLEq6++ysjICPv27WNycpKHH36Y3/iN38But/PNb36Tl156
+      iQceeIDz58+TzWa59957GRoaYv369cRiMd566y22bNnCE0880XCPubk5/u7v/o5SqcRXvvIV
+      JEmir6+P3t5edu7cydDQUP2+xWKRsbExHn/8cTZu3IimadhsNkqlErOzs7S0tOBwOEwBmHx+
+      VCoVisUigUCgvq9QKHD16lXuuuuuT3Xtq1ev4vf7P7W71hSASVNjjgFMmhpTACZNjSkAk6bG
+      FIBJU2MKwKSpMQVg0tSYAjBpakwBmDQ1pgBMmhpTACZNjSkAk6bGFIBJU2MKwKSpMQVg0tSY
+      AjBpakwBmDQ1pgBMmhpTACZNjSkAk6bGFIBJU2MKwKSpMQVg0tSYAjBpakwBmDQ1pgBMmhpT
+      ACZNjSkAk6bGFIBJU2MKwKSpMQVg0tSYAjBpakwBmDQ1pgBMmhpTACZNjSkAk6bGFIBJU2MK
+      wKSpMQVg0tT8/4U9uZ3lPSW9AAAAAElFTkSuQmCC
+    </thumbnail>
+  </thumbnails>
+</workbook>
